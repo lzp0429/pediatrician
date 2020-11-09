@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/classroom/classroom",
+    "pages/pediatrician/pediatrician",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "tabBar":{
+    "color": "#000000",
+    "selectedColor":"#FFC71c",
+    "backgroundColor":"#fff",
+    "list":[
+      {
+        "pagePath":"pages/home/home",
+        "iconPath": "/images/img/shouye@_2xpng.png",
+        "selectedIconPath": "/images/img/shouyexuanzhong@_2xpng.png",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/classroom/classroom",
+        "iconPath": "/images/img/text.png",
+        "selectedIconPath": "/images/img/shitixuanzhong@_2xpng.png",
+        "text":"儿医讲堂"
+      },
+      {
+        "pagePath":"pages/pediatrician/pediatrician",
+        "iconPath": "/images/img/shipin@_2xpng.png",
+        "selectedIconPath": "/images/img/shipinxuanzhong@_2xpng.png",
+        "text":"儿医帮"
+      },
+      {
+        "pagePath":"pages/my/my",
+        "iconPath": "/images/img/wode@_2xpng.png",
+        "selectedIconPath": "/images/img/wodexuanzhong@_2xpng.png",
+        "text":"我的"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
