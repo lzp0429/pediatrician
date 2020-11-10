@@ -46,7 +46,7 @@
     "navigationBarTextStyle":"black"
   },
   "usingComponents": {
-    "van-radio": "../pediatricians/miniprogram_npm/vant-weapp/radio/index",
+    "van-radio": "/miniprogram_npm/vant-weapp/radio/index",
     "van-radio-group": "../pediatricians/miniprogram_npm/vant-weapp/radio-group/index",
     "van-button": "./../pediatricians/miniprogram_npm/vant-weapp/button/index",
     "van-tab": "../pediatricians/miniprogram_npm/vant-weapp/tab/index",

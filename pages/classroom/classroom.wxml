@@ -24,8 +24,8 @@
       <!-- 内容分类 -->
       <view class="classify">
         <view class="title">内容分类：</view>
-        <view wx:for="{{classes}}" wx:key="index" class="classify-common" data-id="{{item.id}}">
-          <view bindtap="aaa" >{{item.title}}</view>
+        <view wx:for="{{classes}}" wx:key="index" class="classify-common" >
+          <view bindtap="aaa"  data-id="{{item.id}}">{{item.title}}</view>
         </view>
       </view>
       <!-- 年龄 -->
