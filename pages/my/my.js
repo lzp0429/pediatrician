@@ -7,7 +7,12 @@ Page({
   data: {
 
   },
-
+  // 联系客服
+  service(){
+    wx.navigateTo({
+      url: '/pages/service/service',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
