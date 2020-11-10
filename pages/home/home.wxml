@@ -1,7 +1,7 @@
 <!-- 首页 -->
 <view class="outer"> 
 <!-- 搜索 -->
-    <view class="search">
+    <view class="search" bindtap="goHomeSearch">
         <image src="/images/home/sousuo.png"></image>
         <view>输入医院、科室、疾病、医生</view>
     </view>
@@ -52,7 +52,7 @@
             </view>
             <image src="/images/home/yunajiiao.png"></image>
         </view>
-        <view>
+        <view bindtap="goCharacteristic">
           <view>
             更多
           </view>
@@ -60,7 +60,7 @@
         </view>
       </view>
       <view class="characteristic_class">
-          <view class="characteristic_class_item">
+          <view class="characteristic_class_item" bindtap="goAntenatal">
               <image src="/images/home/yuan.png">
                 <image class="characteristic_img" src="/images/home/characteristic1.png"></image>
               </image>
@@ -68,7 +68,7 @@
                 围孕产期咨询
               </view>
           </view>
-           <view class="characteristic_class_item">
+           <view class="characteristic_class_item" bindtap="goShowLoving">
               <image src="/images/home/yuan.png">
                 <image class="characteristic_img" src="/images/home/characteristic2.png"></image>
               </image>
@@ -76,7 +76,7 @@
                 心里关怀咨询
               </view>
           </view>
-           <view class="characteristic_class_item">
+           <view class="characteristic_class_item" bindtap="goAbnormal">
               <image src="/images/home/yuan.png">
                 <image class="characteristic_img" src="/images/home/characteristic3.png"></image>
               </image>
@@ -84,12 +84,12 @@
                 发育异常资讯
               </view>
           </view>
-         <view class="characteristic_class_item">
+         <view class="characteristic_class_item" bindtap="goTopSearch"  >
               <image src="/images/home/yuan.png">
                 <image class="characteristic_img" src="/images/home/characteristic4.png"></image>
               </image>
               <view>
-                名义咨询热榜
+                名医咨询热榜
               </view>
           </view>
       </view>
@@ -110,7 +110,7 @@
           <image src="/images/home/you.png"></image>
         </view> -->
       </view>
-      <view class="recommend_item">
+      <view class="recommend_item" bindtap="goFamousDoctors">
       <view>
          <image src="/images/home/toxiang.png"></image>
           <view>
@@ -168,14 +168,14 @@
             </view>
             <image src="/images/home/yunajiiao.png"></image>
         </view>
-        <view style=" margin-right: 20rpx ;">
+        <view style=" margin-right: 20rpx ;" bindtap="goHandpicks">
           <view>
             更多
           </view>
           <image src="/images/home/you.png"></image>
         </view>
       </view>
-      <view class="handpick_item">
+      <view class="handpick_item" bindtap="goPediatricianDetail">
         <image src="/images/home/topai1.png"></image>
         <view>
            <view class="handpick_item_title">

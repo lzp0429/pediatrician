@@ -6,7 +6,16 @@
     "pages/my/my",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/pediatricianDetail/pediatricianDetail"
+    "pages/pediatricianDetail/pediatricianDetail",
+    "pages/homeSearch/homeSearch",
+    "pages/characteristic/characteristic",
+    "pages/antenatal/antenatal",
+    "pages/showLoving/showLoving",
+    "pages/abnormal/abnormal",
+    "pages/topSearch/topSearch",
+    "pages/handpicks/handpicks",
+    "pages/famousDoctors/famousDoctors"
+    
   ],
   "tabBar":{
     "color": "#333333",
@@ -41,9 +50,9 @@
   },
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#4FA7FF",
     "navigationBarTitleText": "儿医通",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
   "usingComponents": {
     "van-radio": "/miniprogram_npm/vant-weapp/radio/index",

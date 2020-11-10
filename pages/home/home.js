@@ -18,5 +18,59 @@ Page({
   onLoad: function (options) {
 
   },
+  // 搜索
+  goHomeSearch(){
+    wx.navigateTo({
+      url: '/pages/homeSearch/homeSearch'
+    })
+  },
+  // 特色服务更多
+  goCharacteristic(){
+    wx.navigateTo({
+      url: '/pages/characteristic/characteristic'
+    })
+  },
+  // 围孕产期咨询
+  goAntenatal(){
+    wx.navigateTo({
+      url: '/pages/antenatal/antenatal'
+    })
+  },
+  // 心里关怀咨询
+  goShowLoving(){
+    wx.navigateTo({
+      url: '/pages/showLoving/showLoving'
+    })
+  },
+  //发育异常咨询
+  goAbnormal(){
+    wx.navigateTo({
+      url: '/pages/abnormal/abnormal'
+    })
+  },
+  // 名医咨询热榜
+  goTopSearch(){
+    wx.navigateTo({
+      url: '/pages/topSearch/topSearch'
+    })
+  },
+  // 儿医讲堂详情
+  goPediatricianDetail(){
+    wx.navigateTo({
+      url: '/pages/pediatricianDetail/pediatricianDetail'
+    })
+  },
+  // 名医推荐
+  goFamousDoctors(){
+    wx.navigateTo({
+      url: '/pages/famousDoctors/famousDoctors'
+    })
+  },
+  // 更多图文精选
+  goHandpicks(){
+    wx.navigateTo({
+      url: '/pages/handpicks/handpicks'
+    })
+  }
 
 })

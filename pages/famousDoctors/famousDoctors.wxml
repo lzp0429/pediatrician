@@ -1,0 +1,27 @@
+<!--pages/famousDoctors/famousDoctors.wxml-->
+<view class="outer">
+  <view class="message">
+    <image src="/images/home/toxiang.png"></image>
+    <view>
+        <view class="message_class">
+            <view class="message_class_name">
+              <view>李伟</view>
+              <image src="/images/home/renzhen.png"></image>
+              <view>已认证</view>
+            </view>
+            <view class="message_class_position">
+              <view>名医咨询热榜</view>
+              <view>副主任医师</view>
+            </view>
+            <view class="message_class_site">
+              <view>三甲</view>
+              <view>天津市儿童医院</view>
+            </view>
+        </view>
+        <view class="message_btn">
+          <view></view>
+          <view></view>
+        </view>
+    </view>
+  </view>
+</view>
