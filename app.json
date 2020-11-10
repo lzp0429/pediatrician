@@ -5,11 +5,12 @@
     "pages/pediatrician/pediatrician",
     "pages/my/my",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/pediatricianDetail/pediatricianDetail"
   ],
   "tabBar":{
-    "color": "#000000",
-    "selectedColor":"#FFC71c",
+    "color": "#333333",
+    "selectedColor":"#4FA7FF",
     "backgroundColor":"#fff",
     "list":[
       {
@@ -21,7 +22,7 @@
       {
         "pagePath":"pages/classroom/classroom",
         "iconPath": "/images/img/text.png",
-        "selectedIconPath": "/images/img/shitixuanzhong@_2xpng.png",
+        "selectedIconPath": "/images/img/jiantang.png",
         "text":"儿医讲堂"
       },
       {
@@ -40,9 +41,35 @@
   },
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#4FA7FF",
-    "navigationBarTitleText": "儿医通在线",
-    "navigationBarTextStyle":"white"
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "儿医通",
+    "navigationBarTextStyle":"black"
+  },
+  "usingComponents": {
+    "van-radio": "/miniprogram_npm/vant-weapp/radio/index",
+    "van-radio-group":"/miniprogram_npm/vant-weapp/radio-group/index",
+    "van-button": "/miniprogram_npm/vant-weapp/button/index",
+    "van-tab": "/miniprogram_npm/vant-weapp/tab/index",
+    "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index",
+    "van-icon": "/miniprogram_npm/vant-weapp/icon/index",
+    "van-progress": "/miniprogram_npm/vant-weapp/progress/index",
+    "van-nav-bar": "/miniprogram_npm/vant-weapp/nav-bar/index",
+    "van-swipe-cell": "/miniprogram_npm/vant-weapp/swipe-cell/index",
+    "van-cell": "/miniprogram_npm/vant-weapp/cell/index",
+    "van-cell-group": "/miniprogram_npm/vant-weapp/cell-group/index",
+    "van-checkbox": "/miniprogram_npm/vant-weapp/checkbox/index",
+    "van-checkbox-group": "/miniprogram_npm/vant-weapp/checkbox-group/index",
+    "van-field": "/miniprogram_npm/vant-weapp/field/index",
+    "van-search": "/miniprogram_npm/vant-weapp/search/index",
+    "van-steps": "/miniprogram_npm/vant-weapp/steps/index",
+    "van-popup": "/miniprogram_npm/vant-weapp/popup/index",
+    "van-stepper": "/miniprogram_npm/vant-weapp/stepper/index",
+    "van-action-sheet": "/miniprogram_npm/vant-weapp/action-sheet/index",
+    "van-picker": "/miniprogram_npm/vant-weapp/picker/index",
+    "van-area": "/miniprogram_npm/vant-weapp/area/index",
+    "van-toast": "/miniprogram_npm/vant-weapp/toast/index",
+    "van-overlay": "/miniprogram_npm/vant-weapp/overlay/index",
+    "van-dialog": "/miniprogram_npm/vant-weapp/dialog/index"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
