@@ -5,11 +5,12 @@
     "pages/pediatrician/pediatrician",
     "pages/my/my",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/pediatricianDetail/pediatricianDetail"
   ],
   "tabBar":{
-    "color": "#000000",
-    "selectedColor":"#FFC71c",
+    "color": "#333333",
+    "selectedColor":"#4FA7FF",
     "backgroundColor":"#fff",
     "list":[
       {
@@ -21,7 +22,7 @@
       {
         "pagePath":"pages/classroom/classroom",
         "iconPath": "/images/img/text.png",
-        "selectedIconPath": "/images/img/shitixuanzhong@_2xpng.png",
+        "selectedIconPath": "/images/img/jiantang.png",
         "text":"儿医讲堂"
       },
       {
@@ -41,7 +42,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "儿医通",
     "navigationBarTextStyle":"black"
   },
   "usingComponents": {

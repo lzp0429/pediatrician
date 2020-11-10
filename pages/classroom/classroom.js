@@ -5,9 +5,51 @@ Page({
    * 页面的初始数据
    */
   data: {
+    active:0,
+    classes:[
+      {id:0,title:'全部'},
+      {id:1,title:'日常急救'},
+      {id:2,title:'常见疾病'},
+      {id:3,title:'辟谣'},
+      {id:4,title:'成长发育'}
+    ],
+    age:[
+      {id:0,title:'婴幼儿0-3'},
+      {id:1,title:'学前期3-6'},
+      {id:2,title:'学龄期6-12'},
+      {id:3,title:'学龄期6-12'},
+    ],
+    illness:[
+      {id:0,title:'呼吸道疾病'},
+      {id:1,title:'肠道疾病'},
+      {id:2,title:'皮肤疾病'},
+      {id:3,title:'传染类疾病'},
+    ],
+    encyclopedia:0,
 
   },
-
+  aaa(event){
+    console.log(event)
+  },
+  // 跳转详情页
+  tapDetail(){
+    wx.navigateTo({
+      url: '/pages/pediatricianDetail/pediatricianDetail'
+    })
+  },
+  // tab栏
+  onChange(event) {
+    console.log(event)
+    if(event.detail.title == "健康百科"){
+      this.setData({
+        encyclopedia:1,
+      })
+    }else{
+      this.setData({
+        encyclopedia:0,
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
