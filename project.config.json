@@ -32,8 +32,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.14.0",
-	"appid": "wx8d5fccdea72cb1f1",
-	"projectname": "pediatricians",
+	"appid": "wxbd6d7a41c91aa2ef",
+	"projectname": "pediatrician",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
