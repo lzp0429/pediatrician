@@ -7,6 +7,7 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/pediatricianDetail/pediatricianDetail",
+    "pages/service/service",
     "pages/homeSearch/homeSearch",
     "pages/characteristic/characteristic",
     "pages/antenatal/antenatal",
@@ -15,9 +16,18 @@
     "pages/topSearch/topSearch",
     "pages/handpicks/handpicks",
     "pages/famousDoctors/famousDoctors",
+
     "pages/wenFigure/wenFigure",
-    "pages/online/online"
-     
+    "pages/online/online",
+    "pages/protocol/protocol",
+    "pages/refund/refund",
+    "pages/mydoctor/mydoctor",
+    "pages/mynews/mynews",
+    "pages/system/system",
+    "pages/discount/discount",
+    "pages/myattention/myattention",
+    "pages/myfavorite/myfavorite",
+    "pages/myorder/myorder"
   ],
   "tabBar":{
     "color": "#333333",
@@ -57,6 +67,7 @@
     "navigationBarTextStyle":"white"
   },
   "usingComponents": {
+    "van-uploader": "@vant/weapp/uploader/index",
     "van-radio": "/miniprogram_npm/vant-weapp/radio/index",
     "van-radio-group":"/miniprogram_npm/vant-weapp/radio-group/index",
     "van-button": "/miniprogram_npm/vant-weapp/button/index",

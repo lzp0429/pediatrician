@@ -8,6 +8,7 @@
 		"es6": true,
 		"enhance": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": false,
 		"coverView": true,
@@ -19,16 +20,20 @@
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"useMultiFrameRuntime": false,
+		"useApiHook": true,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"preloadBackgroundData": false,
-		"compileHotReLoad": false,
 		"useIsolateContext": true,
 		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"packNpmManually": false,
+		"packNpmRelationList": [],
+		"minifyWXSS": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.14.0",
@@ -42,33 +47,52 @@
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
 		"plugin": {
-			"current": -1,
 			"list": []
 		},
 		"game": {
-			"current": -1,
 			"list": []
 		},
 		"gamePlugin": {
-			"current": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
 			"list": [
 				{
 					"id": -1,
 					"name": "pages/classroom/classroom",
 					"pathName": "pages/classroom/classroom",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/service/service",
+					"pathName": "pages/service/service",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/protocol/protocol",
+					"pathName": "pages/protocol/protocol",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/mynews/mynews",
+					"pathName": "pages/mynews/mynews",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/myorder/myorder",
+					"pathName": "pages/myorder/myorder",
 					"scene": null
 				}
 			]

@@ -33,8 +33,9 @@ Page({
   },
   // 跳转详情页
   tapDetail(){
+    var id = 1
     wx.navigateTo({
-      url: '/pages/pediatricianDetail/pediatricianDetail'
+      url: '/pages/pediatricianDetail/pediatricianDetail?id=' + id
     })
   },
   // tab栏

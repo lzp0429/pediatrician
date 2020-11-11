@@ -1,0 +1,31 @@
+<!--pages/mynews/mynews.wxml-->
+<!-- 消息中心 -->
+<view class="box">
+  <view class="topbox" bindtap="system">
+    <view><image src="/images/mynews/alarm.png" class="img"></image></view>
+    <view class="news">系统消息</view>
+  </view>
+  <view class="centerbox">
+    <view><image src="/images/mynews/news.png" class="img"></image></view>
+    <view class="news">订单消息</view>
+  </view>
+  <view class="centerbox" bindtap="discount">
+    <view><image src="/images/mynews/money.png" class="img"></image></view>
+    <view class="news">优惠券消息</view>
+    <view class="circle">1</view>
+  </view>
+  <view class="bottombox">
+    <view><image src="/images/mynews/star.png" class="img"></image></view>
+    <view class="news">儿医帮消息</view>
+  </view>
+  <view>
+    <view class="doctor-news">
+      <view ><image src="/images/mynews/heard.png" class="heard"></image></view>
+      <view class="center">
+        <view class="doctor">刘医生</view>
+        <view class="conter">您的订货已经支付完成。</view>
+      </view>
+      <view class="time">2020-01-01  19:35</view>
+    </view>
+  </view>
+</view>

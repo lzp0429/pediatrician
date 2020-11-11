@@ -1,0 +1,21 @@
+/* pages/protocol/protocol.wxss */
+.box{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40rpx;
+  font-size: 24rpx;
+}
+.box>view{
+  text-indent: 2em;
+  line-height: 40rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+}
+.topbox{
+  color: #000000;
+}
+.oneview{
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #000000;
+}

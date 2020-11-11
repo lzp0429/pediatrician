@@ -1,0 +1,7 @@
+<!--pages/system/system.wxml-->
+<view>
+  <view class="img">
+    <image src="/images/img/nonews.png"></image>
+  </view>
+  <view class="text">当前暂无消息~</view>
+</view>
