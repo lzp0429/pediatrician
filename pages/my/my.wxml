@@ -18,25 +18,25 @@
     </view>
     <view class="view-center">
         <view class="view-top">
-            <view class="view-one">
+            <view class="view-one" bindtap="mydoctor">
                 <view><image class="image-img" src="/images/my/医生 (2).png"></image></view>
                 <view>我的医生</view>
             </view>
-            <view class="view-one">
+            <view class="view-one" bindtap="mynews">
                 <view><image class="image-img" src="/images/my/消息-.png"></image></view>
                 <view>消息中心</view>
             </view>
-            <view class="view-one">
+            <view class="view-one" bindtap="myorder">
                 <view><image class="image-img" src="/images/my/全部任务.png"></image></view>
                 <view>订单管理</view>
             </view>
-            <view class="view-one">
+            <view class="view-one" bindtap="myattention">
                 <view><image class="image-img" src="/images/my/喜欢.png"></image></view>
                 <view>我的关注</view>
             </view>
         </view>
         <view class="view-top">
-            <view class="view-one">
+            <view class="view-one" bindtap="myfavorite">
                 <view><image class="image-img" src="/images/my/收藏.png"></image></view>
                 <view>我的收藏</view>
             </view>
@@ -58,12 +58,12 @@
         <view style="padding-left:30rpx;width:88%;">联系客服</view>
         <view class="bottom-imgs"><image src="/images/my/箭头 上.png"></image></view>
     </view>
-    <view class="bottom-view">
+    <view class="bottom-view" bindtap="protocol">
         <view class="bottom-img"><image src="/images/my/问号-帮助.png"></image></view>
         <view style="padding-left:30rpx;width:88%;">用户协议</view>
         <view class="bottom-imgs"><image src="/images/my/箭头 上.png"></image></view>
     </view>
-    <view class="bottom-view">
+    <view class="bottom-view" bindtap="refund">
         <view class="bottom-img"><image src="/images/my/提醒-叹号.png"></image></view>
         <view style="padding-left:30rpx;width:88%;">退款说明</view>
         <view class="bottom-imgs"><image src="/images/my/箭头 上.png"></image></view>

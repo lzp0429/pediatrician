@@ -7,7 +7,24 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/pediatricianDetail/pediatricianDetail",
-    "pages/service/service"
+    "pages/service/service",
+    "pages/homeSearch/homeSearch",
+    "pages/characteristic/characteristic",
+    "pages/antenatal/antenatal",
+    "pages/showLoving/showLoving",
+    "pages/abnormal/abnormal",
+    "pages/topSearch/topSearch",
+    "pages/handpicks/handpicks",
+    "pages/famousDoctors/famousDoctors",
+    "pages/protocol/protocol",
+    "pages/refund/refund",
+    "pages/mydoctor/mydoctor",
+    "pages/mynews/mynews",
+    "pages/system/system",
+    "pages/discount/discount",
+    "pages/myattention/myattention",
+    "pages/myfavorite/myfavorite",
+    "pages/myorder/myorder"
   ],
   "tabBar":{
     "color": "#333333",
@@ -42,11 +59,12 @@
   },
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#4FA7FF",
     "navigationBarTitleText": "儿医通",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
   "usingComponents": {
+    "van-uploader": "@vant/weapp/uploader/index",
     "van-radio": "/miniprogram_npm/vant-weapp/radio/index",
     "van-radio-group":"/miniprogram_npm/vant-weapp/radio-group/index",
     "van-button": "/miniprogram_npm/vant-weapp/button/index",

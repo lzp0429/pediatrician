@@ -1,0 +1,68 @@
+<!--pages/myorder/myorder.wxml-->
+<view>
+  <van-tabs active="{{ active }}" color="#4FA7FF" bind:change="onChange">
+    <van-tab title="我的咨询"></van-tab>
+    <van-tab title="我的提问"> </van-tab>
+    <van-tab title="免费咨询"></van-tab>
+  </van-tabs>
+  <!-- 我的咨询 -->
+  <view wx:if="{{order == 0}}">
+    <view class="order">
+      <view class="top-order">
+        <view><image src="/images/myorder/order.png" class="img"></image></view>
+        <view class="doctor">王医生</view>
+        <view class="time">2020/01/01 19：36</view>
+        <view class="status">已完成</view>
+      </view>
+      <view class="bottom-order">
+        <view class="image-order">图文咨询</view>
+        <view class="child">儿童内科</view>
+        <view class="evaluate">点我评价</view>
+      </view>
+    </view>
+  </view>
+  <!-- 我的提问 -->
+  <view wx:if="{{order == 1}}">
+    <van-tabs active="{{ actives }}" color="#4FA7FF" bind:change="onChanges">
+      <van-tab title="我的问题"></van-tab>
+      <van-tab title="我的围观"> </van-tab>
+    </van-tabs>
+    <!-- 我的问题 -->
+    <view wx:if="{{article == 0}}">
+      <view class="lis">
+        <view class="text">7岁儿童咳嗽3天，第一天轻味咳嗽后加重,偶尔打喷嚏，嗓子轻微有点红，不疼。听诊没有异常晚上躺下，晨起咳嗽比较厉害，晨起黄痰</view>
+        <view class="detail">
+          <view>2人已回复</view>
+          <view style="padding-left:30rpx">2020/10/24  11：08</view>
+          <view style="width:50%;text-align:right">阅读  10</view>
+        </view>
+      </view>
+      <view class="lis">
+        <view class="text">7岁儿童咳嗽3天，第一天轻味咳嗽后加重,偶尔打喷嚏，嗓子轻微有点红，不疼。听诊没有异常晚上躺下，晨起咳嗽比较厉害，晨起黄痰</view>
+        <view class="detail">
+          <view>2人已回复</view>
+          <view style="padding-left:30rpx">2020/10/24  11：08</view>
+          <view style="width:50%;text-align:right">阅读  10</view>
+        </view>
+      </view>
+    </view>
+    <!-- 我的提问 -->
+    <view wx:if="{{article == 1}}">
+      <view>
+        <view class="imgs">
+          <image src="/images/img/nonews.png"></image>
+        </view>
+        <view class="texts">当前暂无问题列表~</view>
+      </view>
+    </view>
+  </view>
+  <!-- 免费咨询 -->
+  <view wx:if="{{order == 2}}">
+    <view class="free">
+      <view><image src="/images/myorder/toux.png" class="images"></image></view>
+      <view class="symptom">身体乏力...</view>
+      <view class="times">2020-01-01  10:18</view>
+    </view>
+  </view>
+  
+</view>

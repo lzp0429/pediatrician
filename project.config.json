@@ -75,6 +75,24 @@
         {
           "name": "pages/service/service",
           "pathName": "pages/service/service",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/protocol/protocol",
+          "pathName": "pages/protocol/protocol",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mynews/mynews",
+          "pathName": "pages/mynews/mynews",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myorder/myorder",
+          "pathName": "pages/myorder/myorder",
           "scene": null
         }
       ]

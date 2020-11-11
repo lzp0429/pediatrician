@@ -37,3 +37,17 @@ page{
   padding: 20rpx;
   font-size: 25rpx;
 }
+.loaderUp{
+  margin-left: 30rpx;
+}
+.van-uploader{
+  margin-top: 30rpx;
+}
+.hint{
+  margin-left: 30rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #999999;
+}
+

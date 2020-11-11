@@ -1,0 +1,59 @@
+/* pages/handpicks/handpicks.wxss */
+.handpick{
+  /* padding: 20rpx 0 */
+  width: 702rpx;
+  margin: 0 auto
+}
+.handpick_item{
+  padding: 22rpx 43rpx 28rpx 16rpx;
+  display: flex;
+  justify-content: space-between;
+  /* height: 196rpx; */
+  background: #FFFFFF;
+  box-shadow: 0px 0px 29rpx 0px rgba(37, 168, 176, 0.1);
+  border-radius: 16rpx;
+  margin-top:20rpx; 
+}
+.handpick_item>image{
+  width: 206rpx;
+  height: 146rpx;
+  margin-right:24rpx; 
+}
+.handpick_item>view{
+  width: 432rpx;
+  height: 146rpx;
+}
+.handpick_item_title{
+
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+
+  overflow: hidden;/*超出隐藏*/
+  display: -webkit-box;  /*设置为弹性盒子*/
+  -webkit-line-clamp: 1;  /*最多显示x行*/
+  text-overflow: ellipsis;  /*超出显示为省略号*/
+  -webkit-box-orient: vertical; 
+}
+.handpick_item_content{
+  
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  overflow: hidden;/*超出隐藏*/
+  display: -webkit-box;  /*设置为弹性盒子*/
+  -webkit-line-clamp: 2;  /*最多显示x行*/
+  text-overflow: ellipsis;  /*超出显示为省略号*/
+  -webkit-box-orient: vertical; 
+  margin-top:3rpx;
+  margin-bottom:12rpx;  
+}
+.handpick_item_time{
+  
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+}

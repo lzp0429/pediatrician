@@ -1,0 +1,53 @@
+<!-- 搜索 -->
+<view class="outer">
+  <view class="Search_ipt">
+      <van-cell-group >
+        <van-field
+          value="{{ value }}"
+          placeholder="请输入用户名"
+          border="{{ false }}"
+          bind:change="onChange"
+          custom-style=" background: #1f77cf;border-radius:125rpx;padding:0 190rpx ;padding-right:0;height: 54rpx;"
+          placeholder='输入医院、科室、疾病、医生'
+        />
+      </van-cell-group>
+      <image src="/images/home/suosou1.png"></image>
+  </view>
+  <!-- 疾病分类 -->
+  <view class="disease">
+      <view class="disease_nav">
+        疾病分类
+      </view>
+      <view class="disease_class">
+        <view>
+          呼吸道疾病
+        </view>
+         <view>
+          呼吸道疾病
+        </view>
+         <view class="disease_class_btn"> 
+          呼吸道疾病
+        </view>
+         <view>
+          呼吸道疾病
+        </view>
+         <view>
+          呼吸道疾病
+        </view>
+         <view class="disease_class_btn">
+          呼吸道疾病
+        </view>
+         <view>
+          呼吸道疾病
+        </view >
+         <view class="disease_class_btn">
+          呼吸道疾病
+        </view  >
+         <view>
+          呼吸道疾病
+        </view>
+      </view>
+      
+
+  </view>
+</view>

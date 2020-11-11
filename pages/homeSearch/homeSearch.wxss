@@ -1,0 +1,59 @@
+/* pages/homeSearch/homeSearch.wxss */
+.Search_ipt{
+  background: #4FA7FF;
+  padding: 18rpx 32rpx;
+  position: relative
+}
+.Search_ipt>view{
+  background: #1f77cf;
+  border-radius:125rpx;
+  padding:0 169rpx ;
+  height: 54rpx;
+}
+.Search_ipt>image{
+  width: 25rpx;
+  height: 25rpx;
+  position: absolute;
+  top: 30rpx;
+  left: 190rpx;
+}
+.disease{
+  padding:0 34rpx
+}
+
+.disease_nav{
+  height: 97rpx;
+  line-height: 97rpx;
+
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+
+}
+.disease_class{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap:wrap;
+}
+.disease_class>view{
+  width: 206rpx;
+  height: 48rpx;
+  border-radius:125rpx;
+  border:2rpx solid #999999;
+  text-align: center;
+  line-height: 48rpx;    
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  margin-right: 25rpx;
+  margin-bottom:20rpx; 
+}
+.disease_class>view:nth-child(3n){
+  margin-right:0;
+}
+.disease_class>view.disease_class_btn{
+  border: 2rpx solid #4FA7FF;
+  color: #4FA7FF;
+}

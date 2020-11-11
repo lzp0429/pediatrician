@@ -1,0 +1,141 @@
+/* pages/antenatal/antenatal.wxss */
+.Text{
+  color: #4FA7FF!important;
+}
+.recommend{
+  padding-top: 20rpx ;
+
+ 
+}
+.recommend_item{
+  /* height: 332rpx; */
+  background: #FFFFFF;
+  box-shadow: 0px 0px 29rpx 0px rgba(37, 168, 176, 0.1);
+  border-radius: 16rpx;
+  padding: 34rpx 28rpx 0 14rpx;
+  width: 702rpx;
+  box-sizing: border-box;
+  margin: 0 auto;
+ 
+}
+.recommend_item>view{
+   display: flex;
+  justify-content: space-between;
+}
+.recommend_item>view>image{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+}
+.recommend_item>view>view{
+  width: 510rpx;
+  padding-top:6rpx; 
+}
+.recommend_item_nav{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+.recommend_item_nav>view>text{
+  color: #EF2626
+}
+.recommend_item_nav>view>view:nth-child(2){  
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+}
+.recommend_item_nav>view>view:nth-child(2)>text{
+  color:#EF2626;
+}
+.recommend_item_btn{
+  margin:20rpx 0;
+  display: flex;
+  justify-content: flex-start;
+   
+}
+.recommend_item_btn>view{
+  margin-right:15rpx; 
+  height: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  font-size: 18rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #4FA7FF;
+  background:  #4FA7FF;
+  
+  background: rgba(79, 167, 255, 0.3); 
+  width: 122rpx;
+}
+.recommend_item_btn>view:nth-child(2){
+  color: #EF2626;
+  background: #EF2626;
+  background: rgba(239, 38, 38, 0.3); 
+  /* opacity: 0.5 */
+}
+.recommend_item_location{
+  display: flex;
+  justify-content: flex-start;
+  height: 26rpx;
+  line-height:26rpx; 
+}
+.recommend_item_location>image{
+  width: 17rpx;
+  height: 26rpx;
+  margin-right:10rpx; 
+}
+.recommend_item_location>view{
+
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+
+}
+.recommend_item_introductory{
+  margin-top:27rpx;
+  overflow: hidden;/*超出隐藏*/
+  display: -webkit-box;  /*设置为弹性盒子*/
+  -webkit-line-clamp: 1;  /*最多显示x行*/
+  text-overflow: ellipsis;  /*超出显示为省略号*/
+  -webkit-box-orient: vertical; 
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #999999;
+}
+.recommend_item_price{
+  margin-top:36rpx; 
+  border-top: 2rpx solid #F7FAFF;
+  height: 67rpx;
+  background: #fff;
+  padding: 17rpx 0 0 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.recommend_item_price>view{
+  display: flex;
+  justify-content:flex-start;
+}
+.recommend_item_price>view>image{
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 11rpx;
+  margin-top:4rpx; 
+}
+.recommend_item_price_text{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+}
+.recommend_item_price_text>text{
+  color: #EF2626
+}
+.recommend_item_price>view:nth-child(2){
+  margin-left:20rpx; 
+}
