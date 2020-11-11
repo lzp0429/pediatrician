@@ -24,6 +24,18 @@ Page({
       url: '/pages/homeSearch/homeSearch'
     })
   },
+  // 图文急诊
+  goWenFigure(){
+    wx.navigateTo({
+      url: '/pages/wenFigure/wenFigure'
+    })
+  },
+  // 儿医在线
+  goOnline(){
+    wx.navigateTo({
+      url: '/pages/online/online'
+    })
+  },
   // 特色服务更多
   goCharacteristic(){
     wx.navigateTo({

@@ -14,8 +14,10 @@
     "pages/abnormal/abnormal",
     "pages/topSearch/topSearch",
     "pages/handpicks/handpicks",
-    "pages/famousDoctors/famousDoctors"
-    
+    "pages/famousDoctors/famousDoctors",
+    "pages/wenFigure/wenFigure",
+    "pages/online/online"
+     
   ],
   "tabBar":{
     "color": "#333333",

@@ -22,21 +22,21 @@
         <image src="/images/home/zisun1.png"></image>
       </view>
       <view>
-        <view class="consult_class_text">
+        <view class="consult_class_text" bindtap="goWenFigure">
             <view>图文急诊</view>
             <view>Graphic emergency</view>
         </view>
         <image src="/images/home/zisun2.png"></image>
       </view>
       <view>
-        <view class="consult_class_text">
+        <view class="consult_class_text" >
             <view>在线视频</view>
             <view>Online video</view>
         </view>
         <image src="/images/home/zisun3.png"></image>
       </view>
       <view>
-        <view class="consult_class_text">
+        <view class="consult_class_text" bindtap="goOnline">
             <view>儿医在线</view>
             <view>Pediatrics Online</view>
         </view>

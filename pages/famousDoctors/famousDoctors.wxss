@@ -1,20 +1,23 @@
 /* pages/famousDoctors/famousDoctors.wxss */
 .outer{
-  padding:  17rpx 25rpx 0 25rpx
+  padding:  17rpx 25rpx 120rpx 25rpx
 }
 .message{
   background: #fff;
   padding:30rpx 30rpx 60rpx 30rpx;
   box-sizing: border-box;
-  height: 566rpx;
+
+  
+}
+.message_wrap{
   display: flex;
   justify-content: space-between;
 }
-.message>image{
+.message_wrap>image{
   width: 142rpx;
   height: 142rpx;
 }
-.message>view{
+.message_outer{
   width:458rpx;
   height: 142rpx;
   display: flex;
@@ -98,4 +101,198 @@
   line-height: 27rpx;
   margin-right:20rpx; 
 
+}
+.message_btn{
+  padding-top: 25rpx;
+}
+.message_btn>view{
+  background: #ff9f4e;
+  width: 91rpx;
+  height: 38rpx;
+  border-radius:125rpx;
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 38rpx;
+
+}
+.message_btn>view:nth-child(2){
+  background: #f16960;
+  margin-top:20rpx; 
+}
+.beGood{
+  margin-top:56rpx; 
+}
+.beGood>view{
+
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+  line-height: 42rpx;
+}
+.beGood>view:nth-child(1){
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  
+
+}
+.goodReputation{
+  margin-top:40rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.goodReputation>view:nth-child(2){
+  color: #F16960;
+  margin-left:20rpx; 
+}
+.price{
+  padding: 36rpx 0  53rpx 0;
+  background: #fff;
+  box-sizing: border-box;
+  margin-top:30rpx; 
+}
+.evaluate{
+  /* width: 700rpx; */
+  padding: 31rpx 41rpx 32rpx 30rpx;
+  background: #fff;
+  margin-top:30rpx; 
+}
+.evaluate_nav{
+  height: 27rpx;
+  line-height: 27rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top:30rpx; 
+
+  
+
+}
+.evaluate_nav>view{
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+.evaluate_nav>image{
+  width: 10rpx;
+  height: 16rpx;
+
+}
+.evaluate_btn{
+  width: 148rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  margin-top:27rpx; 
+  border: 1rpx solid #999999;
+  border-radius:10rpx; 
+
+
+}
+.evaluate_item{
+  padding: 0 10rpx 36rpx 22rpx;
+  margin-top:37rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  border-bottom:1rpx solid #999999 
+}
+.evaluate_item_name{
+  margin-top:23rpx; 
+  display:flex;
+  justify-content: space-between; 
+  
+}
+.evaluate_item_name>view:nth-child(1){
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #666666;
+}
+.famousDoctors_bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  padding:12rpx 36rpx;
+
+}
+.famousDoctors_bottom_btn{
+  width: 678rpx;
+  height: 74rpx;
+
+
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 74rpx;
+  background: #4FA7FF;
+
+}
+.radio_text{
+  position: absolute;
+  top: 20rpx;
+  left:180rpx;
+
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #F16960;
+
+
+}
+.radio_text>text{
+
+  font-size: 20rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+  margin-top:10rpx; 
+
+
+}
+.radio{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.radio_image>view{
+  width: 72rpx;
+  height: 72rpx;
+  background: #4FA7FF;
+  border-radius:50rpx; 
+  margin-left:40rpx;
+  margin-top:  10rpx;
+  padding: 15rpx ;
+  box-sizing: border-box;
+}
+.radio_image>view>image{
+  width: 45rpx;
+  height: 45rpx;
+}
+.radio_image>view:nth-child(2){
+  background: #F16960;
+  margin-top:15rpx; 
+}
+.radio_van{
+  width: 580rpx;
 }
