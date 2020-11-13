@@ -2,8 +2,8 @@
 
 <view>
   <van-dropdown-menu active-color="#1989fa">
-    <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
-    <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+    <van-dropdown-item title='地区选择' value="{{ value1 }}" options="{{ option1 }}" />
+    <van-dropdown-item title='科室选择' value="{{ value2 }}" options="{{ option2 }}" />
   </van-dropdown-menu>
   <view class="recommend">
       <view class="recommend_item">

@@ -46,6 +46,12 @@ Page({
       url: '/pages/online/online'
     })
   },
+  // f免费咨询
+  goFreeConsultation(){
+    wx.navigateTo({
+      url: '/pages/freeConsultation/freeConsultation'
+    })
+  },
   // 特色服务更多
   goCharacteristic(){
     wx.navigateTo({

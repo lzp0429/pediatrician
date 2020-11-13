@@ -15,7 +15,7 @@
   <!-- 咨询 -->
     <view class="consult_class">
       <view>
-        <view class="consult_class_text">
+        <view class="consult_class_text" bindtap="goFreeConsultation">
             <view>免费咨询</view>
             <view>Free consultation</view>
         </view>

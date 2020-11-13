@@ -16,7 +16,6 @@
     "pages/topSearch/topSearch",
     "pages/handpicks/handpicks",
     "pages/famousDoctors/famousDoctors",
-
     "pages/wenFigure/wenFigure",
     "pages/online/online",
     "pages/protocol/protocol",
@@ -27,7 +26,9 @@
     "pages/discount/discount",
     "pages/myattention/myattention",
     "pages/myfavorite/myfavorite",
-    "pages/myorder/myorder"
+    "pages/myorder/myorder",
+    "pages/freeConsultation/freeConsultation"
+    
   ],
   "tabBar":{
     "color": "#333333",
