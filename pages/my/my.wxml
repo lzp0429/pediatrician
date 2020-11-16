@@ -2,23 +2,37 @@
 <view>
     <view class="top-view">
         <view class="top-img">
+<<<<<<< HEAD
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/my/toux.png"></image>
+=======
+            <image src="/images/my/椭圆 1.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         </view>
         <view class="center-view">
             <view>王小明</view>
             <view class="top-phone">
+<<<<<<< HEAD
                 <view class="phone"><image src="https://fenxiang.fancyopen.com/img/eryitong/images/my/phone.png"></image></view>
                 <view>18816688666</view>
             </view>
         </view>
         <view class="right-view" bindtap="myset">
             <view class="right-left-view"><image src="https://fenxiang.fancyopen.com/img/eryitong/images/my/set.png"></image></view>
+=======
+                <view class="phone"><image src="/images/my/电话.png"></image></view>
+                <view>18816688666</view>
+            </view>
+        </view>
+        <view class="right-view">
+            <view class="right-left-view"><image src="/images/my/set.png"></image></view>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
             <view class="set">设置</view>
         </view>
     </view>
     <view class="view-center">
         <view class="view-top">
             <view class="view-one" bindtap="mydoctor">
+<<<<<<< HEAD
                 <view><image class="image-img" src="https://fenxiang.fancyopen.com/img/eryitong/images/my/doctor.png"></image></view>
                 <view>我的医生</view>
             </view>
@@ -32,11 +46,27 @@
             </view>
             <view class="view-one" bindtap="myattention">
                 <view><image class="image-img" src="https://fenxiang.fancyopen.com/img/eryitong/images/my/love.png"></image></view>
+=======
+                <view><image class="image-img" src="/images/my/医生 (2).png"></image></view>
+                <view>我的医生</view>
+            </view>
+            <view class="view-one" bindtap="mynews">
+                <view><image class="image-img" src="/images/my/消息-.png"></image></view>
+                <view>消息中心</view>
+            </view>
+            <view class="view-one" bindtap="myorder">
+                <view><image class="image-img" src="/images/my/全部任务.png"></image></view>
+                <view>订单管理</view>
+            </view>
+            <view class="view-one" bindtap="myattention">
+                <view><image class="image-img" src="/images/my/喜欢.png"></image></view>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
                 <view>我的关注</view>
             </view>
         </view>
         <view class="view-top">
             <view class="view-one" bindtap="myfavorite">
+<<<<<<< HEAD
                 <view><image class="image-img" src="https://fenxiang.fancyopen.com/img/eryitong/images/my/shoucang.png"></image></view>
                 <view>我的收藏</view>
             </view>
@@ -46,6 +76,17 @@
             </view>
             <view class="view-one" bindtap="mydiscount">
                 <view><image class="image-img" src="https://fenxiang.fancyopen.com/img/eryitong/images/my/youhui.png"></image></view>
+=======
+                <view><image class="image-img" src="/images/my/收藏.png"></image></view>
+                <view>我的收藏</view>
+            </view>
+            <view class="view-one">
+                <view><image class="image-img" src="/images/my/档案.png"></image></view>
+                <view>健康档案</view>
+            </view>
+            <view class="view-one">
+                <view><image class="image-img" src="/images/my/优惠券.png"></image></view>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
                 <view>优惠券</view>
             </view>
             <view class="view-one">
@@ -54,6 +95,7 @@
         </view>
     </view>
     <view class="bottom-view" bindtap="service">
+<<<<<<< HEAD
         <view class="bottom-img"><image src="https://fenxiang.fancyopen.com/img/eryitong/images/my/kefu.png"></image></view>
         <view style="padding-left:30rpx;width:88%;">联系客服</view>
         <view class="bottom-imgs"><image src="https://fenxiang.fancyopen.com/img/eryitong/images/my/right.png"></image></view>
@@ -67,5 +109,20 @@
         <view class="bottom-img"><image src="https://fenxiang.fancyopen.com/img/eryitong/images/my/gantanhao.png"></image></view>
         <view style="padding-left:30rpx;width:88%;">退款说明</view>
         <view class="bottom-imgs"><image src="https://fenxiang.fancyopen.com/img/eryitong/images/my/right.png"></image></view>
+=======
+        <view class="bottom-img"><image src="/images/my/客服 (1).png"></image></view>
+        <view style="padding-left:30rpx;width:88%;">联系客服</view>
+        <view class="bottom-imgs"><image src="/images/my/箭头 上.png"></image></view>
+    </view>
+    <view class="bottom-view" bindtap="protocol">
+        <view class="bottom-img"><image src="/images/my/问号-帮助.png"></image></view>
+        <view style="padding-left:30rpx;width:88%;">用户协议</view>
+        <view class="bottom-imgs"><image src="/images/my/箭头 上.png"></image></view>
+    </view>
+    <view class="bottom-view" bindtap="refund">
+        <view class="bottom-img"><image src="/images/my/提醒-叹号.png"></image></view>
+        <view style="padding-left:30rpx;width:88%;">退款说明</view>
+        <view class="bottom-imgs"><image src="/images/my/箭头 上.png"></image></view>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     </view>
 </view>

@@ -1,7 +1,11 @@
 <!--pages/wenFigure/wenFigure.wxml-->
 <!-- 图文急诊 -->
 <view class="wenFigure">
+<<<<<<< HEAD
   <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/beijin.png" class="wenFigure_image">
+=======
+  <image src="/images/home/beijin.png" class="wenFigure_image">
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
       <view class="wenFigure_content">
         <view class="wenFigure_content_title">
             图文急诊,<text>方便快捷！</text>
@@ -18,24 +22,40 @@
   <view class="wenFigure_class">
       <view>
           <view class="wenFigure_class_image">
+<<<<<<< HEAD
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dui.png"></image>
+=======
+            <image src="/images/home/dui.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
             <view><text>60秒</text>快速回复</view>
           </view>
           <view>
             <view class="wenFigure_class_image">
+<<<<<<< HEAD
               <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dui.png"></image>
+=======
+              <image src="/images/home/dui.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
               <view>儿科<text>9元</text>/次</view>
            </view>
           </view>
       </view>
       <view>
           <view class="wenFigure_class_image">
+<<<<<<< HEAD
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dui.png"></image>
+=======
+            <image src="/images/home/dui.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
             <view><text>30分钟</text>快速解决</view>
           </view>
           <view>
             <view class="wenFigure_class_image">
+<<<<<<< HEAD
               <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dui.png"></image>
+=======
+              <image src="/images/home/dui.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
               <view>医生<text>实时</text>在线</view>
            </view>
           </view>
@@ -44,7 +64,11 @@
   <view class="comment">
     <view class="comments_title">
       <view>患者评价</view>
+<<<<<<< HEAD
        <!-- <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/xiahuaxian.png"></image> -->
+=======
+       <!-- <image src="/images/home/xiahuaxian.png"></image> -->
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     </view>
     <view class="comment_list">
       <view class="comment_item">

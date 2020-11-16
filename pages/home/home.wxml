@@ -2,7 +2,11 @@
 <view class="outer"> 
 <!-- 搜索 -->
     <view class="search" bindtap="goHomeSearch">
+<<<<<<< HEAD
         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/sousuo.png"></image>
+=======
+        <image src="/images/home/sousuo.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         <view>输入医院、科室、疾病、医生</view>
     </view>
     <!-- 轮播图 -->
@@ -19,28 +23,44 @@
             <view>免费咨询</view>
             <view>Free consultation</view>
         </view>
+<<<<<<< HEAD
         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/zisun1.png"></image>
+=======
+        <image src="/images/home/zisun1.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
       </view>
       <view>
         <view class="consult_class_text" bindtap="goWenFigure">
             <view>图文急诊</view>
             <view>Graphic emergency</view>
         </view>
+<<<<<<< HEAD
         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/zisun2.png"></image>
+=======
+        <image src="/images/home/zisun2.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
       </view>
       <view>
         <view class="consult_class_text" >
             <view>在线视频</view>
             <view>Online video</view>
         </view>
+<<<<<<< HEAD
         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/zisun3.png"></image>
+=======
+        <image src="/images/home/zisun3.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
       </view>
       <view>
         <view class="consult_class_text" bindtap="goOnline">
             <view>儿医在线</view>
             <view>Pediatrics Online</view>
         </view>
+<<<<<<< HEAD
         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/zisun4.png"></image>
+=======
+        <image src="/images/home/zisun4.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
       </view>
     </view>
     <!-- 特色服务 -->
@@ -50,43 +70,71 @@
             <view>
               特色服务
             </view>
+<<<<<<< HEAD
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yunajiiao.png"></image>
+=======
+            <image src="/images/home/yunajiiao.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         </view>
         <view bindtap="goCharacteristic">
           <view>
             更多
           </view>
+<<<<<<< HEAD
           <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
+=======
+          <image src="/images/home/you.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         </view>
       </view>
       <view class="characteristic_class">
           <view class="characteristic_class_item" bindtap="goAntenatal">
+<<<<<<< HEAD
               <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yuan.png">
                 <image class="characteristic_img" src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic1.png"></image>
+=======
+              <image src="/images/home/yuan.png">
+                <image class="characteristic_img" src="/images/home/characteristic1.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
               </image>
               <view>
                 围孕产期咨询
               </view>
           </view>
            <view class="characteristic_class_item" bindtap="goShowLoving">
+<<<<<<< HEAD
               <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yuan.png">
                 <image class="characteristic_img" src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic2.png"></image>
+=======
+              <image src="/images/home/yuan.png">
+                <image class="characteristic_img" src="/images/home/characteristic2.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
               </image>
               <view>
                 心里关怀咨询
               </view>
           </view>
            <view class="characteristic_class_item" bindtap="goAbnormal">
+<<<<<<< HEAD
               <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yuan.png">
                 <image class="characteristic_img" src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic3.png"></image>
+=======
+              <image src="/images/home/yuan.png">
+                <image class="characteristic_img" src="/images/home/characteristic3.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
               </image>
               <view>
                 发育异常资讯
               </view>
           </view>
          <view class="characteristic_class_item" bindtap="goTopSearch"  >
+<<<<<<< HEAD
               <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yuan.png">
                 <image class="characteristic_img" src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic4.png"></image>
+=======
+              <image src="/images/home/yuan.png">
+                <image class="characteristic_img" src="/images/home/characteristic4.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
               </image>
               <view>
                 名医咨询热榜
@@ -101,18 +149,30 @@
             <view>
               名医推荐
             </view>
+<<<<<<< HEAD
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yunajiiao.png"></image>
+=======
+            <image src="/images/home/yunajiiao.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         </view>
         <!-- <view>
           <view>
             更多
           </view>
+<<<<<<< HEAD
           <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
+=======
+          <image src="/images/home/you.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         </view> -->
       </view>
       <view class="recommend_item" bindtap="goFamousDoctors">
       <view>
+<<<<<<< HEAD
          <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/toxiang.png"></image>
+=======
+         <image src="/images/home/toxiang.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
           <view>
             <view class="recommend_item_nav"> 
               <view>
@@ -132,7 +192,11 @@
               </view>
             </view>
             <view class="recommend_item_location">
+<<<<<<< HEAD
               <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/location.png"></image>
+=======
+              <image src="/images/home/location.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
               <view>天津市儿童医院</view>
             </view>
             <view class="recommend_item_introductory">
@@ -143,14 +207,22 @@
           
         <view class="recommend_item_price">
           <view>
+<<<<<<< HEAD
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/tupai.png"></image>
+=======
+            <image src="/images/home/tupai.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
             <view class="recommend_item_price_text">
               图文：<text>￥70.00</text> / 次           
             </view>
           </view>
             
           <view>
+<<<<<<< HEAD
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dianhua.png"></image>
+=======
+            <image src="/images/home/dianhua.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
             <view class="recommend_item_price_text">
               电话：<text>￥100.00</text> / 次           
             </view>
@@ -166,17 +238,29 @@
             <view>
               图文精选
             </view>
+<<<<<<< HEAD
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yunajiiao.png"></image>
+=======
+            <image src="/images/home/yunajiiao.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         </view>
         <view style=" margin-right: 20rpx ;" bindtap="goHandpicks">
           <view>
             更多
           </view>
+<<<<<<< HEAD
           <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
         </view>
       </view>
       <view class="handpick_item" bindtap="goPediatricianDetail">
         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/topai1.png"></image>
+=======
+          <image src="/images/home/you.png"></image>
+        </view>
+      </view>
+      <view class="handpick_item" bindtap="goPediatricianDetail">
+        <image src="/images/home/topai1.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         <view>
            <view class="handpick_item_title">
               宝宝开口晚、话讲不清、可能是......

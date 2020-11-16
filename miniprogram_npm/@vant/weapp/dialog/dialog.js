@@ -16,12 +16,42 @@ var __assign =
   };
 Object.defineProperty(exports, '__esModule', { value: true });
 var queue = [];
+<<<<<<< HEAD
+=======
+var defaultOptions = {
+  show: false,
+  title: '',
+  width: null,
+  theme: 'default',
+  message: '',
+  zIndex: 100,
+  overlay: true,
+  selector: '#van-dialog',
+  className: '',
+  asyncClose: false,
+  transition: 'scale',
+  customStyle: '',
+  messageAlign: '',
+  overlayStyle: '',
+  confirmButtonText: '确认',
+  cancelButtonText: '取消',
+  showConfirmButton: true,
+  showCancelButton: false,
+  closeOnClickOverlay: false,
+  confirmButtonOpenType: '',
+};
+var currentOptions = __assign({}, defaultOptions);
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
 function getContext() {
   var pages = getCurrentPages();
   return pages[pages.length - 1];
 }
 var Dialog = function (options) {
+<<<<<<< HEAD
   options = __assign(__assign({}, Dialog.currentOptions), options);
+=======
+  options = __assign(__assign({}, currentOptions), options);
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
   return new Promise(function (resolve, reject) {
     var context = options.context || getContext();
     var dialog = context.selectComponent(options.selector);
@@ -42,6 +72,7 @@ var Dialog = function (options) {
     }
   });
 };
+<<<<<<< HEAD
 Dialog.defaultOptions = {
   show: false,
   title: '',
@@ -65,6 +96,11 @@ Dialog.defaultOptions = {
   confirmButtonOpenType: '',
 };
 Dialog.alert = Dialog;
+=======
+Dialog.alert = function (options) {
+  return Dialog(options);
+};
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
 Dialog.confirm = function (options) {
   return Dialog(__assign({ showCancelButton: true }, options));
 };
@@ -79,11 +115,23 @@ Dialog.stopLoading = function () {
     dialog.stopLoading();
   });
 };
+<<<<<<< HEAD
 Dialog.setDefaultOptions = function (options) {
   Object.assign(Dialog.currentOptions, options);
 };
 Dialog.resetDefaultOptions = function () {
   Dialog.currentOptions = __assign({}, Dialog.defaultOptions);
+=======
+Dialog.currentOptions = currentOptions;
+Dialog.defaultOptions = defaultOptions;
+Dialog.setDefaultOptions = function (options) {
+  currentOptions = __assign(__assign({}, currentOptions), options);
+  Dialog.currentOptions = currentOptions;
+};
+Dialog.resetDefaultOptions = function () {
+  currentOptions = __assign({}, defaultOptions);
+  Dialog.currentOptions = currentOptions;
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
 };
 Dialog.resetDefaultOptions();
 exports.default = Dialog;

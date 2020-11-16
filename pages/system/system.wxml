@@ -1,7 +1,11 @@
 <!--pages/system/system.wxml-->
 <view>
   <view class="img">
+<<<<<<< HEAD
     <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
+=======
+    <image src="/images/img/nonews.png"></image>
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
   </view>
   <view class="text">当前暂无消息~</view>
 </view>

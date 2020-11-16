@@ -3,7 +3,11 @@
   padding-bottom: 150rpx; 
 }
 .wenFigure_image{
+<<<<<<< HEAD
   /* background: url(https://fenxiang.fancyopen.com/img/eryitong/images/home/beijin.png) no-repeat;
+=======
+  /* background: url(/images/home/beijin.png) no-repeat;
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
 	background-size: cover;
 	background-position: center 0; */
   width: 750rpx;

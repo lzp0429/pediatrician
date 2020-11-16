@@ -18,6 +18,10 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var component_1 = require('../common/component');
 var utils_1 = require('./utils');
 var shared_1 = require('./shared');
+<<<<<<< HEAD
+=======
+var validator_1 = require('../common/validator');
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
 component_1.VantComponent({
   props: __assign(
     __assign(
@@ -94,6 +98,7 @@ component_1.VantComponent({
         maxCount = _a.maxCount;
       var lists = fileList.map(function (item) {
         return __assign(__assign({}, item), {
+<<<<<<< HEAD
           isImage:
             typeof item.isImage === 'undefined'
               ? utils_1.isImageFile(item)
@@ -102,6 +107,16 @@ component_1.VantComponent({
             typeof item.deletable === 'undefined' ? true : item.deletable,
         });
       });
+=======
+          isImage: utils_1.isImageFile(item),
+          isVideo: utils_1.isVideoFile(item),
+          deletable: validator_1.isBoolean(item.deletable)
+            ? item.deletable
+            : true,
+        });
+      });
+      console.log(lists);
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
       this.setData({ lists: lists, isInCount: lists.length < maxCount });
     },
     getDetail: function (index) {
@@ -126,6 +141,7 @@ component_1.VantComponent({
           })
         )
         .then(function (res) {
+<<<<<<< HEAD
           var file = null;
           if (utils_1.isVideo(res, accept)) {
             file = __assign({ path: res.tempFilePath }, res);
@@ -133,6 +149,10 @@ component_1.VantComponent({
             file = multiple ? res.tempFiles : res.tempFiles[0];
           }
           _this.onBeforeRead(file);
+=======
+          console.log(res);
+          _this.onBeforeRead(multiple ? res : res[0]);
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         })
         .catch(function (error) {
           _this.$emit('error', error);
@@ -162,7 +182,11 @@ component_1.VantComponent({
       if (!res) {
         return;
       }
+<<<<<<< HEAD
       if (utils_1.isPromise(res)) {
+=======
+      if (validator_1.isPromise(res)) {
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         res.then(function (data) {
           return _this.onAfterRead(data || file);
         });
@@ -171,7 +195,13 @@ component_1.VantComponent({
       }
     },
     onAfterRead: function (file) {
+<<<<<<< HEAD
       var maxSize = this.data.maxSize;
+=======
+      var _a = this.data,
+        maxSize = _a.maxSize,
+        afterRead = _a.afterRead;
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
       var oversize = Array.isArray(file)
         ? file.some(function (item) {
             return item.size > maxSize;
@@ -181,8 +211,13 @@ component_1.VantComponent({
         this.$emit('oversize', __assign({ file: file }, this.getDetail()));
         return;
       }
+<<<<<<< HEAD
       if (typeof this.data.afterRead === 'function') {
         this.data.afterRead(file, this.getDetail());
+=======
+      if (typeof afterRead === 'function') {
+        afterRead(file, this.getDetail());
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
       }
       this.$emit('after-read', __assign({ file: file }, this.getDetail()));
     },
@@ -203,17 +238,47 @@ component_1.VantComponent({
       wx.previewImage({
         urls: lists
           .filter(function (item) {
+<<<<<<< HEAD
             return item.isImage;
           })
           .map(function (item) {
             return item.url || item.path;
           }),
         current: item.url || item.path,
+=======
+            return utils_1.isImageFile(item);
+          })
+          .map(function (item) {
+            return item.url;
+          }),
+        current: item.url,
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         fail: function () {
           wx.showToast({ title: '预览图片失败', icon: 'none' });
         },
       });
     },
+<<<<<<< HEAD
+=======
+    onPreviewVideo: function (event) {
+      if (!this.data.previewFullImage) return;
+      var index = event.currentTarget.dataset.index;
+      var lists = this.data.lists;
+      wx.previewMedia({
+        sources: lists
+          .filter(function (item) {
+            return utils_1.isVideoFile(item);
+          })
+          .map(function (item) {
+            return __assign(__assign({}, item), { type: 'video' });
+          }),
+        current: index,
+        fail: function () {
+          wx.showToast({ title: '预览视频失败', icon: 'none' });
+        },
+      });
+    },
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     onClickPreview: function (event) {
       var index = event.currentTarget.dataset.index;
       var item = this.data.lists[index];

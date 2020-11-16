@@ -8,7 +8,14 @@ component_1.VantComponent({
     // overlay custom style
     overlayStyle: Object,
     // z-index
+<<<<<<< HEAD
     zIndex: [Number, String],
+=======
+    zIndex: {
+      type: Number,
+      value: 100,
+    },
+>>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     title: String,
     cancelText: {
       type: String,
