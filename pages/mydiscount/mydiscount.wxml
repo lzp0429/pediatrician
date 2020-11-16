@@ -1,0 +1,22 @@
+<!--pages/mydiscount/mydiscount.wxml-->
+<view>
+  <van-tabs swipeable bind:change="onChange">
+    <van-tab title="全部"></van-tab>
+    <van-tab title="图文咨询"></van-tab>
+    <van-tab title="电话问诊"></van-tab>
+    <van-tab title="图文急诊"></van-tab>
+    <van-tab title="私人医生周套餐"></van-tab>
+    <van-tab title="私人医生月套餐"></van-tab>
+    <van-tab title="儿医帮"></van-tab>
+    <van-tab title="所有服务"></van-tab>
+    <van-tab title="付费视频"></van-tab>
+  </van-tabs>
+  <view>
+    <view>
+      <view class="img">
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
+      </view>
+      <view class="text">您目前还没有优惠券哦~</view>
+    </view>
+  </view>
+</view>

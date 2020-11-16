@@ -1,0 +1,56 @@
+<!--pages/freeConsultation/freeConsultation.wxml-->
+<view class="outer">
+  <view class="freeConsultation">
+    <view class="texts">
+      <textarea bindinput="aaa" placeholder="请详细描述您的性别、年龄、疾病症状及具体问题并上传相应资料，提升回复准确性" cols="1" rows="5"></textarea>
+      <view class="num">0/500</view>
+      <van-uploader class="loaderUp" file-list="{{ fileList }}" bind:after-read="afterRead" max-count="5" />
+      <view class="hint">最多上传5张，JPEG或PNG格式，单张大小不超过3M</view>
+    </view>
+  </view>
+  <view class="videoCalls">
+    <view class="videoCalls_title">视频咨询</view>
+    <view class="videoCalls_content">
+      <view>视频咨询方式:
+        <text>（问诊时间：09：00-12：00；14：               00-1800；15分钟快速回复）</text>
+        <view style="display: flex;justify-content:space-between;">
+          <view>
+            <view>视频连线电话：
+              <text>0311-85204800</text>
+            </view>
+            <view>视频连线微信：
+              <text>eytyy01</text>
+            </view>
+          </view>
+          <view class="videoCalls_image">
+
+            <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/erweima.png"></image>
+
+          </view>
+        </view>
+      </view>
+
+
+
+
+
+
+    </view>
+
+  </view>
+
+  <view class="Use_outer">
+      <view class="Use_title">
+          使用规则
+      </view>
+     <view class="Use">
+      <view> 1、客户按平台说明与客服取得微信联系后,平台客服根据您的咨询问题您预约在线医生视频咨询;</view>
+      <view> 2、客户按平台说明与客服取得微信联系后,平台客服根据您的咨询问题为您预约在线医生视频咨询;</view>
+      <view>3、平台原则收费后15分钟内安排您开始视频咨询,因有时医生繁忙的特殊情况，如等待超过30分钟,则客户可提出退款，客服将费用按原路径退还;</view>
+      <view>4、每个客户在线咨询时间原则上不超过25分钟;</view>
+    </view>
+  </view>
+ <view class="freeConsultation_btn">
+    <view>提交</view>
+ </view>
+</view>

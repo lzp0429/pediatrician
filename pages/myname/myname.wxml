@@ -1,0 +1,16 @@
+<!--pages/myname/myname.wxml-->
+<view>
+  <view class="box">
+    <view class="name">姓名</view>
+    <view class="ipt">
+      <van-cell-group>
+        <van-field
+          value="{{ value }}"
+          placeholder="请输入用户名"
+          bind:change="onChange"
+        />
+      </van-cell-group>
+    </view>
+    <van-button type="info" block>确定修改</van-button>
+  </view>
+</view>

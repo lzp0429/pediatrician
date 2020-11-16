@@ -1,0 +1,140 @@
+/* pages/freeConsultation/freeConsultation.wxss */
+
+.outer{
+  padding: 27rpx 31rpx 180rpx 31rpx;
+}
+.freeConsultation{
+  width: 687rpx;
+  background: #fff;
+  padding: 20rpx 20rpx 39rpx 0;
+}
+.texts textarea{
+  width: 85%;
+  height: 200rpx;
+  margin-left: 30rpx;
+  padding: 20rpx;
+  font-size: 25rpx;
+  line-height: 42rpx;
+}
+.loaderUp{
+  margin-left: 30rpx;
+}
+.van-uploader{
+  margin-top: 30rpx;
+}
+.hint{
+  margin-left: 30rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #999999;
+}
+.num{
+text-align: right;
+font-size: 24rpx;
+font-family: PingFang SC;
+font-weight: 500;
+color: #999999;
+line-height: 39px;
+
+}
+.videoCalls{
+  width: 590rpx;
+  /* height: 300rpx; */
+  margin: 0 auto;
+  margin-top: 38rpx;
+}
+.videoCalls_title{
+
+font-size: 26rpx;
+font-family: PingFang SC;
+font-weight: 500;
+color: #333333;
+margin: 20rpx auto;
+text-align: center;
+
+}
+.videoCalls_content{
+
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 42rpx;
+  
+
+}
+.videoCalls_content text{
+  color:  #CD161F;
+}
+.videoCalls_content>view>view>view>view{
+  width:400rpx;
+  word-wrap:break-word;
+}
+.videoCalls_content>view>view:nth-child(1){
+  width: 100%;
+}
+.videoCalls_image{
+  width: 120rpx;
+  height: 120rpx;
+  margin-top:-40rpx; 
+}
+.videoCalls_image>image{
+   width: 120rpx;
+  height: 120rpx;
+ 
+}
+.Use_title{
+
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  margin: 20rpx auto;
+  text-align: center 
+
+}
+.Use{
+  width: 686rpx;
+  height: 375rpx;
+  margin: 0 auto;
+  padding: 33rpx 36rpx;
+  background: #fff;
+  box-sizing: border-box;
+}
+.Use>view{
+    font-size: 26rpx;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 39rpx;
+
+}
+.freeConsultation_btn{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-bottom:20rpx; 
+  padding: 20rpx 36rpx;
+  background: #f6f9fe;
+}
+.freeConsultation_btn>view{
+  background: #ff9f4e;
+  width: 678rpx;
+  height: 74rpx;
+  line-height: 74rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+   
+  
+  margin: 0 auto;
+  margin-top:30rpx; 
+ 
+
+}
+.freeConsultation_btn>view:nth-child(2){
+  background: #4FA7FF;
+}

@@ -1,0 +1,18 @@
+<!--pages/myfavorite/myfavorite.wxml-->
+<view>
+  <view class="common-bottom" bindtap="tapDetail">
+
+    <view class="common-left">
+      图片
+    </view>
+    <view style="width:412rpx;margin-left:40rpx;margin-top:12rpx">
+      <view style="color:#333333;font-size:24rpx;width:412rpx;">
+        千万别被中国式“坐月子”坑了，90%的 妈妈中了这三大误区
+      </view>
+      <view style="color:#999999;font-size:20rpx;margin-top:30rpx">
+        2020-10-27
+      </view>
+    </view>
+
+  </view>
+</view>

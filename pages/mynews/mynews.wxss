@@ -1,0 +1,99 @@
+/* pages/mynews/mynews.wxss */
+.box{
+  width: 93%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  /* background: red; */
+  height: 200rpx;
+  border-radius: 20rpx;
+}
+.topbox{
+  display: flex;
+  flex-wrap:nowrap;
+  background: #FFFFFF;
+  padding: 20rpx;
+  margin-top: 3rpx;
+  border-top-left-radius:20rpx;
+  border-top-right-radius:20rpx;
+}
+.img{
+  width: 90rpx;
+  height: 90rpx;
+}
+.topbox>view{
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #000000;
+  /* line-height: 90rpx; */
+}
+.news{
+  padding-top: 20rpx;
+  padding-left: 30rpx;
+  width: 75%;
+}
+.centerbox{
+  display: flex;
+  flex-wrap:nowrap;
+  background: #FFFFFF;
+  padding: 20rpx;
+  margin-top: 5rpx;
+}
+.circle{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 60%;
+  background: red !important;
+  color: #FFFFFF;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 30rpx;
+  margin-top: 25rpx;
+}
+.bottombox{
+  display: flex;
+  flex-wrap:nowrap;
+  background: #FFFFFF;
+  padding: 20rpx;
+  margin-top: 3rpx;
+  border-bottom-left-radius:20rpx;
+  border-bottom-right-radius:20rpx;
+}
+.doctor-news{
+  padding: 20rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  margin-top: 40rpx;
+}
+.heard{
+  width: 90rpx;
+  height: 90rpx;
+}
+.center{
+  width: 56%;
+}
+.doctor{
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 50rpx;
+  padding-left: 20rpx;
+}
+.conter{
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+  line-height: 30rpx;
+  padding-left: 20rpx;
+}
+.time{
+  line-height: 50rpx;
+  font-size: 20rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+}

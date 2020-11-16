@@ -1,0 +1,20 @@
+.box{
+  padding: 30rpx 40rpx;
+}
+.name{
+  width: 678rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+.ipt{
+  width: 678rpx;
+  border: 1px dashed #333333;
+  margin-top: 30rpx;
+  margin-bottom: 50rpx;
+}
+.van-btn{
+  background: #ffffff;
+  width: 30%;
+}

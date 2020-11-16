@@ -1,0 +1,65 @@
+<!--pages/wenFigure/wenFigure.wxml-->
+<!-- 图文急诊 -->
+<view class="wenFigure">
+  <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/beijin.png" class="wenFigure_image">
+      <view class="wenFigure_content">
+        <view class="wenFigure_content_title">
+            图文急诊,<text>方便快捷！</text>
+        </view>
+        <view class="wenFigure_content_satisfactory">
+          <view>99%满意度，30分钟内获得医生答复，</view>
+          <view>得到明确建议，交流不限次数。</view>
+        </view>
+        <view class="wenFigure_content_time">
+           咨询时间：<text>8:00~22:00</text>
+        </view>
+      </view>
+  </image>
+  <view class="wenFigure_class">
+      <view>
+          <view class="wenFigure_class_image">
+            <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dui.png"></image>
+            <view><text>60秒</text>快速回复</view>
+          </view>
+          <view>
+            <view class="wenFigure_class_image">
+              <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dui.png"></image>
+              <view>儿科<text>9元</text>/次</view>
+           </view>
+          </view>
+      </view>
+      <view>
+          <view class="wenFigure_class_image">
+            <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dui.png"></image>
+            <view><text>30分钟</text>快速解决</view>
+          </view>
+          <view>
+            <view class="wenFigure_class_image">
+              <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dui.png"></image>
+              <view>医生<text>实时</text>在线</view>
+           </view>
+          </view>
+      </view>
+  </view>
+  <view class="comment">
+    <view class="comments_title">
+      <view>患者评价</view>
+       <!-- <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/xiahuaxian.png"></image> -->
+    </view>
+    <view class="comment_list">
+      <view class="comment_item">
+        <view class="comment_item_content">
+  谢谢张医生的帮助，非常满意，非常专业，非常认真！
+        </view>
+        <view class="comment_item_time">
+          <view>李****红</view>
+          <view>10月21日</view>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+  <view class="wenFigure_btn">
+    马上问诊
+  </view>
+</view>

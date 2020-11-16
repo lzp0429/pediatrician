@@ -1,0 +1,57 @@
+/* pages/characteristic/characteristic.wxss */ 
+.outer{
+  padding: 28rpx 32rpx 0 32rpx;
+}
+.characteristic{
+  background: #fff;
+  padding: 27rpx 31rpx 34rpx 31rpx;
+  width: 686rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #000000;
+  line-height: 39rpx;
+
+}
+.characteristic_class{
+  margin-top:20rpx;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  width: 686rpx;
+  height: 160rpx;
+  padding-right:10rpx ;
+  box-sizing: border-box;
+}
+.characteristic_class_image{
+  padding: 26rpx 72rpx 26rpx 26rpx;
+
+}
+.characteristic_class_image>image{
+   width: 108rpx;
+  height: 108rpx;
+}
+.characteristic_class_title{
+  margin-top:18rpx; 
+
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #000000;
+  line-height: 39rpx;
+
+}
+.characteristic_class_content{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+  line-height: 28rpx;
+  overflow: hidden;/*超出隐藏*/
+  display: -webkit-box;  /*设置为弹性盒子*/
+  -webkit-line-clamp: 3;  /*最多显示x行*/
+  text-overflow: ellipsis;  /*超出显示为省略号*/
+  -webkit-box-orient: vertical;
+
+}

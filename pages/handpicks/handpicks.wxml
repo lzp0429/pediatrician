@@ -1,0 +1,24 @@
+<!--图文精选-->
+<view>
+  <view class="handpick">
+
+    <view class="handpick_item" bindtap="goPediatricianDetail">
+      <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/topai1.png"></image>
+      <view>
+          <view class="handpick_item_title">
+            宝宝开口晚、话讲不清、可能是......
+          </view>
+          <view class="handpick_item_content">
+            对爸爸妈妈来说，世界上最美妙的语言，一定是宝宝第一次开口喊“爸爸”、                
+          </view>
+          <view class="handpick_item_time">
+          2020/07/31 11:59
+          </view>
+      </view>
+    </view>
+
+  </view>
+
+</view>
+
+

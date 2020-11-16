@@ -1,0 +1,32 @@
+<view>
+  <view class="box">
+    <view class="name">请输入您要绑定的手机号</view>
+    <view class="ipt">
+      <van-cell-group>
+        <van-field
+          value="{{ value }}"
+          placeholder="新手机号"
+          bind:change="onChange"
+        />
+      </van-cell-group>
+    </view>
+    <view class="ipt">
+      <van-cell-group>
+        <van-field
+          value="{{ sms }}"
+          center
+          clearable
+          placeholder="请输入短信验证码"
+          border="{{ false }}"
+          use-button-slot
+        >
+          <van-button slot="button" size="small" type="primary"
+            >{{time}}</van-button
+          >
+        </van-field>
+      </van-cell-group>
+    </view>
+    <van-button type="info" block>下一步</van-button>
+  </view>
+</view>
+

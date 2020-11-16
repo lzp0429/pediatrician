@@ -1,0 +1,48 @@
+/* pages/myset/myset.wxss */
+.heard{
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 20rpx 40rpx;
+  background: #ffffff;
+}
+.portrait{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50rpx;
+}
+.name{
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  line-height: 120rpx;
+  padding-left: 30rpx;
+  width: 80%;
+}
+.img{
+  width: 10rpx;
+  height: 16rpx;
+  margin-top: 55rpx;
+}
+.center{
+  display: flex;
+  justify-content:space-between;
+  padding: 20rpx 40rpx;
+  background: #ffffff;
+  margin-top: 5rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+.datename{
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+.imgs{
+  width: 10rpx;
+  height: 16rpx;
+}
+

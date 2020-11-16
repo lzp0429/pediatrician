@@ -1,0 +1,53 @@
+/* pages/service/service.wxss */
+page{
+  background: #ffffff !important;
+}
+.li{
+  width: 90%;
+  margin: 0 auto;
+  padding: 40rpx 0;
+}
+.lis{
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 42rpx;
+}
+.texts{
+  width: 90%;
+  margin: 0 auto;
+  border:  1px dashed black;
+  padding: 30rpx 0;
+  background: #f1f1f1;
+}
+.text-top{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+  padding-left: 30rpx;
+}
+.texts textarea{
+  width: 85%;
+  height: 200rpx;
+  margin-top: 20rpx;
+  border: 1rpx dotted #999999;
+  margin-left: 30rpx;
+  padding: 20rpx;
+  font-size: 25rpx;
+}
+.loaderUp{
+  margin-left: 30rpx;
+}
+.van-uploader{
+  margin-top: 30rpx;
+}
+.hint{
+  margin-left: 30rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #999999;
+}
+

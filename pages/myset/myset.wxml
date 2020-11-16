@@ -1,0 +1,32 @@
+<!--pages/myset/myset.wxml-->
+<view>
+  <view class="heard">
+    <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myset/heard.png" class="portrait"></image></view>
+    <view class="name">王小明</view>
+    <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myset/right.png" class="img"></image></view>
+  </view>
+  <view class="center" bindtap="myname">
+    <view class="datename">修改姓名</view>
+    <view style="margin-top:-5rpx"><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myset/right.png" class="imgs"></image></view>
+  </view>
+  <view class="center" bindtap="mypassword">
+    <view class="datename">修改密码</view>
+    <view style="margin-top:-5rpx"><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myset/right.png" class="imgs"></image></view>
+  </view>
+  <view class="center" bindtap="myphone">
+    <view class="datename">修改手机</view>
+    <view style="margin-top:-5rpx"><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myset/right.png" class="imgs"></image></view>
+  </view>
+  <view class="center">
+    <view class="datename">在线客服</view>
+    <view>010-87162468</view>
+  </view>
+  <view class="center">
+    <view class="datename">版本号</view>
+    <view>V1.6.1</view>
+  </view>
+  <view style="margin-top:150rpx" bindtap="quit">
+    <van-button  type="default" block>退出登录</van-button>
+    <van-dialog id="van-dialog" />
+  </view>
+</view>

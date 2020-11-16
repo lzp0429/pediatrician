@@ -1,0 +1,95 @@
+/* pages/pediatrician/pediatrician.wxss */
+.pediatrician_nav{
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding-right:40rpx; 
+   box-sizing: border-box
+ 
+}
+.pediatrician_nav_tab{
+  width: 630rpx;
+}
+.pediatrician_nav>view:nth-child(2){
+   padding-top:24rpx; 
+    box-sizing: border-box
+}
+.pediatrician_nav_image{
+ 
+  width: 30rpx;
+  height: 30rpx;
+
+}
+
+.pediatrician_tabT{
+  height: 70rpx;
+ 
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding:0 40rpx;
+   padding-top:18rpx; 
+   margin-bottom:10rpx; 
+}
+.pediatrician_tabT>view{
+  width: 132rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  text-align: center;
+  background: #fff;
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+.pediatrician_tabT_chosen{
+   color: #4FA7FF!important; 
+   background: rgba(79,167,225,0.1)!important;
+}
+
+
+
+.lis{
+  padding: 30rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+}
+.text{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+.detail{
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+}
+.detail>view{
+  padding-top: 20rpx;
+}
+.dialog{
+  max-height: 600rpx;
+  padding: 23rpx 44rpx 44rpx 44rpx;
+}
+.dialog>view{
+  height: 76rpx;
+  border-bottom: 2rpx solid #999999;
+  line-height: 76rpx;
+  
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #000000;
+  padding-left:20rpx; 
+
+
+}
+.Close{
+  padding-right: 60rpx;
+  margin-top: 30rpx;
+  text-align: right;
+}

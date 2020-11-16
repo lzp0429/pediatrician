@@ -1,0 +1,7 @@
+<!--pages/discount/discount.wxml-->
+<view class="box">
+  <view>
+    <view class="title">您的优惠券已过期</view>
+    <view class="time">2020-01-01  10:18</view>
+  </view>
+</view>

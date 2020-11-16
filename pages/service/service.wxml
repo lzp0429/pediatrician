@@ -1,0 +1,20 @@
+<!--pages/service/service.wxml-->
+<view>
+  <view class="li">
+    <view class="lis">1、可以直接拨打客服电话:010-87162468  </view>
+    <view class="lis">2、微信:eytzaixianKF(通通在线)</view>
+    <view class="lis">3、邮箱:eytzaixian@126.com </view>
+    <view class="lis">4、直接在下方留言，我们会尽快回复您!</view>
+  </view>
+  <view class="texts">
+    <view class="text-top">输入您想咨询的问题：</view>
+    <textarea bindinput="aaa"  placeholder="请输入问题" cols="1" rows="5"></textarea>
+    <van-uploader
+      class="loaderUp"
+      file-list="{{ fileList }}"
+      bind:after-read="afterRead"
+      max-count="5"
+    />
+    <view class="hint">最多可上传5张图片</view>
+  </view>
+</view>

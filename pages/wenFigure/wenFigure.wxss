@@ -1,0 +1,162 @@
+/* pages/wenFigure/wenFigure.wxss */
+.wenFigure{
+  padding-bottom: 150rpx; 
+}
+.wenFigure_image{
+  /* background: url(https://fenxiang.fancyopen.com/img/eryitong/images/home/beijin.png) no-repeat;
+	background-size: cover;
+	background-position: center 0; */
+  width: 750rpx;
+  height: 400rpx;
+  position: relative;
+  z-index: -1
+}
+.wenFigure_content{
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: right;
+  padding: 50rpx 30rpx 0 350rpx;
+  box-sizing: border-box;
+}
+.wenFigure_content_title{
+  font-size: 38rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 800;
+  color: #333333;
+}
+.wenFigure_content_title>text{
+  color: #4FA7FF;
+}
+.wenFigure_content_satisfactory{
+  margin-top:40rpx; 
+
+  font-size: 20rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #999999;
+  line-height: 36rpx;
+
+}
+.wenFigure_content_time{
+  font-size: 20rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #999999;
+  margin-top:40rpx; 
+}
+.wenFigure_content_time>text{
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 800;
+  color: #000000;
+
+}
+.wenFigure_class{
+  width: 686rpx;
+  height: 150rpx;
+  background: #FFFFFF;
+  box-shadow: 0px 4rpx 27rpx 2rpx rgba(7, 7, 7, 0.05);
+  border-radius: 24rpx;
+  margin: 0 auto;
+  margin-top:-60rpx; 
+  padding: 31rpx 41rpx 36rpx 41rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+}
+.wenFigure_class>view{
+  width: 300rpx;
+}
+.wenFigure_class_image{
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  justify-content: flex-start;
+}
+.wenFigure_class_image>image{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 16rpx;
+}
+.wenFigure_class_image>view>text{
+  color: #FF5F5C;
+}
+
+
+.wenFigure_class_image:nth-child(1){
+  margin-bottom: 20rpx;
+}
+.comment{
+  width: 686rpx;
+  margin: 0 auto;
+  margin-top:42rpx;
+}
+.comments_title{
+
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+
+}
+
+.comments_title>image{
+  width: 50rpx;
+  height: 2rpx;
+}
+.comment_list{
+  background: #f3f2f7;
+  padding: 54rpx 83rpx 37rpx 43rpx;
+  margin-top:36rpx; 
+  border-radius:24rpx; 
+
+}
+.comment_item{
+  /* margin-top:37rpx; */
+  border-bottom:2rpx solid  #DDDDDD;
+  padding-bottom:36rpx; 
+}
+.comment_item_content{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+}
+.comment_item_time{
+  display: flex;
+  justify-content: space-between;
+  height: 27rpx;
+  line-height: 27rpx;
+  margin-top:23rpx; 
+
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #666666;
+}
+.comment_item_time>view:nth-child(2){
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+}
+.wenFigure_btn{
+  height:100rpx;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  line-height: 100rpx;
+  text-align: center; 
+  width: 750rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #4FA7FF;
+}

@@ -1,0 +1,30 @@
+/* pages/myhealth/myhealth.wxss */
+page{
+  background: #f8f8f8;
+}
+.health{
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 20rpx 30rpx;
+  background: #ffffff;
+}
+image{
+  width: 35rpx;
+  height: 36rpx;
+  margin-top: 15rpx;
+  margin-right: 30rpx;
+}
+.person{
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+}
+.time{
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}

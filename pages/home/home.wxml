@@ -1,0 +1,199 @@
+<!-- 首页 -->
+<view class="outer"> 
+<!-- 搜索 -->
+    <view class="search" bindtap="goHomeSearch">
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/sousuo.png"></image>
+        <view>输入医院、科室、疾病、医生</view>
+    </view>
+    <!-- 轮播图 -->
+      <swiper indicator-color="#a39f99" indicator-active-color="#4FA7FF" indicator-dots  interval="2000"  duration="1000" autoplay='true' indicator-dots='true' >
+    <swiper-item wx:for='{{imgUrls}}' wx:key='index'>
+      <image src='{{item}}'></image>
+    </swiper-item>
+   
+  </swiper>
+  <!-- 咨询 -->
+    <view class="consult_class">
+      <view>
+        <view class="consult_class_text" bindtap="goFreeConsultation">
+            <view>免费咨询</view>
+            <view>Free consultation</view>
+        </view>
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/zisun1.png"></image>
+      </view>
+      <view>
+        <view class="consult_class_text" bindtap="goWenFigure">
+            <view>图文急诊</view>
+            <view>Graphic emergency</view>
+        </view>
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/zisun2.png"></image>
+      </view>
+      <view>
+        <view class="consult_class_text" >
+            <view>在线视频</view>
+            <view>Online video</view>
+        </view>
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/zisun3.png"></image>
+      </view>
+      <view>
+        <view class="consult_class_text" bindtap="goOnline">
+            <view>儿医在线</view>
+            <view>Pediatrics Online</view>
+        </view>
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/zisun4.png"></image>
+      </view>
+    </view>
+    <!-- 特色服务 -->
+    <view class="characteristic">
+      <view class="characteristic_nav">
+        <view>
+            <view>
+              特色服务
+            </view>
+            <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yunajiiao.png"></image>
+        </view>
+        <view bindtap="goCharacteristic">
+          <view>
+            更多
+          </view>
+          <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
+        </view>
+      </view>
+      <view class="characteristic_class">
+          <view class="characteristic_class_item" bindtap="goAntenatal">
+              <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yuan.png">
+                <image class="characteristic_img" src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic1.png"></image>
+              </image>
+              <view>
+                围孕产期咨询
+              </view>
+          </view>
+           <view class="characteristic_class_item" bindtap="goShowLoving">
+              <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yuan.png">
+                <image class="characteristic_img" src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic2.png"></image>
+              </image>
+              <view>
+                心里关怀咨询
+              </view>
+          </view>
+           <view class="characteristic_class_item" bindtap="goAbnormal">
+              <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yuan.png">
+                <image class="characteristic_img" src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic3.png"></image>
+              </image>
+              <view>
+                发育异常资讯
+              </view>
+          </view>
+         <view class="characteristic_class_item" bindtap="goTopSearch"  >
+              <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yuan.png">
+                <image class="characteristic_img" src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic4.png"></image>
+              </image>
+              <view>
+                名医咨询热榜
+              </view>
+          </view>
+      </view>
+    </view>
+  <!-- 名医推荐 -->
+    <view class="recommend">
+      <view class="characteristic_nav" style=" margin-left: 20rpx ;">
+        <view>
+            <view>
+              名医推荐
+            </view>
+            <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yunajiiao.png"></image>
+        </view>
+        <!-- <view>
+          <view>
+            更多
+          </view>
+          <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
+        </view> -->
+      </view>
+      <view class="recommend_item" bindtap="goFamousDoctors">
+      <view>
+         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/toxiang.png"></image>
+          <view>
+            <view class="recommend_item_nav"> 
+              <view>
+                刘喆
+              </view>
+              <view>
+                 问诊人数
+                <text>1003次</text>
+              </view>
+            </view>
+            <view class="recommend_item_btn">
+              <view>
+                名医资讯热榜
+              </view>
+              <view>
+                副主任医师
+              </view>
+            </view>
+            <view class="recommend_item_location">
+              <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/location.png"></image>
+              <view>天津市儿童医院</view>
+            </view>
+            <view class="recommend_item_introductory">
+              擅长：从事儿科工作15年,熟悉儿科常见病的治疗
+            </view>
+          </view>
+      </view>
+          
+        <view class="recommend_item_price">
+          <view>
+            <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/tupai.png"></image>
+            <view class="recommend_item_price_text">
+              图文：<text>￥70.00</text> / 次           
+            </view>
+          </view>
+            
+          <view>
+            <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dianhua.png"></image>
+            <view class="recommend_item_price_text">
+              电话：<text>￥100.00</text> / 次           
+            </view>
+          </view>
+        </view>
+      </view>
+       
+    </view>
+    <!-- 图文精选 -->
+    <view class="handpick">
+      <view class="characteristic_nav" style=" margin-left: 20rpx ;">
+        <view>
+            <view>
+              图文精选
+            </view>
+            <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/yunajiiao.png"></image>
+        </view>
+        <view style=" margin-right: 20rpx ;" bindtap="goHandpicks">
+          <view>
+            更多
+          </view>
+          <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
+        </view>
+      </view>
+      <view class="handpick_item" bindtap="goPediatricianDetail">
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/topai1.png"></image>
+        <view>
+           <view class="handpick_item_title">
+              宝宝开口晚、话讲不清、可能是......
+           </view>
+           <view class="handpick_item_content">
+              对爸爸妈妈来说，世界上最美妙的语言，一定是宝宝第一次开口喊“爸爸”、                
+           </view>
+           <view class="handpick_item_time">
+           2020/07/31 11:59
+           </view>
+        </view>
+      </view>
+    
+    </view>
+      
+
+
+  
+
+</view>

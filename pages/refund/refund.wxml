@@ -1,0 +1,20 @@
+<!--pages/refund/refund.wxml-->
+<view class="box">
+  <view class="topbox">
+    退款说明内容
+  </view>
+  <view class="bottombox">
+    <view> 
+      1、支付咨询费，医生接单后，无法实现退款;                         
+    </view>
+    <view>
+      2、医生无应答，支付24小时后,自动退款到支付账户;
+    </view>
+    <view>
+      3、因自然灾害、不可抗拒或其他原因导致,可与平台客服联系协商解决;
+    </view>
+    <view>
+      为保护账户安全，网上支付的退款，均会按照原支付卡原路退回。
+    </view>
+  </view>
+</view>
