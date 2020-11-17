@@ -32,7 +32,6 @@ component_1.VantComponent({
     },
   },
   data: {
-<<<<<<< HEAD
     statusBarHeight: 0,
     height: 44,
     baseStyle: '',
@@ -49,15 +48,6 @@ component_1.VantComponent({
       statusBarHeight: statusBarHeight,
       height: 44 + statusBarHeight,
       baseStyle: baseStyle,
-=======
-    height: 46,
-  },
-  created: function () {
-    var statusBarHeight = utils_1.getSystemInfoSync().statusBarHeight;
-    this.setData({
-      statusBarHeight: statusBarHeight,
-      height: 46 + statusBarHeight,
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     });
   },
   mounted: function () {
@@ -76,11 +66,7 @@ component_1.VantComponent({
         return;
       }
       wx.nextTick(function () {
-<<<<<<< HEAD
         _this.getRect('.van-nav-bar').then(function (res) {
-=======
-        utils_1.getRect.call(_this, '.van-nav-bar').then(function (res) {
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
           _this.setData({ height: res.height });
         });
       });

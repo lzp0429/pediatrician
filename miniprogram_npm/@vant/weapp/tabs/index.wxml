@@ -20,11 +20,7 @@
         style="{{ color ? 'border-color: ' + color : '' }}"
       >
         <view class="{{ utils.bem('tabs__nav', [type, { complete: !ellipsis }]) }} nav-class" style="{{ getters.tabCardTypeBorderStyle(color, type) }}">
-<<<<<<< HEAD
           <view wx:if="{{ type === 'line' }}" class="van-tabs__line" style="{{ lineStyle }}" />
-=======
-          <view wx:if="{{ type === 'line' }}" class="van-tabs__line" style="{{ getters.lineStyle({ color, lineOffsetLeft, lineHeight, skipTransition, duration, lineWidth }) }}" />
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
           <view
             wx:for="{{ tabs }}"
             wx:key="index"

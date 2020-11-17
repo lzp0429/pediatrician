@@ -1,0 +1,72 @@
+/* pages/userlogin/userlogin.wxss */
+page{
+  background: #ffffff;
+}
+.tab{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 200rpx;
+  border-bottom: 1px solid #dddddd;
+}
+.phone{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+.van-btn{
+  background: #fff;
+  color: #b3b7f4;
+  height: 24px !important;
+  line-height: 24px !important;
+  margin-left: 140rpx;
+  max-width: 50px;
+  border: 1px solid #b3b7f4;
+}
+.top-phone{
+  border: 1px solid #dddddd;
+}
+.bottom-phone{
+  border: 1px solid #dddddd;
+  margin-top: 30rpx;
+}
+.xieyi{
+  display: flex;
+  flex-wrap: wrap;
+}
+.xieyi>view{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+}
+.zaixian{
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #4FA7FF;
+}
+.forget{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #4FA7FF;
+}
+.botton-box{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content:space-between;
+}
+.login{
+  width: 80%;
+  background: #4FA7FF;
+  margin: 0 auto;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 80rpx;
+  margin-top: 80rpx;
+}

@@ -1,5 +1,12 @@
 <!--pages/myhealth/myhealth.wxml-->
 <view>
+  <van-nav-bar
+  title="个人档案"
+  left-text=""
+  left-arrow
+  bind:click-left="onClickLeft"
+  custom-style="dangan"
+/>
   <view class="health">
     <view>
       <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/person.png"></image>
@@ -14,7 +21,7 @@
       </view>
     </view>
   </view>
-  <view>
-    
+  <view class="record">
+    <view bindtap="addrecord">添加新档案</view>
   </view>
 </view>

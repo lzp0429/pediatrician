@@ -9,11 +9,7 @@
           </van-tabs>
         </view>
         <view bindtap="bindShow">
-<<<<<<< HEAD
            <image class="pediatrician_nav_image" src="https://fenxiang.fancyopen.com/img/eryitong/images/pediatrician/jiahao.png"></image>
-=======
-           <image class="pediatrician_nav_image" src="/images/pediatrician/jiahao.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         </view>
     </view>
     <view class="pediatrician_tabT">

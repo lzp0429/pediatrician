@@ -7,14 +7,23 @@ Page({
   data: {
 
   },
-
+  // 自定义导航栏返回事件
+  onClickLeft() {
+    wx.switchTab({
+      url:'/pages/my/my'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
   },
-
+  addrecord(){
+    wx.navigateTo({
+      url: '/pages/addrecord/addrecord',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

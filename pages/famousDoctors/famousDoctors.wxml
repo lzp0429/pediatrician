@@ -2,20 +2,11 @@
 <view class="outer">
   <view class="message">
   <view class="message_wrap">
-<<<<<<< HEAD
     <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/toxiang.png"></image>
-=======
-    <image src="/images/home/toxiang.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     <view class="message_outer">
         <view class="message_class">
             <view class="message_class_name">
-              <view>李伟</view>
-<<<<<<< HEAD
               <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/renzhen.png"></image>
-=======
-              <image src="/images/home/renzhen.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
               <view>已认证</view>
             </view>
             <view class="message_class_position">
@@ -51,17 +42,10 @@
     <view class="radio">
         <view class="radio_image">
           <view>
-<<<<<<< HEAD
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/zixun.png"></image>
           </view> 
           <view>
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dianhua11.png"></image>
-=======
-            <image src="/images/home/zixun.png"></image>
-          </view> 
-          <view>
-            <image src="/images/home/dianhua11.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
           </view>
         </view>
         <view class="radio_van">
@@ -107,11 +91,7 @@
   <view class="evaluate">
       <view class="evaluate_nav" >
         <view>患者评价</view>
-<<<<<<< HEAD
         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
-=======
-        <image src="/images/home/you.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
       </view>
       <view class="evaluate_btn" wx:if='{{evaluateList.length==0}}'>
         暂无评价

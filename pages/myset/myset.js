@@ -30,12 +30,15 @@ Page({
   // 退出登录
   quit(){
     Dialog.confirm({
-      title: '确定要退出儿医通在线吗？'
-    }).then(() => {
-      console.log("111111111111")
-    }).catch(()=>{
-      console.log("1111111111")
+      title: '退出登录',
+      message: '确定退出儿医通吗？',
     })
+      .then(() => {
+        // on confirm
+      })
+      .catch(() => {
+        // on cancel
+      });
   },
   /**
    * 生命周期函数--监听页面加载

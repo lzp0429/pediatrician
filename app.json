@@ -27,17 +27,19 @@
     "pages/myattention/myattention",
     "pages/myfavorite/myfavorite",
     "pages/myorder/myorder",
-<<<<<<< HEAD
     "pages/myhealth/myhealth",
     "pages/mydiscount/mydiscount",
     "pages/myset/myset",
     "pages/myname/myname",
     "pages/mypassword/mypassword",
     "pages/myphone/myphone",
-=======
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
-    "pages/freeConsultation/freeConsultation"
-    
+    "pages/freeConsultation/freeConsultation",
+    "pages/addrecord/addrecord",
+    "pages/login/login",
+    "pages/error/error",
+    "pages/userlogin/userlogin",
+    "pages/negotiated/negotiated",
+    "pages/forget/forget"
   ],
   "tabBar":{
     "color": "#333333",
@@ -77,6 +79,7 @@
     "navigationBarTextStyle":"white"
   },
   "usingComponents": {
+    "van-calendar": "@vant/weapp/calendar/index",
     "van-uploader": "@vant/weapp/uploader/index",
     "van-radio": "/miniprogram_npm/vant-weapp/radio/index",
     "van-radio-group":"/miniprogram_npm/vant-weapp/radio-group/index",

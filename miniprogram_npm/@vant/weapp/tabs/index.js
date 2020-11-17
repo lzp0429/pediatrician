@@ -28,14 +28,10 @@ component_1.VantComponent({
     swipeable: Boolean,
     titleActiveColor: String,
     titleInactiveColor: String,
-<<<<<<< HEAD
     color: {
       type: String,
       observer: 'setLine',
     },
-=======
-    color: String,
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     animated: {
       type: Boolean,
       observer: function () {
@@ -53,10 +49,7 @@ component_1.VantComponent({
     lineHeight: {
       type: [String, Number],
       value: -1,
-<<<<<<< HEAD
       observer: 'setLine',
-=======
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     },
     active: {
       type: [String, Number],
@@ -107,15 +100,8 @@ component_1.VantComponent({
     scrollLeft: 0,
     scrollable: false,
     trackStyle: '',
-<<<<<<< HEAD
     currentIndex: null,
     container: null,
-=======
-    currentIndex: 0,
-    container: null,
-    skipTransition: true,
-    lineOffsetLeft: 0,
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
   },
   mounted: function () {
     var _this = this;
@@ -225,7 +211,6 @@ component_1.VantComponent({
     },
     setLine: function (skipTransition) {
       var _this = this;
-<<<<<<< HEAD
       if (this.data.type !== 'line') {
         return;
       }
@@ -239,27 +224,10 @@ component_1.VantComponent({
         if (rects === void 0) {
           rects = [];
         }
-=======
-      if (skipTransition === void 0) {
-        skipTransition = false;
-      }
-      if (this.data.type !== 'line') {
-        return;
-      }
-      var currentIndex = this.data.currentIndex;
-      Promise.all([
-        utils_1.getAllRect.call(this, '.van-tab'),
-        utils_1.getRect.call(this, '.van-tabs__line'),
-      ]).then(function (_a) {
-        var _b = _a[0],
-          rects = _b === void 0 ? [] : _b,
-          lineRect = _a[1];
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         var rect = rects[currentIndex];
         if (rect == null) {
           return;
         }
-<<<<<<< HEAD
         var height =
           lineHeight !== -1
             ? 'height: ' +
@@ -294,17 +262,6 @@ component_1.VantComponent({
             'px);\n            ' +
             transition +
             '\n          ',
-=======
-        var lineOffsetLeft = rects
-          .slice(0, currentIndex)
-          .reduce(function (prev, curr) {
-            return prev + curr.width;
-          }, 0);
-        lineOffsetLeft += (rect.width - lineRect.width) / 2;
-        _this.setData({
-          lineOffsetLeft: lineOffsetLeft,
-          skipTransition: skipTransition,
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         });
       });
     },
@@ -318,13 +275,8 @@ component_1.VantComponent({
         return;
       }
       Promise.all([
-<<<<<<< HEAD
         this.getRect('.van-tab', true),
         this.getRect('.van-tabs__nav'),
-=======
-        utils_1.getAllRect.call(this, '.van-tab'),
-        utils_1.getRect.call(this, '.van-tabs__nav'),
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
       ]).then(function (_a) {
         var tabRects = _a[0],
           navRect = _a[1];

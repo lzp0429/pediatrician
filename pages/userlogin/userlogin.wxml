@@ -1,0 +1,46 @@
+<!--pages/userlogin/userlogin.wxml-->
+<view>
+  <view class="tab">
+    <van-tabs active="{{ active }}" color="#0076ff" border="{{false}}" bind:change="onChange">
+      <van-tab title="快捷登录"></van-tab>
+      <van-tab title="账号密码"></van-tab>
+    </van-tabs>
+  </view>
+  <view class="phone">
+    <view class="top-phone">
+      <van-cell-group>
+        <van-field
+           border="{{false}}"
+          model:value="{{ value }}"
+          placeholder="{{phone}}"
+        />
+      </van-cell-group>
+      </view>
+    <!-- <van-field  model:value="{{ sms }}"  placeholder="{{password}}" type="password" /> -->
+    <view class="bottom-phone">
+      <van-cell-group class="van-box">
+        <van-field
+          model:value="{{ sms }}"
+          center
+          clearable
+          placeholder="{{password}}"
+          use-button-slot
+          type="{{status}}"
+          border="{{false}}"
+        >
+          <van-button slot="button" wx:if="{{iftime == true}}" :loading="disabled" disabled="{{disabled}}"  custom-class='van-btn'  type="van-btn" bindtap="yanzhenma"
+            >{{time}}</van-button
+          >
+        </van-field>
+      </van-cell-group>
+    </view>
+  </view>
+  <view class="botton-box">
+    <view class="xieyi">
+      <view>登录即代表同意</view>
+      <view class="zaixian" bindtap="negotiated">《儿医通在线使用协议》</view>
+    </view>
+    <view class="forget" bindtap="forget" wx:if="{{ifpassword == true}}">忘记密码</view>
+  </view>
+  <view class="login">登录</view>
+</view>

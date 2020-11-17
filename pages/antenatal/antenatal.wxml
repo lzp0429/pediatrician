@@ -8,11 +8,7 @@
   <view class="recommend">
       <view class="recommend_item">
       <view>
-<<<<<<< HEAD
          <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/toxiang.png"></image>
-=======
-         <image src="/images/home/toxiang.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
           <view>
             <view class="recommend_item_nav"> 
               <view>
@@ -32,11 +28,7 @@
               </view>
             </view>
             <view class="recommend_item_location">
-<<<<<<< HEAD
               <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/location.png"></image>
-=======
-              <image src="/images/home/location.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
               <view>天津市儿童医院</view>
             </view>
             <view class="recommend_item_introductory">
@@ -47,22 +39,14 @@
           
         <view class="recommend_item_price">
           <view>
-<<<<<<< HEAD
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/tupai.png"></image>
-=======
-            <image src="/images/home/tupai.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
             <view class="recommend_item_price_text">
               图文：<text>￥70.00</text> / 次           
             </view>
           </view>
             
           <view>
-<<<<<<< HEAD
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dianhua.png"></image>
-=======
-            <image src="/images/home/dianhua.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
             <view class="recommend_item_price_text">
               电话：<text>￥100.00</text> / 次           
             </view>

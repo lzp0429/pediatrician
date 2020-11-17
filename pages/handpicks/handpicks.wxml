@@ -3,11 +3,7 @@
   <view class="handpick">
 
     <view class="handpick_item" bindtap="goPediatricianDetail">
-<<<<<<< HEAD
       <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/topai1.png"></image>
-=======
-      <image src="/images/home/topai1.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
       <view>
           <view class="handpick_item_title">
             宝宝开口晚、话讲不清、可能是......

@@ -9,11 +9,7 @@
   <view wx:if="{{order == 0}}">
     <view class="order">
       <view class="top-order">
-<<<<<<< HEAD
         <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myorder/order.png" class="img"></image></view>
-=======
-        <view><image src="/images/myorder/order.png" class="img"></image></view>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         <view class="doctor">王医生</view>
         <view class="time">2020/01/01 19：36</view>
         <view class="status">已完成</view>
@@ -54,11 +50,7 @@
     <view wx:if="{{article == 1}}">
       <view>
         <view class="imgs">
-<<<<<<< HEAD
           <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
-=======
-          <image src="/images/img/nonews.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
         </view>
         <view class="texts">当前暂无问题列表~</view>
       </view>
@@ -67,11 +59,7 @@
   <!-- 免费咨询 -->
   <view wx:if="{{order == 2}}">
     <view class="free">
-<<<<<<< HEAD
       <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myorder/toux.png" class="images"></image></view>
-=======
-      <view><image src="/images/myorder/toux.png" class="images"></image></view>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
       <view class="symptom">身体乏力...</view>
       <view class="times">2020-01-01  10:18</view>
     </view>

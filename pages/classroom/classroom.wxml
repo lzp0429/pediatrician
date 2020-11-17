@@ -3,17 +3,10 @@
 <!-- 轮播图 -->
   <swiper indicator-dots='true' indicator-active-color='#4FA7FF' autoplay='true'>
     <swiper-item>
-<<<<<<< HEAD
       <image src='https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png'></image>
     </swiper-item>
     <swiper-item>
       <image src='https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png'></image>
-=======
-      <image src='/images/img/swiper.png'></image>
-    </swiper-item>
-    <swiper-item>
-      <image src='/images/img/swiper.png'></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     </swiper-item>
   </swiper>
   <!-- tab -->
@@ -31,22 +24,22 @@
       <!-- 内容分类 -->
       <view class="classify">
         <view class="title">内容分类：</view>
-        <view wx:for="{{classes}}" wx:key="index" class="classify-common" >
-          <view bindtap="aaa"  data-id="{{item.id}}">{{item.title}}</view>
+        <view wx:for="{{classes}}" wx:key="index" class="classify-common">
+          <view bindtap="checked" class="{{item.id == status ? 'active':''}}" data-id="{{item.id}}"  >{{item.title}}</view>
         </view>
       </view>
       <!-- 年龄 -->
       <view class="classify">
         <view class="title">年龄分段：</view>
         <view wx:for="{{age}}" wx:key="index" class="classify-common">
-          <view>{{item.title}}</view>
+          <view bindtap="ageSection" class="{{item.id == ages ? 'active':''}}" data-id="{{item.id}}">{{item.title}}</view>
         </view>
       </view>
       <!-- 疾病 -->
       <view class="classify">
         <view class="title">疾病类目：</view>
         <view wx:for="{{illness}}" wx:key="index" class="classify-common">
-          <view>{{item.title}}</view>
+          <view bindtap="sickness" class="{{item.id == sick ? 'active':''}}" data-id="{{item.id}}">{{item.title}}</view>
         </view>
       </view>
     </view>

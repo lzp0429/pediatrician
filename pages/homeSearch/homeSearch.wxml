@@ -11,11 +11,7 @@
           placeholder='输入医院、科室、疾病、医生'
         />
       </van-cell-group>
-<<<<<<< HEAD
       <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/suosou1.png"></image>
-=======
-      <image src="/images/home/suosou1.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
   </view>
   <!-- 疾病分类 -->
   <view class="disease">

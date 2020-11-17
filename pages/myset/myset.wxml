@@ -26,7 +26,7 @@
     <view>V1.6.1</view>
   </view>
   <view style="margin-top:150rpx" bindtap="quit">
-    <van-button  type="default" block>退出登录</van-button>
-    <van-dialog id="van-dialog" />
+    <van-button  type="default" block>退出登录</van-button>   
   </view>
+  <van-dialog id="van-dialog" />
 </view>

@@ -290,13 +290,6 @@ swiper image{
 .recommend_item_price>view:nth-child(2){
   margin-left:20rpx; 
 }
-<<<<<<< HEAD
-
-=======
-.handpick{
-  /* padding: 20rpx 0 */
-}
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
 .handpick_item{
   padding: 22rpx 43rpx 28rpx 16rpx;
   display: flex;
@@ -349,10 +342,7 @@ swiper image{
   font-family: PingFang SC;
   font-weight: 400;
   color: #333333;
-<<<<<<< HEAD
 }
 .wx-swiper-dots {
   margin-bottom: 15rpx;
-=======
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
 }

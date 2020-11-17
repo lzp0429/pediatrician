@@ -23,13 +23,7 @@
             </view>
           </view>
           <view class="videoCalls_image">
-
-<<<<<<< HEAD
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/erweima.png"></image>
-=======
-            <image src="/images/home/erweima.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
-
           </view>
         </view>
       </view>
@@ -55,10 +49,6 @@
     </view>
   </view>
  <view class="freeConsultation_btn">
-<<<<<<< HEAD
-=======
-    <view>问诊记录</view>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     <view>提交</view>
  </view>
 </view>

@@ -6,6 +6,9 @@ Page({
    */
   data: {
     active:0,
+    status:0,
+    ages:'-1',
+    sick:'-1',
     classes:[
       {id:0,title:'全部'},
       {id:1,title:'日常急救'},
@@ -28,8 +31,36 @@ Page({
     encyclopedia:0,
 
   },
-  aaa(event){
+  // 内容分类
+  checked(event){
     console.log(event)
+    this.setData({
+      status:event.currentTarget.dataset.id
+    })
+  },
+  // 年龄分段
+  ageSection(event){
+    if(this.data.ages == event.currentTarget.dataset.id){
+      this.setData({
+        ages:'-1'
+      })
+    }else{
+      this.setData({
+        ages:event.currentTarget.dataset.id
+      })
+    }
+  },
+  // 疾病
+  sickness(event){
+    if(this.data.sick == event.currentTarget.dataset.id){
+      this.setData({
+        sick:'-1'
+      })
+    }else{
+      this.setData({
+        sick:event.currentTarget.dataset.id
+      })
+    }
   },
   // 跳转详情页
   tapDetail(){

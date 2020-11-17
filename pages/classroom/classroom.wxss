@@ -1,5 +1,7 @@
 /* pages/classroom/classroom.wxss */
-
+page{
+  background: #f8f8f8;
+}
 swiper {
   width: 100%;
   height: 350rpx;
@@ -27,6 +29,7 @@ swiper image {
   color: #4FA7FF;
   border-bottom: 2px solid #4FA7FF;
 }
+
 .common>view{
   margin-top: 25rpx;
 }
@@ -35,6 +38,7 @@ swiper image {
   height: 202rpx;
   margin: 0 auto;
   border: 1px solid black;
+  background: #ffffff;
 }
 .common-bottom{
   width: 703rpx;
@@ -43,6 +47,7 @@ swiper image {
   margin: 0 auto;
   display: flex;
   flex-wrap: nowrap;
+  background: #ffffff;
 }
 .common-left{
   width: 208rpx;
@@ -76,4 +81,9 @@ swiper image {
   font-family: PingFang SC;
   font-weight: 500;
   color: #333333;
+}
+.active{
+  color: #4FA7FF !important;
+  background-color: #EDF6FF;
+  
 }

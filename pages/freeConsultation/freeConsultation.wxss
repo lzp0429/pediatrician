@@ -1,11 +1,7 @@
 /* pages/freeConsultation/freeConsultation.wxss */
 
 .outer{
-<<<<<<< HEAD
   padding: 27rpx 31rpx 180rpx 31rpx;
-=======
-  padding: 27rpx 31rpx 240rpx 31rpx;
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
 }
 .freeConsultation{
   width: 687rpx;

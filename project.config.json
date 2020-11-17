@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "description": "项目配置文件",
   "packOptions": {
     "ignore": []
@@ -36,12 +35,15 @@
   "compileType": "miniprogram",
   "libVersion": "2.14.0",
   "appid": "wx8d5fccdea72cb1f1",
-  "projectname": "pediatrician",
+  "projectname": "pediatricians",
+  "cloudfunctionTemplateRoot": "",
+  "watchOptions": {
+    "ignore": []
+  },
   "debugOptions": {
     "hidedInDevtools": []
   },
   "scripts": {},
-  "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
@@ -71,142 +73,41 @@
           "scene": null
         },
         {
-          "name": "pages/service/service",
-          "pathName": "pages/service/service",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/protocol/protocol",
-          "pathName": "pages/protocol/protocol",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/mynews/mynews",
-          "pathName": "pages/mynews/mynews",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/myorder/myorder",
-          "pathName": "pages/myorder/myorder",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/myhealth/myhealth",
           "pathName": "pages/myhealth/myhealth",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/myset/myset",
-          "pathName": "pages/myset/myset",
+          "name": "pages/addrecord/addrecord",
+          "pathName": "pages/addrecord/addrecord",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/error/error",
+          "pathName": "pages/error/error",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/userlogin/userlogin",
+          "pathName": "pages/userlogin/userlogin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/userlogin/userlogin",
+          "pathName": "pages/userlogin/userlogin",
           "scene": null
         }
       ]
     }
   }
-=======
-	"description": "项目配置文件",
-	"packOptions": {
-		"ignore": []
-	},
-	"setting": {
-		"urlCheck": true,
-		"es6": true,
-		"enhance": true,
-		"postcss": true,
-		"preloadBackgroundData": false,
-		"minified": true,
-		"newFeature": false,
-		"coverView": true,
-		"nodeModules": true,
-		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"uglifyFileName": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"compileHotReLoad": false,
-		"useMultiFrameRuntime": false,
-		"useApiHook": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		},
-		"useIsolateContext": true,
-		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false,
-		"packNpmManually": false,
-		"packNpmRelationList": [],
-		"minifyWXSS": true
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.14.0",
-	"appid": "wxbd6d7a41c91aa2ef",
-	"projectname": "pediatrician",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"scripts": {},
-	"isGameTourist": false,
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"condition": {
-		"plugin": {
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"gamePlugin": {
-			"list": []
-		},
-		"miniprogram": {
-			"list": [
-				{
-					"id": -1,
-					"name": "pages/classroom/classroom",
-					"pathName": "pages/classroom/classroom",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/my/my",
-					"pathName": "pages/my/my",
-					"query": "",
-					"scene": null
-				},
-				{
-					"name": "pages/service/service",
-					"pathName": "pages/service/service",
-					"query": "",
-					"scene": null
-				},
-				{
-					"name": "pages/protocol/protocol",
-					"pathName": "pages/protocol/protocol",
-					"query": "",
-					"scene": null
-				},
-				{
-					"name": "pages/mynews/mynews",
-					"pathName": "pages/mynews/mynews",
-					"query": "",
-					"scene": null
-				},
-				{
-					"name": "pages/myorder/myorder",
-					"pathName": "pages/myorder/myorder",
-					"scene": null
-				}
-			]
-		}
-	}
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
 }

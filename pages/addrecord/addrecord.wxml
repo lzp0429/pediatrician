@@ -1,0 +1,108 @@
+<!--pages/addrecord/addrecord.wxml-->
+<view>
+  
+  <!-- 与您的关系 -->
+  <view>
+    <van-cell title="与您的关系" is-link bind:click="showrelation"  style='border:none'>{{concern}}</van-cell>
+    <van-popup
+      show="{{ showrelation }}"
+      position="bottom"
+      custom-style="height: 45%"
+      round
+      bind:close="onRelation"
+    >
+    <van-picker  show-toolbar title="与您的关系" columns="{{ relation }}"  bind:cancel="onRelation" bind:confirm="goRrelation"/>
+    </van-popup>
+  </view>
+  <!-- 性别 -->
+  <view>
+    <van-cell title="性别" is-link bind:click="showPopup"  style='border:none'>{{sex}}</van-cell>
+    <van-popup
+      show="{{ showsex }}"
+      position="bottom"
+      custom-style="height: 45%"
+      round
+      bind:close="onCloses"
+    >
+    <van-picker  show-toolbar title="性别" columns="{{ columns }}"  bind:cancel="onCancel" bind:confirm="goChange"/>
+    </van-popup>
+  </view>
+  <!-- 出生日期 -->
+  <view>
+    <van-cell title="出生日期" value="{{ date }}"  bind:click="onDisplay" />
+    <van-calendar show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm" />
+  </view>
+  <!-- 身高 -->
+  <view>
+    <van-field
+      model:value="{{ stature }}"
+      label="身高（CM）"
+      placeholder="请输入档案人的身高"
+      input-align="right"
+    />
+  </view>
+  <!-- 身高 -->
+  <view>
+    <van-field
+      model:value="{{ weight }}"
+      label="体重（KG）"
+      placeholder="请输入档案人的体重"
+      input-align="right"
+    />
+  </view>
+   <!-- 血压是否正常 -->
+   <view>
+    <van-cell title="血压是否正常" is-link bind:click="showblood"  style='border:none'>{{blood}}</van-cell>
+    <van-popup
+      show="{{ showblood }}"
+      position="bottom"
+      custom-style="height: 45%"
+      round
+      bind:close="onBlood"
+    >
+    <van-picker  show-toolbar title="血压是否正常" columns="{{ pressure }}"  bind:cancel="onBlood" bind:confirm="goBlood"/>
+    </van-popup>
+  </view>
+  <!-- 是否有过敏史 -->
+  <view>
+    <van-cell title="是否有过敏史" is-link bind:click="showallergy"  style='border:none'>{{allergy}}</van-cell>
+    <van-popup
+      show="{{ showallergy }}"
+      position="bottom"
+      custom-style="height: 45%"
+      round
+      bind:close="onAllergy"
+    >
+    <van-picker  show-toolbar title="是否有过敏史" columns="{{ history }}"  bind:cancel="onAllergy" bind:confirm="goAllergy"/>
+    </van-popup>
+  </view>
+  <!-- 是否做过手术 -->
+  <view>
+    <van-cell title="是否做过手术" is-link bind:click="showsurgery"  style='border:none'>{{surgery}}</van-cell>
+    <van-popup
+      show="{{ showsurgery }}"
+      position="bottom"
+      custom-style="height: 45%"
+      round
+      bind:close="onsurgery"
+    >
+    <van-picker  show-toolbar title="是否做过手术" columns="{{ history }}"  bind:cancel="onsurgery" bind:confirm="gosurgery"/>
+    </van-popup>
+  </view>
+  <!-- 是否有家族遗传病 -->
+  <view>
+    <van-cell title="是否有家族遗传病" is-link bind:click="showfamily"  style='border:none'>{{family}}</van-cell>
+    <van-popup
+      show="{{ showfamily }}"
+      position="bottom"
+      custom-style="height: 45%"
+      round
+      bind:close="onsurgery"
+    >
+    <van-picker  show-toolbar title="是否有家族遗传病" columns="{{ history }}"  bind:cancel="onfamily" bind:confirm="gofamily"/>
+    </van-popup>
+  </view>
+  <view style="margin-top:150rpx;">
+    <van-button type="info" block bindtap="sure">确定提交</van-button>
+  </view>
+</view>
