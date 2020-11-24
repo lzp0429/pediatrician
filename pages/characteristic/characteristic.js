@@ -7,7 +7,30 @@ Page({
   data: {
 
   },
-
+  // 围孕产期
+  antenatal(){
+    wx.navigateTo({
+      url: '/pages/antenatal/antenatal',
+    })
+  },
+  // 
+  showLoving(){
+    wx.navigateTo({
+      url: '/pages/showLoving/showLoving',
+    })
+  },
+  // 
+  abnormal(){
+    wx.navigateTo({
+      url: '/pages/abnormal/abnormal',
+    })
+  },
+  // 
+  topSearch(){
+    wx.navigateTo({
+      url: '/pages/topSearch/topSearch',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

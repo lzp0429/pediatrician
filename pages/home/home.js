@@ -6,28 +6,52 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      'https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png',
-      'https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png',
-      'https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png',
-      'https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png',
-      'https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png',
-    ],
+    imgUrls: [],
+    doctorList:[],
+    newsList:[],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-
-    
-
+    this.getData()
+    this.getImage()
+    this.swiper()
   },
-
-
-  onLoad: function (options) {
-
+  // 轮播图
+  swiper(){
+    api._get('index/ad_list?pid=' + '1').then((res)=>{
+      console.log(res,"轮播图")
+      if(res.data.error == 0){
+        this.setData({
+          imgUrls:res.data.message
+        })
+      }
+    })
+  },
+  // 名医推荐
+  getData(){
+    var that = this
+    api._get('/index/doctor_list?is_hot=' + '1').then((res)=>{
+      console.log(res)
+      if(res.statusCode == 200 && res.data.error == 0){
+        this.setData({
+          doctorList : res.data.message
+        })
+      }
+    })
+  },
+  // 图文精选
+  getImage(){
+    api._get('/index/eryijt_list?is_hot=' + '1' + '&page=' + '1').then((res)=>{
+      console.log("图文精选",res)
+      if (res.statusCode == 200 && res.data.error == 0) {
+        this.setData({
+          newsList : res.data.message
+        })
+      };
+    })
   },
   // 搜索
   goHomeSearch(){
@@ -84,15 +108,18 @@ Page({
     })
   },
   // 儿医讲堂详情
-  goPediatricianDetail(){
+  goPediatricianDetail(event){
+    console.log(event)
+    var id = event.currentTarget.dataset.id
     wx.navigateTo({
-      url: '/pages/pediatricianDetail/pediatricianDetail'
+      url: '/pages/pediatricianDetail/pediatricianDetail?id=' + id
     })
   },
   // 名医推荐
-  goFamousDoctors(){
+  goFamousDoctors(event){
+    var id = event.currentTarget.dataset.id
     wx.navigateTo({
-      url: '/pages/famousDoctors/famousDoctors'
+      url: '/pages/famousDoctors/famousDoctors?id=' + id
     })
   },
   // 更多图文精选

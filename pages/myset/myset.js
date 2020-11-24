@@ -9,6 +9,12 @@ Page({
   data: {
 
   },
+  // 自定义导航栏返回事件
+  onClickLeft() {
+    wx.switchTab({
+      url:'/pages/my/my'
+    })
+  },
   // 修改姓名
   myname(){ 
     wx.navigateTo({

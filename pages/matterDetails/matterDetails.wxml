@@ -1,0 +1,30 @@
+<!--pages/matterDetails/matterDetails.wxml-->
+<view>
+  <view class="boxs">
+    <view class="box">
+      <view><image class="img" src="/images/../images/img/login.png"></image></view>
+      <view>
+        <view class="title">{{info.nickname}}</view>
+        <view class="center">{{info.content}}</view>
+      </view>
+    </view>
+    <view class="detail">
+      <view class="time">{{info.add_time}}</view>
+      <view class="read">阅读 {{read}}</view>
+    </view>
+  </view>
+  <view class="jieguo">共计 <text class="num">{{info.comment_num}}</text> 条回复。回复仅为个人建议，不能作为临床诊断结果</view>
+  <view class="community">
+    <view class="zuijia" wx:for="{{info.comment_list}}" wx:key="index">
+      <view><image class="img" src="{{item.doctor_headimg}}"></image></view>
+      <view class="doctor">
+        <view class="doctor-title">{{item.doctor_name}}  |  {{item.titles_name}}</view>
+        <view class="doctor-dizhi">{{item.hos_name}}</view>
+        <view class="doctor-center">
+          {{item.comment_con}}
+        </view>
+        <view class="times">{{item.add_time}}</view>
+      </view>
+    </view>
+  </view>
+</view>

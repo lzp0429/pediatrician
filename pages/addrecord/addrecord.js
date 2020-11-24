@@ -5,6 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    user:"",
+    minDate: new Date(2000, 0, 1).getTime(),
     date: '2020/11/16',
     show: false,
     showsex:false,
@@ -28,9 +30,30 @@ Page({
   },
   // 确定提交
   sure(){
-    wx.navigateTo({
-      url: '/pages/myhealth/myhealth',
-    })
+    if(!this.data.user){
+      wx.showToast({
+        title: '请输入建档人姓名',
+        icon: 'none',
+        duration: 1500
+      })
+    }else if(!this.data.stature){
+      wx.showToast({
+        title: '请输入建档人身高',
+        icon: 'none',
+        duration: 1500
+      })
+    }else if(!this.data.weight){
+      wx.showToast({
+        title: '请输入建档人体重',
+        icon: 'none',
+        duration: 1500
+      })
+    }else{
+      wx.navigateTo({
+        url: '/pages/myhealth/myhealth',
+      })
+    }
+    
   },
   // 是否有家族遗传病
   showfamily(){
@@ -142,6 +165,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var date = new Date();
+    var Y = date.getFullYear() + '/';
+    var M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '/';
+    var D = date.getDate();
+    var time = Y+M+D;
+    this.setData({
+      date:time
+    })
 
   },
 

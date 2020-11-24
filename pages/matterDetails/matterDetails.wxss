@@ -1,0 +1,105 @@
+/* pages/matterDetails/matterDetails.wxss */
+page{
+  background: #EEEEEE;
+}
+.boxs{
+  padding: 20rpx 30rpx;
+  background: #ffffff;
+}
+.box{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.img{
+  width: 60rpx;
+  height: 60rpx;
+}
+.title{
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  padding-left: 20rpx;
+  padding-top: 10rpx;
+}
+.center{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 36rpx;
+  padding-left: 20rpx;
+  margin-top: 30rpx;
+}
+.detail{
+  display: flex;
+  justify-content:flex-end;
+  margin-top: 15rpx;
+}
+.time{
+  font-size: 23rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  padding-right: 100rpx;
+}
+.read{
+  font-size: 23rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+}
+.jieguo{
+  font-size: 23rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  line-height: 32px;
+  text-align: center;
+  background: #EEEEEE;
+  margin-top: 10rpx;
+}
+.num{
+  color: #4FA7FF;
+}
+.zuijia{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 10rpx;
+  padding: 20rpx 30rpx;
+  background: #ffffff;
+}
+.doctor-title{
+  font-size: 23rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  padding-top: 5rpx;
+  padding-left: 20rpx;
+}
+.doctor-dizhi{
+  font-size: 23rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  padding-top: 5rpx;
+  padding-left: 20rpx;
+}
+.doctor-center{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 36rpx;
+  padding-left: 20rpx;
+  margin-top: 30rpx;
+}
+.times{
+  font-size: 23rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  line-height: 42rpx;
+  text-align: right;
+  margin-top: 10rpx;
+}

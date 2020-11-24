@@ -3,39 +3,37 @@
   <view class="characteristic">
     下一代的优质孕育及科学健护不仅关乎祖国未来，更攸关的家庭指数，为使宝妈提供获取到更加科学、专业的优质孕育及科学健护育儿秘籍，本平台特别推出“围孕产期名医问询”、“儿童心理健康干预”以及“儿童发育异常干预”三大特色模块，希望您能在这里精准、快捷地找到您迫切需要的专业、权威、科学的专家咨询服务，助您实现优质备孕、高效受孕、舒适孕产、完美产复、科学喂护、身体发育与心理成长可以正常和谐同步，科学孕育优秀下一代的目标。
   </view>
-  <view class="characteristic_class">
-  <view class="characteristic_class_image">
-   <image     src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic11.png"></image>
-  </view>
-   
-    <view>
-      <view class="characteristic_class_title">
-        围孕产期咨询
-      </view>
-      <view class="characteristic_class_content">
-        本科室主要聚焦优质备孕、高效受孕、舒适孕产、完美产复、科学喂护五大核心关注，提高咨询服务解决方案。
+
+  <view class="characteristic_class" bindtap="antenatal">
+
+    <view class="characteristic_class_image" >
+    <image     src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic11.png"></image>
+    </view>
+      <view>
+        <view class="characteristic_class_title">
+          围孕产期咨询
+        </view>
+        <view class="characteristic_class_content">
+          本科室主要聚焦优质备孕、高效受孕、舒适孕产、完美产复、科学喂护五大核心关注，提高咨询服务解决方案。
+        </view>
       </view>
     </view>
 
-    
-  </view>
-
-  <view class="characteristic_class">
-     <view class="characteristic_class_image">
-   <image     src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic12.png"></image>
-  </view>
-    <view>
-      <view class="characteristic_class_title">
-        心理关怀咨询
-      </view>
-      <view class="characteristic_class_content">
-        本科室主要围绕儿童常见多发型心理发育异常、性格偏激等症状进行专业、权威的科学关怀及干预。
+    <view class="characteristic_class" bindtap="showLoving">
+      <view class="characteristic_class_image">
+    <image     src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic12.png"></image>
+    </view>
+      <view>
+        <view class="characteristic_class_title">
+          心理关怀咨询
+        </view>
+        <view class="characteristic_class_content">
+          本科室主要围绕儿童常见多发型心理发育异常、性格偏激等症状进行专业、权威的科学关怀及干预。
+        </view>
       </view>
     </view>
 
-    
-  </view>
-  <view class="characteristic_class">
+  <view class="characteristic_class" bindtap="abnormal">
      <view class="characteristic_class_image">
    <image     src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic13.png"></image>
   </view>
@@ -46,11 +44,10 @@
       <view class="characteristic_class_content">
         本科室主要针对儿童骨骼、智力、视力发育异常以及免疫力优化提供专业、权威、科学、实用、高效的解决方案。
       </view>
-    </view>
-
-    
+    </view>   
   </view>
-  <view class="characteristic_class">
+
+  <view class="characteristic_class" bindtap="topSearch">
      <view class="characteristic_class_image">
    <image     src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic14.png"></image>
   </view>
@@ -62,7 +59,5 @@
         本版块为您精选推荐近期接单频率较高的名医专家，供您参考选择!
       </view>
     </view>
-
-    
   </view>
 </view>

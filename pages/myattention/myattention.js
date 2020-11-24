@@ -1,13 +1,31 @@
 // pages/myattention/myattention.js
+const api = require('../../utils/util')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    myLike:[]
   },
-
+  // 我的关注
+  getMylike(){
+    var token = ''
+    api._get('user/follow_list?token=' + token).then((res)=>{
+      console.log(res)
+      if(res.data.error == 0){
+        this.setData({
+          myLike:res.data.message
+        })
+      }else{
+        wx.showToast({
+          title: res.data.message,
+          icon: 'none',
+          duration: 1500
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -26,7 +44,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.getMylike()
   },
 
   /**

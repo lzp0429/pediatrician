@@ -3,40 +3,32 @@
     <view class="pediatrician_nav">
         <view class="pediatrician_nav_tab">
             <van-tabs active="{{ active }}" color="#4FA7FF" bind:change="onChange" tab-active-class='Text'>
-            <van-tab title="全部"></van-tab>
-            <van-tab title="儿童常见病"> </van-tab>
-            <van-tab title="先天性儿童疾病"></van-tab>
-          </van-tabs>
+              <van-tab title="全部"></van-tab>
+              <van-tab title="儿童常见病"> </van-tab>
+              <van-tab title="先天性儿童疾病"></van-tab>
+            </van-tabs>
         </view>
         <view bindtap="bindShow">
            <image class="pediatrician_nav_image" src="https://fenxiang.fancyopen.com/img/eryitong/images/pediatrician/jiahao.png"></image>
         </view>
     </view>
     <view class="pediatrician_tabT">
-      <view wx:for='{{tabTow}}' wx:key='index' class=" {{count === index?'pediatrician_tabT_chosen':''}}" bindtap="switchs" data-index='{{index}}'>已经采纳</view>
+      <view wx:for='{{tabTow}}' wx:key='index' class=" {{count == item.id?'pediatrician_tabT_chosen':''}}" bindtap="switchs" data-index='{{item.id}}'>{{item.name}}</view>
     </view>
-    <view class="lis">
-      <view class="text">7岁儿童咳嗽3天，第一天轻味咳嗽后加重,偶尔打喷嚏，嗓子轻微有点红，不疼。听诊没有异常晚上躺下，晨起咳嗽比较厉害，晨起黄痰</view>
+    <view class="lis" wx:for="{{newList}}" wx:key="index" data-id="{{item.illness_aid}}" bindtap="matterDetails">
+      <view class="text">{{item.content}}</view>
       <view class="detail">
-        <view>2人已回复</view>
-        <view style="padding-left:30rpx">2020/10/24  11：08</view>
-        <view style="width:50%;text-align:right">阅读  10</view>
+        <view>{{item.comment_num}}人已回复</view>
+        <view style="padding-left:30rpx">{{item.add_time}}</view>
+        <view style="width:50%;text-align:right">阅读  {{item.read}}</view>
       </view>
     </view>
-    <view class="lis">
-      <view class="text">7岁儿童咳嗽3天，第一天轻味咳嗽后加重,偶尔打喷嚏，嗓子轻微有点红，不疼。听诊没有异常晚上躺下，晨起咳嗽比较厉害，晨起黄痰</view>
-      <view class="detail">
-        <view>2人已回复</view>
-        <view style="padding-left:30rpx">2020/10/24  11：08</view>
-        <view style="width:50%;text-align:right">阅读  10</view>
+    <view wx:if="{{ifShow == 1}}">
+      <view class="img">
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
       </view>
+      <view class="texts">当前暂无问题列表~</view>
     </view>
- 
-
-
-
-
-
     <van-dialog
       use-slot
       show="{{ show }}"
@@ -46,33 +38,12 @@
       <view>
         <view class="Close" bindtap="onClose">x</view>
         <view class="dialog">
-          <view style="color:#4FA7FF">全部</view>
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-          
-          <view>儿童常见病</view>
-          <view>儿童常见病</view>
-        
-      </view>
+          <scroll-view class="bottom_scroll" scroll-y="true" scroll-left="{{y}}" scroll-with-animation="{{true}}">
+            <view wx:for="{{illness_class}}" wx:key="index" class="dialogview">
+              <view class="{{item.class_id == status ? 'colors':''}}" bindtap="onClick" data-id="{{item.class_id}}" >{{item.class_name}}</view>
+            </view>
+          </scroll-view>
+        </view>
       </view>
       
     </van-dialog>

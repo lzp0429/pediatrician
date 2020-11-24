@@ -2,63 +2,94 @@
 <view>
 <!-- 轮播图 -->
   <swiper indicator-dots='true' indicator-active-color='#4FA7FF' autoplay='true'>
-    <swiper-item>
-      <image src='https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png'></image>
-    </swiper-item>
-    <swiper-item>
-      <image src='https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png'></image>
+    <swiper-item wx:for='{{imgUrls}}' wx:key='index'>
+      <image src='{{item.ad_code}}'></image>
+      <view class="adname">{{item.ad_name}}</view>
     </swiper-item>
   </swiper>
   <!-- tab -->
   <van-tabs active="{{ active }}" color="#4FA7FF" bind:change="onChange">
-    <van-tab title="推荐"></van-tab>
-    <van-tab title="健康百科"> </van-tab>
-    <van-tab title="我的收藏"></van-tab>
+    <van-tab title="推荐">
+      <view class="common-bottom" bindtap="tapDetail" data-id="{{item.eryijt_id}}" wx:for="{{newsList}}" wx:key='index'>
+        <view class="common-left">
+          <image src="{{item.img_url}}"></image>
+        </view>
+        <view style="width:412rpx;margin-left:40rpx;margin-top:12rpx">
+          <view style="color:#333333;font-size:24rpx;width:412rpx;">
+            {{item.title}}
+          </view>
+          <view style="color:#999999;font-size:20rpx;margin-top:30rpx">
+            {{item.add_time}}
+          </view>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="健康百科">
+      
+    </van-tab>
+    <van-tab title="我的收藏">
+      <view>
+        <view class="img">
+          <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
+        </view>
+        <view class="text">亲，您还没有收藏过文章哦~</view>
+      </view>
+    </van-tab>
   </van-tabs>
 
   <!-- 推荐、健康百科、我的收藏 -->
-  <view class="common">
+  <view class="common" wx:if="{{encyclopedia == 1}}">
 
     <!-- 健康百科筛选 -->
-    <view class="common-top" wx:if="{{encyclopedia == 1}}">
+    <view class="common-top" >
       <!-- 内容分类 -->
       <view class="classify">
         <view class="title">内容分类：</view>
-        <view wx:for="{{classes}}" wx:key="index" class="classify-common">
-          <view bindtap="checked" class="{{item.id == status ? 'active':''}}" data-id="{{item.id}}"  >{{item.title}}</view>
+        <view class="index_tab">
+          <scroll-view class="bottom_scroll" scroll-x="true" scroll-left="{{x}}" scroll-with-animation="{{true}}">
+            <view wx:for="{{classes}}" wx:key="index" class="classify-common nav " >
+              <view bindtap="checked" class="{{item.eyclass_id == status ? 'active':''}}" data-id="{{item.eyclass_id}}"  >{{item.eyclass_name}}</view>
+            </view>
+          </scroll-view>
         </view>
       </view>
       <!-- 年龄 -->
       <view class="classify">
         <view class="title">年龄分段：</view>
-        <view wx:for="{{age}}" wx:key="index" class="classify-common">
-          <view bindtap="ageSection" class="{{item.id == ages ? 'active':''}}" data-id="{{item.id}}">{{item.title}}</view>
-        </view>
+        <view class="index_tab">
+          <scroll-view class="bottom_scroll" scroll-x="true" scroll-left="{{x}}" scroll-with-animation="{{true}}">
+            <view wx:for="{{age}}" wx:key="index" class="classify-common nav">
+              <view bindtap="ageSection" class="{{item.id == ages ? 'active':''}}" data-id="{{item.id}}">{{item.title}}</view>
+            </view>
+          </scroll-view>
+        </view>  
       </view>
       <!-- 疾病 -->
-      <view class="classify">
+      <view class="classify classifys">
         <view class="title">疾病类目：</view>
-        <view wx:for="{{illness}}" wx:key="index" class="classify-common">
-          <view bindtap="sickness" class="{{item.id == sick ? 'active':''}}" data-id="{{item.id}}">{{item.title}}</view>
-        </view>
+        <view class="index_tab">
+          <scroll-view class="bottom_scroll" scroll-x="true" scroll-left="{{x}}" scroll-with-animation="{{true}}">
+            <view wx:for="{{illness}}" wx:key="index" class="classify-common nav">
+              <view bindtap="sickness" class="{{item.illness_id == sick ? 'active':''}}" data-id="{{item.illness_id}}">{{item.illness_name}}</view>
+            </view>
+          </scroll-view>
+        </view>    
       </view>
     </view>
-
-    <view class="common-bottom" bindtap="tapDetail">
-
+    <view class="common-bottom" bindtap="tapDetail" data-id="{{item.eryijt_id}}" wx:for="{{news_list}}" wx:key='index'>
       <view class="common-left">
-        图片
+        <image src="{{item.img_url}}"></image>
       </view>
       <view style="width:412rpx;margin-left:40rpx;margin-top:12rpx">
         <view style="color:#333333;font-size:24rpx;width:412rpx;">
-          千万别被中国式“坐月子”坑了，90%的 妈妈中了这三大误区
+          {{item.title}}
         </view>
         <view style="color:#999999;font-size:20rpx;margin-top:30rpx">
-          2020-10-27
+          {{item.add_time}}
         </view>
       </view>
-
     </view>
-
+    
+    
   </view>
 </view>

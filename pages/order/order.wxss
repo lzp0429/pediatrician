@@ -1,0 +1,12 @@
+/* pages/order/order.wxss */
+page{
+  background: #f8f8f8;
+}
+.title{
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 80rpx;
+  padding-left: 30rpx;
+}

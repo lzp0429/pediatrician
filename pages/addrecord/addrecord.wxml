@@ -1,6 +1,14 @@
 <!--pages/addrecord/addrecord.wxml-->
 <view>
-  
+  <!-- 姓名 -->
+  <view>
+    <van-field
+      model:value="{{ user }}"
+      label="姓名"
+      placeholder="请输入档案人的姓名"
+      input-align="right"
+    />
+  </view>
   <!-- 与您的关系 -->
   <view>
     <van-cell title="与您的关系" is-link bind:click="showrelation"  style='border:none'>{{concern}}</van-cell>
@@ -30,7 +38,7 @@
   <!-- 出生日期 -->
   <view>
     <van-cell title="出生日期" value="{{ date }}"  bind:click="onDisplay" />
-    <van-calendar show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm" />
+    <van-calendar show="{{ show }}"  min-date="{{ minDate }}" bind:close="onClose" bind:confirm="onConfirm" />
   </view>
   <!-- 身高 -->
   <view>

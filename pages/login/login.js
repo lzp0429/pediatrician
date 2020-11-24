@@ -13,6 +13,12 @@ Page({
       url: '/pages/error/error',
     })
   },
+  // 去登陆
+  userlogin(){
+    wx.navigateTo({
+      url: '/pages/userlogin/userlogin',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

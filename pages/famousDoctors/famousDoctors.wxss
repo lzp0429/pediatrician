@@ -118,7 +118,7 @@
   line-height: 38rpx;
 
 }
-.message_btn>view:nth-child(2){
+.dashang{
   background: #f16960;
   margin-top:20rpx; 
 }

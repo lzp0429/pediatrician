@@ -4,7 +4,7 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": true,
     "postcss": true,
@@ -21,6 +21,8 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -29,8 +31,9 @@
     "useIsolateContext": true,
     "useCompilerModule": false,
     "userConfirmedUseCompilerModuleSwitch": false,
-    "useMultiFrameRuntime": false,
-    "useApiHook": true
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.0",
@@ -105,6 +108,36 @@
         {
           "name": "pages/userlogin/userlogin",
           "pathName": "pages/userlogin/userlogin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/order",
+          "pathName": "pages/order/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pediatrician/pediatrician",
+          "pathName": "pages/pediatrician/pediatrician",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pediatrician/pediatrician",
+          "pathName": "pages/pediatrician/pediatrician",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/matterDetails/matterDetails",
+          "pathName": "pages/matterDetails/matterDetails",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pediatrician/pediatrician",
+          "pathName": "pages/pediatrician/pediatrician",
           "scene": null
         }
       ]

@@ -1,18 +1,29 @@
 // pages/mydoctor/mydoctor.js
+const api = require('../../utils/util.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    myDoctor:[],
   },
-
+  getMydoctor(){
+    api._get('user/my_doctor').then((res)=>{
+      console.log(res)
+      if(res.data.error == 0){
+        this.setData({
+          myDoctor:res.data.message
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getMydoctor()
+    
   },
 
   /**

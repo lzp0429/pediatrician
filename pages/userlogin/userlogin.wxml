@@ -42,5 +42,5 @@
     </view>
     <view class="forget" bindtap="forget" wx:if="{{ifpassword == true}}">忘记密码</view>
   </view>
-  <view class="login">登录</view>
+  <view class="login" bindtap="Login">登录</view>
 </view>

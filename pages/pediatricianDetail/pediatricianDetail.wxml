@@ -1,4 +1,8 @@
 <!--pages/pediatricianDetail/pediatricianDetail.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
 <view>
-  儿医详情页(富文本)
+  <view class="title">{{title}}</view>
+  <view class="center">
+    <template is="wxParse" data="{{wxParseData:content.nodes}}"></template>
+  </view>
 </view>

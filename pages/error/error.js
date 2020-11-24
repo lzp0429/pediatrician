@@ -1,4 +1,5 @@
 // pages/error/error.js
+const api = require('../../utils/util')
 Page({
 
   /**
@@ -22,7 +23,6 @@ Page({
         icon:'none'
       });
     }else{
-
       if(phone){
         if(this.data.disabled == false){
           var timeNum = 60
@@ -45,6 +45,22 @@ Page({
               })
             }
           }, 1000)
+          api._get('user/sendsms?phone=' + this.data.phone).then((res)=>{
+            console.log(res)
+            if(res.data.error == 0){
+              wx.showToast({
+                title: res.data.message,
+                duration: 2000,
+                icon:'none'
+              });
+            }else{
+              wx.showToast({
+                title: res.data.message,
+                duration: 2000,
+                icon:'none'
+              });
+            }
+          })
         }
       }else{
         wx.showToast({
@@ -56,7 +72,54 @@ Page({
   },
   // 去注册
   error(){
-    
+    var phone = this.data.phone
+    if (!(/^((13[0-9])|(14[0-9])|(15[0-9])|(17[0-9])|(18[0-9]))\d{8}$/.test(phone))) {
+      wx.showToast({
+        title: '请输入正确的手机号',
+        duration: 2000,
+        icon:'none'
+      });
+    }else if(!this.data.sms){
+      wx.showToast({
+        title: '请输入验证码',
+        duration: 2000,
+        icon:'none'
+      });
+    }else if(!this.data.coded){
+      wx.showToast({
+        title: '请输入密码',
+        duration: 2000,
+        icon:'none'
+      });
+    }else if(this.data.coded.length < 6 || this.data.coded.length>18){
+      wx.showToast({
+        title: '请输入密码的长度在6~18之间',
+        duration: 2000,
+        icon:'none'
+      });
+    }else{
+      // api._post('/user/reg_sms_verify',{
+      //   smscode:this.data.sms
+      // },{
+      //   emulateJSON: true
+      // }).then((res)=>{
+      //   console.log(res)
+      // })
+      wx.request({
+        url: 'http://eryitong.zhengzhengh.top/user/reg_sms_verify',
+        method:"POST",
+        header:{
+          'content-type':'multipart/form-data; boundary=XXX'
+        },
+        data:'\r\n--XXX' +
+        '\r\nContent-Disposition: form-data; name="smscode"' +
+        '\r\n' +
+        '\r\n' + this.data. sms,
+        success:function(res){
+          console.log(res)
+        }
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载

@@ -1,16 +1,37 @@
 // pages/myhealth/myhealth.js
+const api = require('../../utils/util')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    myArchive:[
 
+    ],
   },
   // 自定义导航栏返回事件
   onClickLeft() {
     wx.switchTab({
       url:'/pages/my/my'
+    })
+  },
+  // 个人档案
+  getArchive(){
+    const token = ''
+    api._get('user/archive_list?token=' + token).then((res)=>{
+      console.log(res)
+      if(res.data.error == 0){
+        this.setData({
+          myArchive:res.data.message
+        })
+      }else{
+        wx.showToast({
+          title: res.data.message,
+          icon: 'none',
+          duration: 1500
+        })
+      }
     })
   },
   /**
