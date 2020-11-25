@@ -1,5 +1,7 @@
 /* pages/classroom/classroom.wxss */
-
+page{
+  background: #f8f8f8;
+}
 swiper {
   width: 100%;
   height: 350rpx;
@@ -27,53 +29,103 @@ swiper image {
   color: #4FA7FF;
   border-bottom: 2px solid #4FA7FF;
 }
+
 .common>view{
   margin-top: 25rpx;
 }
 .common-top{
-  width: 702rpx;
-  height: 202rpx;
+  width: 665rpx;
   margin: 0 auto;
   border: 1px solid black;
+  background: #ffffff;
+  padding: 0 20rpx;
 }
 .common-bottom{
   width: 703rpx;
   height: 150rpx;
-  border: 1px solid black;
   margin: 0 auto;
   display: flex;
   flex-wrap: nowrap;
+  background: #ffffff;
 }
 .common-left{
   width: 208rpx;
   height: 126rpx;
-  border: 1px solid black;
   margin-top: 12rpx;
   margin-left: 10rpx;
 }
+.common-left>image{
+  width: 208rpx;
+  height: 126rpx;
+}
 .title{
-  width: 115rpx;
   font-size: 23rpx;
   font-family: PingFang SC;
   font-weight: 500;
   color: #000000;
-  padding: 2rpx 0;
-  padding-left: 30rpx;
   text-align: right;
+  padding-top: 6rpx;
 }
 .classify{
   display: flex;
   flex-wrap: nowrap;
-  margin-top:25rpx;
+  margin-top: 20rpx;
 }
-.classify-common{
-  display: flex;
-  flex-wrap: nowrap
+.classifys{
+  margin-bottom: 20rpx;
 }
 .classify-common>view{
   padding:2rpx 13rpx;
-  font-size: 22rpx;
+  font-size: 23rpx;
   font-family: PingFang SC;
   font-weight: 500;
   color: #333333;
+}
+.active{
+  color: #4FA7FF !important;
+  background-color: #EDF6FF;
+}
+
+ .bottom_scroll{
+  width:100%;
+  white-space:nowrap;
+  overflow:hidden;
+}
+.index_tab .bottom_scroll .nav{
+  display:inline-block;
+  white-space:normal;
+  text-align:center;
+  font-size: 23rpx;
+}
+.index_tab{
+  width: 80%;
+}
+.img{
+  width: 272rpx;
+  height: 226rpx;
+  margin: 0 auto;
+  margin-top: 30%;
+}
+.img>image{
+  width: 100%;
+  height: 100%;
+}
+.text{
+  text-align: center;
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  line-height: 60rpx;
+}
+.adname{
+  position: absolute;
+  top: 310rpx;
+  width: 100%;
+  background: rgba(6,10,46, 0.3);
+  color: #ffffff;
+  z-index: 20;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  padding-left: 30rpx;
 }

@@ -4,8 +4,7 @@
 }
 .recommend{
   padding-top: 20rpx ;
-
- 
+ margin-top: 80rpx;
 }
 .recommend_item{
   /* height: 332rpx; */
@@ -138,4 +137,11 @@
 }
 .recommend_item_price>view:nth-child(2){
   margin-left:20rpx; 
+}
+.heard{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }

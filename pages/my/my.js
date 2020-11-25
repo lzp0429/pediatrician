@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    nick_name:'',
+    phone:wx.getStorageSync('phone'),
   },
 
   // 设置
@@ -77,6 +78,17 @@ Page({
     })
   },
 
+  // 查看本地有没有token
+  getToken(){
+    // wx.setStorageSync('token','token')
+    var token =  wx.getStorageSync('token')
+    console.log(token)
+    if(!token){
+      wx.navigateTo({
+        url: '/pages/login/login',
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -95,7 +107,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    // 每次点进来查看有没有token
+    this.getToken()
+    var nick_name = wx.getStorageSync('nick_name')
+    var phone = wx.getStorageSync('phone')
+    this.setData({
+      nick_name:nick_name,
+      phone:phone
+    })
   },
 
   /**

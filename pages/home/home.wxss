@@ -291,7 +291,6 @@ swiper image{
   margin-left:20rpx; 
 }
 
-
 .handpick_item{
   padding: 22rpx 43rpx 28rpx 16rpx;
   display: flex;
@@ -344,4 +343,8 @@ swiper image{
   font-family: PingFang SC;
   font-weight: 400;
   color: #333333;
+
+}
+.wx-swiper-dots {
+  margin-bottom: 15rpx;
 }

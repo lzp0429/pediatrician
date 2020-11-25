@@ -1,38 +1,42 @@
 <!-- 围孕产期咨询 -->
 <view>
-  <van-tabs active="{{ active }}" color="#4FA7FF" bind:change="onChange" tab-active-class='Text'>
-    <van-tab title="优质备孕"></van-tab>
-    <van-tab title="舒适妊娠"> </van-tab>
-    <van-tab title="科学产康"></van-tab>
-  </van-tabs>
+  <view class="heard">
+    <van-tabs active="{{ active }}" color="#4FA7FF" bind:change="onChange" tab-active-class='Text'>
+      <van-tab title="优质备孕"></van-tab>
+      <van-tab title="舒适妊娠"> </van-tab>
+      <van-tab title="科学产康"></van-tab>
+    </van-tabs>
+  </view>
   <view class="recommend">
-      <view class="recommend_item">
+      <view class="recommend_item" bindtap="goFamousDoctors" data-id="{{item.doctor_id}}" wx:for="{{doctorList}}" wx:key='index'>
       <view>
-         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/toxiang.png"></image>
+
+         <image src="{{item.headimg}}"></image>
           <view>
             <view class="recommend_item_nav"> 
               <view>
-                刘喆
+                {{item.real_name}}
               </view>
               <view>
                  问诊人数
-                <text>1003次</text>
+                <text>{{item.count}}次</text>
               </view>
             </view>
             <view class="recommend_item_btn">
               <view>
-                名医资讯热榜
+                {{item.classify_name}}
               </view>
               <view>
-                副主任医师
+                {{item.titles_name}}
               </view>
             </view>
             <view class="recommend_item_location">
               <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/location.png"></image>
-              <view>天津市儿童医院</view>
+
+              <view>{{item.hos_name}}</view>
             </view>
             <view class="recommend_item_introductory">
-              擅长：从事儿科工作15年,熟悉儿科常见病的治疗
+              擅长：{{item.content}}
             </view>
           </view>
       </view>
@@ -40,16 +44,15 @@
         <view class="recommend_item_price">
           <view>
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/tupai.png"></image>
-
             <view class="recommend_item_price_text">
-              图文：<text>￥70.00</text> / 次           
+              图文：<text>￥{{item.price}}</text> / 次           
             </view>
           </view>
             
           <view>
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dianhua.png"></image>
             <view class="recommend_item_price_text">
-              电话：<text>￥100.00</text> / 次           
+              电话：<text>￥{{item.price2}}</text> / 次           
             </view>
           </view>
         </view>

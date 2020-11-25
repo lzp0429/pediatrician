@@ -1,0 +1,43 @@
+<!--pages/forget/forget.wxml-->
+<view>
+  <view>
+    <van-field
+      model:value="{{ phone }}"
+      label="手机号"
+      placeholder="请输入手机号码"
+    />
+  </view>
+  <view>
+      <van-field
+        model:value="{{ sms }}"
+        center
+        clearable
+        label="验证码"
+        placeholder="请输入短信验证码"
+        use-button-slot
+        custom-class="van-box"
+      >
+        <van-button slot="button"  custom-class='van-btn' disabled="{{disabled}}" type="van-btn"  border="{{ false }}" bindtap='tapLogo'
+          >{{time}}</van-button
+        >
+      </van-field>
+  </view>
+  <view>
+    <van-field
+        model:value="{{ coded }}"
+        label="密码"
+        placeholder="请输入6~18位新密码"
+        type="password"
+      />
+  </view>
+  <view>
+    <van-field
+        model:value="{{ invite }}"
+        label="确认密码"
+        placeholder="请再次输入新密码"
+        type="password"
+      />
+  </view>
+  <view class="error" bindtap="error">确认</view>
+</view>
+

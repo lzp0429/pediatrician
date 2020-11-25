@@ -3,7 +3,7 @@
   <view class="Search_ipt">
       <van-cell-group >
         <van-field
-          value="{{ value }}"
+          model:value="{{ value }}"
           placeholder="请输入用户名"
           border="{{ false }}"
           bind:change="onChange"
@@ -13,7 +13,6 @@
       </van-cell-group>
 
       <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/suosou1.png"></image>
-
   </view>
   <!-- 疾病分类 -->
   <view class="disease">

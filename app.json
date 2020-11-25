@@ -35,7 +35,15 @@
     "pages/myphone/myphone",
     "pages/freeConsultation/freeConsultation",
     "pages/announce/announce",
-    "pages/RewardPage/RewardPage"
+    "pages/RewardPage/RewardPage",
+    "pages/addrecord/addrecord",
+    "pages/login/login",
+    "pages/error/error",
+    "pages/userlogin/userlogin",
+    "pages/negotiated/negotiated",
+    "pages/forget/forget",
+    "pages/order/order",
+    "pages/matterDetails/matterDetails"
   ],
   "tabBar":{
     "color": "#333333",
@@ -75,6 +83,9 @@
     "navigationBarTextStyle":"white"
   },
   "usingComponents": {
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+  "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-calendar": "@vant/weapp/calendar/index",
     "van-uploader": "@vant/weapp/uploader/index",
     "van-radio": "/miniprogram_npm/vant-weapp/radio/index",
     "van-radio-group":"/miniprogram_npm/vant-weapp/radio-group/index",

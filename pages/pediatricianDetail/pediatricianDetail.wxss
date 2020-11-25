@@ -1,1 +1,25 @@
 /* pages/pediatricianDetail/pediatricianDetail.wxss */
+@import "/wxParse/wxParse.wxss";
+.title{
+  text-align: center;
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #000000;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.center{
+  width: 90%;
+  margin: 0 auto; 
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 36rpx;
+  margin-top: 30rpx;
+}
+img{
+  width: 90%;
+}

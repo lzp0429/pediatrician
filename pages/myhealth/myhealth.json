@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "个人档案"
+  "navigationBarTitleText": "个人档案",
+  "navigationStyle": "custom"
 }

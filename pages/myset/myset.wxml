@@ -1,5 +1,12 @@
 <!--pages/myset/myset.wxml-->
 <view>
+  <van-nav-bar
+    title="账号设置"
+    left-text=""
+    left-arrow
+    bind:click-left="onClickLeft"
+    custom-style="dangan"
+  />
   <view class="heard">
     <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myset/heard.png" class="portrait"></image></view>
     <view class="name">王小明</view>
@@ -26,7 +33,7 @@
     <view>V1.6.1</view>
   </view>
   <view style="margin-top:150rpx" bindtap="quit">
-    <van-button  type="default" block>退出登录</van-button>
-    <van-dialog id="van-dialog" />
+    <van-button  type="default" block>退出登录</van-button>   
   </view>
+  <van-dialog id="van-dialog" />
 </view>

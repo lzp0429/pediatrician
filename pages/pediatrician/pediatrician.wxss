@@ -73,45 +73,66 @@
 }
 .dialog{
   max-height: 600rpx;
-  padding: 23rpx 44rpx 44rpx 44rpx;
+  padding: 50rpx 44rpx 44rpx 44rpx;
+  z-index: 20;
 }
-.dialog>view{
+.dialogview{
   height: 76rpx;
   border-bottom: 2rpx solid #999999;
   line-height: 76rpx;
-  
   font-size: 26rpx;
   font-family: PingFang SC;
   font-weight: 500;
   color: #000000;
   padding-left:20rpx; 
-
-
 }
 .Close{
-  padding-right: 60rpx;
-  margin-top: 30rpx;
   text-align: right;
-}
-.pediatrician_btn{
+
   position: fixed;
-  right: 32rpx;
-  bottom: 20rpx;
+  top: 30rpx;
+  right: 60rpx;
+  z-index: 20;
+  width: 100%;
 }
-.pediatrician_btn>view{
-  width: 72rpx;
-  height: 72rpx;
-  margin-bottom:30rpx; 
-  background: #4FA7FF;
-  padding: 13rpx; 
-  border-radius:50rpx; 
-  box-sizing: border-box
+.colors{
+  color:#4FA7FF;
 }
-.pediatrician_btn>view:nth-child(2){
-  padding: 14rpx; 
+.img{
+  width: 272rpx;
+  height: 226rpx;
+  margin: 0 auto;
+  margin-top: 30%;
 }
-.pediatrician_btn>view>image{
-  width: 46rpx;
-  height: 46rpx;
-  
+.img>image{
+  width: 100%;
+  height: 100%;
+}
+.texts{
+  text-align: center;
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  line-height: 80rpx;
+}
+.adname{
+  position: absolute;
+  top: 310rpx;
+  width: 100%;
+  background: rgba(6,10,46, 0.3);
+  color: #ffffff;
+  z-index: 20;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  padding-left: 30rpx;
+}
+.top-fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+.bottom-fliex{
+  padding-top: 174rpx;
 }

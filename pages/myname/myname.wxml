@@ -5,12 +5,12 @@
     <view class="ipt">
       <van-cell-group>
         <van-field
-          value="{{ value }}"
+          model:value="{{ value }}"
           placeholder="请输入用户名"
           bind:change="onChange"
         />
       </van-cell-group>
     </view>
-    <van-button type="info" block>确定修改</van-button>
+    <van-button type="info" block bindtap="nickname">确定修改</van-button>
   </view>
 </view>

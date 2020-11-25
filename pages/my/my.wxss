@@ -2,7 +2,6 @@
 .top-view{
 
   height: 250rpx;
-
   background: #4FA7FF;
   display: flex;
   flex-wrap: nowrap;

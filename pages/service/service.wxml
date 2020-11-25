@@ -17,4 +17,7 @@
     />
     <view class="hint">最多可上传5张图片</view>
   </view>
+  <view class="record">
+    <view bindtap="addrecord">确定提交</view>
+  </view>
 </view>

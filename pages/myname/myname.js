@@ -1,4 +1,5 @@
 // pages/myname/myname.js
+const api = require('../../utils/util')
 Page({
 
   /**
@@ -7,7 +8,21 @@ Page({
   data: {
     value:'',
   },
-
+  // 修改姓名
+  nickname(){
+    var token = ''
+    api._post('/user/user_modify_nickname',{
+      token:token,
+      nickname:this.data.value
+    }).then((res)=>{
+      console.log(res)
+      if(res.status == 200 && res.data.error == 0){
+        wx.navigateTo({
+          url: '/pages/myset/myset',
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

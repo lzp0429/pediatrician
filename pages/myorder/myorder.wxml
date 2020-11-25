@@ -7,7 +7,13 @@
   </van-tabs>
   <!-- 我的咨询 -->
   <view wx:if="{{order == 0}}">
-    <view class="order">
+    <view wx:if="{{myDoctor.length <= 0 }}">
+      <view class="imges">
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
+      </view>
+      <view class="text">亲，您还没有咨询过哦~</view>
+    </view>
+    <view class="order" wx:for="{{myDoctor}}" wx:key="index">
       <view class="top-order">
         <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myorder/order.png" class="img"></image></view>
         <view class="doctor">王医生</view>
@@ -20,6 +26,7 @@
         <view class="evaluate">点我评价</view>
       </view>
     </view>
+    
   </view>
   <!-- 我的提问 -->
   <view wx:if="{{order == 1}}">
@@ -29,15 +36,13 @@
     </van-tabs>
     <!-- 我的问题 -->
     <view wx:if="{{article == 0}}">
-      <view class="lis">
-        <view class="text">7岁儿童咳嗽3天，第一天轻味咳嗽后加重,偶尔打喷嚏，嗓子轻微有点红，不疼。听诊没有异常晚上躺下，晨起咳嗽比较厉害，晨起黄痰</view>
-        <view class="detail">
-          <view>2人已回复</view>
-          <view style="padding-left:30rpx">2020/10/24  11：08</view>
-          <view style="width:50%;text-align:right">阅读  10</view>
+      <view wx:if="{{myUser.length <= 0}}">
+        <view class="imgs">
+          <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
         </view>
+        <view class="texts">当前暂无问题列表~</view>
       </view>
-      <view class="lis">
+      <view class="lis" wx:for="{{myUser}}" wx:key="index">
         <view class="text">7岁儿童咳嗽3天，第一天轻味咳嗽后加重,偶尔打喷嚏，嗓子轻微有点红，不疼。听诊没有异常晚上躺下，晨起咳嗽比较厉害，晨起黄痰</view>
         <view class="detail">
           <view>2人已回复</view>
@@ -58,10 +63,17 @@
   </view>
   <!-- 免费咨询 -->
   <view wx:if="{{order == 2}}">
-    <view class="free">
+
+    <view class="free" wx:for="{{myOrder}}" wx:key="index">
       <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myorder/toux.png" class="images"></image></view>
       <view class="symptom">身体乏力...</view>
       <view class="times">2020-01-01  10:18</view>
+    </view>
+    <view wx:if="{{myOrder.length <= 0}}">
+      <view class="imgs">
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
+      </view>
+      <view class="texts">当前暂无咨询问题列表~</view>
     </view>
   </view>
   

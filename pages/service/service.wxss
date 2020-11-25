@@ -50,4 +50,21 @@ page{
   font-weight: 400;
   color: #999999;
 }
+.record{
+  background: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20rpx 0;
+}
+.record>view{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 74rpx;
+  font-size: 28rpx;
+  color: #ffffff;
+  background: #4fa7ff;
+}
 

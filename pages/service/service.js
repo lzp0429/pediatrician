@@ -37,6 +37,12 @@ Page({
       a:a.detail.value
     })
   },
+  // 确定提交
+  addrecord(){
+    wx.switchTab({
+      url: '/pages/my/my',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

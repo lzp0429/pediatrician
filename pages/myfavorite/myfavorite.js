@@ -1,11 +1,12 @@
 // pages/myfavorite/myfavorite.js
+const api = require('../../utils/util')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    myLikeL:[],
   },
   // 跳转详情页
   tapDetail(){
@@ -14,11 +15,29 @@ Page({
       url: '/pages/pediatricianDetail/pediatricianDetail?id=' + id
     })
   },
+  // 收藏列表
+  getLive(){
+    const token = ''
+    api._get('user/collect_list?token=' + token).then((res)=>{
+      console.log(res)
+      if(res.data.error == 0){
+        this.setData({
+          myLike:res.data.message
+        })
+      }else{
+        wx.showToast({
+          title: res.data.message,
+          icon: 'none',
+          duration: 1500
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getLive()
   },
 
   /**
