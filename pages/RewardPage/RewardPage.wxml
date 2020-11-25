@@ -1,0 +1,36 @@
+<!--打赏医生-->
+<view class="outer">
+  <view class="message">
+    <view class="message_img">
+      <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/toxiang.png"></image>
+    </view>
+    
+    <view class="message_name">王小明</view>
+    <view class="message_blessing">谢谢医生的辛苦付出</view>
+  </view>
+  <view class="fengexian"></view>
+  <view class="money">
+    <view class="money_title">
+        请选择答谢金额
+    </view>
+    <view class="money_class">
+      <view class="money_class_content money_class_content_single">
+        <view>5元</view>
+        <view>一点心意</view>
+      </view>
+      <view class="money_class_content">
+        <view>10元</view>
+        <view>白衣天使</view>
+      </view>
+    </view>
+    <view class="money_ipt">
+     <textarea bindinput="aaa"  placeholder="说几句感谢医生的话" cols="1" rows="5"></textarea>
+    </view>
+
+   
+  </view>
+   <view class="bottom_btn">
+      完成
+    </view>
+    <view class="bottom_text">答谢金会全部转入该医生的账户，并且医生会看到您的留言</view>
+</view>

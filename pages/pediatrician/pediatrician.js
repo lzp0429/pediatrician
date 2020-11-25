@@ -35,4 +35,10 @@ Page({
   onClose() {
     this.setData({ show: false });
   },
+  //跳转发布
+  goAnnounce(){
+    wx.navigateTo({
+      url: '/pages/announce/announce',
+    })
+  }
 })

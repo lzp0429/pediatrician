@@ -23,4 +23,10 @@ Page({
     // event.detail 为当前输入的值
     console.log(event.detail);
   },
+  goReward(){
+    console.log('aaaaaaaaaaaaaaaaaaaa')
+    wx.navigateTo({
+      url: '/pages/RewardPage/RewardPage',
+    })
+  }
 });

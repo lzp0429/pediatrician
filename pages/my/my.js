@@ -7,15 +7,14 @@ Page({
   data: {
 
   },
-<<<<<<< HEAD
+
   // 设置
   myset(){
     wx.navigateTo({
       url: '/pages/myset/myset',
     })
   },
-=======
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
+
   // 联系客服
   service(){
     wx.navigateTo({
@@ -64,7 +63,7 @@ Page({
       url: '/pages/myfavorite/myfavorite',
     })
   },
-<<<<<<< HEAD
+
   // 健康档案
   myhealth(){
     wx.navigateTo({
@@ -77,8 +76,7 @@ Page({
       url: '/pages/mydiscount/mydiscount',
     })
   },
-=======
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
+
   /**
    * 生命周期函数--监听页面加载
    */

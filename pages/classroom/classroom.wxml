@@ -3,17 +3,10 @@
 <!-- 轮播图 -->
   <swiper indicator-dots='true' indicator-active-color='#4FA7FF' autoplay='true'>
     <swiper-item>
-<<<<<<< HEAD
       <image src='https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png'></image>
     </swiper-item>
     <swiper-item>
       <image src='https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png'></image>
-=======
-      <image src='/images/img/swiper.png'></image>
-    </swiper-item>
-    <swiper-item>
-      <image src='/images/img/swiper.png'></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     </swiper-item>
   </swiper>
   <!-- tab -->

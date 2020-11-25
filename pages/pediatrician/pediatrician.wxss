@@ -93,3 +93,25 @@
   margin-top: 30rpx;
   text-align: right;
 }
+.pediatrician_btn{
+  position: fixed;
+  right: 32rpx;
+  bottom: 20rpx;
+}
+.pediatrician_btn>view{
+  width: 72rpx;
+  height: 72rpx;
+  margin-bottom:30rpx; 
+  background: #4FA7FF;
+  padding: 13rpx; 
+  border-radius:50rpx; 
+  box-sizing: border-box
+}
+.pediatrician_btn>view:nth-child(2){
+  padding: 14rpx; 
+}
+.pediatrician_btn>view>image{
+  width: 46rpx;
+  height: 46rpx;
+  
+}

@@ -5,11 +5,7 @@
   </view>
   <view class="characteristic_class">
   <view class="characteristic_class_image">
-<<<<<<< HEAD
    <image     src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic11.png"></image>
-=======
-   <image     src="/images/home/characteristic11.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
   </view>
    
     <view>
@@ -26,11 +22,7 @@
 
   <view class="characteristic_class">
      <view class="characteristic_class_image">
-<<<<<<< HEAD
    <image     src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic12.png"></image>
-=======
-   <image     src="/images/home/characteristic12.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
   </view>
     <view>
       <view class="characteristic_class_title">
@@ -45,11 +37,8 @@
   </view>
   <view class="characteristic_class">
      <view class="characteristic_class_image">
-<<<<<<< HEAD
    <image     src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic13.png"></image>
-=======
-   <image     src="/images/home/characteristic13.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
+
   </view>
     <view>
       <view class="characteristic_class_title">
@@ -64,11 +53,7 @@
   </view>
   <view class="characteristic_class">
      <view class="characteristic_class_image">
-<<<<<<< HEAD
    <image     src="https://fenxiang.fancyopen.com/img/eryitong/images/home/characteristic14.png"></image>
-=======
-   <image     src="/images/home/characteristic14.png"></image>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
   </view>
     <view>
       <view class="characteristic_class_title">

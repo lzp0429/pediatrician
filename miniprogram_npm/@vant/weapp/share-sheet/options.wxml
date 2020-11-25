@@ -9,13 +9,7 @@
     data-index="{{ index }}"
     bindtap="onSelect"
   >
-<<<<<<< HEAD
     <image src="{{ computed.getIconURL(item.icon) }}" class="van-share-sheet__icon" />
-=======
-    <button class="van-share-sheet__button" open-type="{{ item.openType }}">
-      <image src="{{ computed.getIconURL(item.icon) }}" class="van-share-sheet__icon" />
-    </button>
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     <view wx:if="{{ item.name }}" class="van-share-sheet__name">{{ item.name }}</view>
     <view wx:if="{{ item.description }}" class="van-share-sheet__option-description">
       {{ item.description }}

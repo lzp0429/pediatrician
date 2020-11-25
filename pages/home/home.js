@@ -6,19 +6,11 @@ Page({
    */
   data: {
     imgUrls: [
-<<<<<<< HEAD
       'https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png',
       'https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png',
       'https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png',
       'https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png',
       'https://fenxiang.fancyopen.com/img/eryitong/images/img/swiper.png',
-=======
-      '/images/banner/banner1.jpeg',
-      '/images/banner/banner2.jpg',
-      '/images/banner/banner3.jpg',
-      '/images/banner/banner4.jpg',
-      '/images/banner/banner5.jpg',
->>>>>>> ab005e5f07d6bc9eb2f76923ca4340851d1950b1
     ],
   },
 

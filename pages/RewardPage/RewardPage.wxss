@@ -1,0 +1,143 @@
+/* pages/RewardPage/RewardPage.wxss */
+.outer{
+  padding:100rpx 0; 
+  background: #fff
+}
+.message{
+  padding-bottom:26rpx; 
+}
+.message_img{
+  width: 144rpx;
+  height: 144rpx;
+  margin: 0 auto;
+}
+.message_img>image{
+  width: 100%;
+  height: 100%;
+}
+.message_name{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  margin-top:17rpx; 
+  text-align: center 
+}
+.message_blessing{
+  
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #E71F49;
+  margin-top:38rpx;
+  text-align: center 
+
+}
+.fengexian{
+  width: 600rpx;
+  height: 2rpx;
+  background: #DDDDDD;
+  margin: 0 auto;
+}
+.money{
+  /* 130rpx */
+  padding:  0 64rpx 42rpx 64rpx;
+  box-sizing: border-box;
+  
+}
+.money_title{
+  height: 130rpx;
+  line-height: 130rpx;
+  text-align: center;
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+}
+.money_class{
+  display: flex;
+  justify-content: flex-start;
+}
+.money_class_content{
+  margin-right: 50rpx;
+}
+.money_class_content>view:nth-child(1){
+  width: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+ 
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  border-radius:125rpx;
+  margin: 0 auto;
+  
+  border:2rpx solid #4FA7FF;  
+}
+.money_class_content>view:nth-child(2){
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+ 
+  margin-top:10rpx; 
+  color: #999999;
+}
+
+
+.money_class_content_single>view:nth-child(1){
+  background: #4FA7FF;
+  color: #FFFFFF;
+}
+.money_class_content_single>view:nth-child(2){
+  color: #4FA7FF;
+}
+
+.money_ipt{
+  margin-top:54rpx;
+  min-width: 628rpx;
+  height: 180rpx;
+  background: #F0EEF4;
+  border-radius: 8rpx;
+  motion: 0 auto;
+
+
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+  line-height: 20px;
+  padding: 30rpx;
+  box-sizing: border-box;
+  
+
+}
+textarea{
+  width: 100%;
+  height: 100%;
+}
+.bottom_btn{
+  width: 678rpx;
+  height: 74rpx;
+  background: #4FA7FF;
+  border-radius: 8rpx;
+  margin:0 auto; 
+  text-align: center;
+  line-height: 74rpx;
+
+font-size: 28rpx;
+font-family: PingFang SC;
+font-weight: bold;
+color: #FFFFFF;
+
+
+}
+.bottom_text{
+  margin-top:18rpx;
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+}
