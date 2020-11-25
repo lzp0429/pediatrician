@@ -91,6 +91,8 @@
   position: fixed;
   top: 30rpx;
   right: 60rpx;
+  z-index: 20;
+  width: 100%;
 }
 .colors{
   color:#4FA7FF;
@@ -123,4 +125,13 @@
   font-size: 25rpx;
   line-height: 40rpx;
   padding-left: 30rpx;
+}
+.top-fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+.bottom-fliex{
+  padding-top: 174rpx;
 }

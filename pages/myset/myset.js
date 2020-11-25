@@ -41,6 +41,9 @@ Page({
     })
       .then(() => {
         // on confirm
+        wx.switchTab({
+          url:'/pages/home/home'
+        })
       })
       .catch(() => {
         // on cancel

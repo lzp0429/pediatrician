@@ -5,10 +5,10 @@
             <image src="https://fenxiang.fancyopen.com/img/eryitong/images/my/toux.png"></image>
         </view>
         <view class="center-view">
-            <view>王小明</view>
+            <view>{{nick_name}}</view>
             <view class="top-phone">
                 <view class="phone"><image src="https://fenxiang.fancyopen.com/img/eryitong/images/my/phone.png"></image></view>
-                <view>18816688666</view>
+                <view>{{phone}}</view>
             </view>
         </view>
         <view class="right-view" bindtap="myset">

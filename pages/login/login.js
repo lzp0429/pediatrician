@@ -7,6 +7,12 @@ Page({
   data: {
 
   },
+  // 自定义导航栏返回事件
+  onClickLeft() {
+    wx.switchTab({
+      url:'/pages/home/home'
+    })
+  },
   // 去注册
   error(){
     wx.navigateTo({

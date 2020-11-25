@@ -21,7 +21,7 @@ image{
   line-height: 80rpx;
   background: #4fa4ff;
   text-align: center;
-  margin-top: 150rpx;
+  margin-top: 100rpx;
 }
 .login{
   width: 80%;

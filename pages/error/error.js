@@ -12,6 +12,7 @@ Page({
     disabled:false,
     coded:'',
     invite:'',
+    yanzhen:'1234',
   },
    // 获取验证码
    tapLogo(){
@@ -45,14 +46,17 @@ Page({
               })
             }
           }, 1000)
-          api._get('user/sendsms?phone=' + this.data.phone).then((res)=>{
+          api._get('newuser/new_sendsms?phone=' + this.data.phone).then((res)=>{
             console.log(res)
             if(res.data.error == 0){
               wx.showToast({
-                title: res.data.message,
+                title: '发送成功',
                 duration: 2000,
                 icon:'none'
               });
+              this.setData({
+                yanzhen:res.data.message
+              })
             }else{
               wx.showToast({
                 title: res.data.message,
@@ -85,6 +89,12 @@ Page({
         duration: 2000,
         icon:'none'
       });
+    }else if(this.data.sms != this.data.yanzhen){
+      wx.showToast({
+        title: '请输入正确的验证码',
+        duration: 2000,
+        icon:'none'
+      });
     }else if(!this.data.coded){
       wx.showToast({
         title: '请输入密码',
@@ -98,25 +108,36 @@ Page({
         icon:'none'
       });
     }else{
-      // api._post('/user/reg_sms_verify',{
-      //   smscode:this.data.sms
-      // },{
-      //   emulateJSON: true
-      // }).then((res)=>{
-      //   console.log(res)
-      // })
+      
       wx.request({
-        url: 'http://eryitong.zhengzhengh.top/user/reg_sms_verify',
+        url: 'http://eryitong.zhengzhengh.top/user/register',
         method:"POST",
         header:{
           'content-type':'multipart/form-data; boundary=XXX'
         },
         data:'\r\n--XXX' +
-        '\r\nContent-Disposition: form-data; name="smscode"' +
+        '\r\nContent-Disposition: form-data; name="phone"' +
         '\r\n' +
-        '\r\n' + this.data. sms,
+        '\r\n' + this.data.phone +
+        '\r\n--XXX' +
+        '\r\nContent-Disposition: form-data; name="password"' +
+        '\r\n' +
+        '\r\n' + this.data.coded +
+        '\r\n--XXX' +
+        '\r\nContent-Disposition: form-data; name="referee"' +
+        '\r\n' +
+        '\r\n' + this.data.invite ,
         success:function(res){
           console.log(res)
+          if(res.data.error == 0){
+            wx.setStorageSync('token',res.data.message.token)
+            wx.setStorageSync('user_id',res.data.message.user_id)
+            wx.setStorageSync('nickname',res.data.message.nickname)
+            wx.setStorageSync('phone',res.data.message.phone)
+            wx.switchTab({
+              url:'/pages/home/home'
+            })
+          }
         }
       })
     }
