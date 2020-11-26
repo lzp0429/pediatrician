@@ -1,0 +1,11 @@
+<!--pages/portrait/portrait.wxml-->
+<view class="outer">
+  <view class="portrait">
+    <view class="loader">
+      <van-uploader class="portrait" file-list="{{ fileList }}" bind:after-read="afterRead" />
+    </view>
+  </view>
+  <view class="portrait_btn">
+    确定并保存
+  </view>
+</view>

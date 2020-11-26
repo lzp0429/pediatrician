@@ -7,7 +7,7 @@
     bind:click-left="onClickLeft"
     custom-style="dangan"
   />
-  <view class="heard">
+  <view class="heard" bindtap="goPortrait">
     <view>
       <image wx:if="{{headimgurl}}" src="{{headimgurl}}" class="portrait"></image>
       <image wx:else src="https://fenxiang.fancyopen.com/img/eryitong/images/myset/heard.png" class="portrait"></image>
