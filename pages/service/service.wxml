@@ -8,7 +8,7 @@
   </view>
   <view class="texts">
     <view class="text-top">输入您想咨询的问题：</view>
-    <textarea bindinput="aaa"  placeholder="请输入问题" cols="1" rows="5"></textarea>
+    <textarea bindinput="changeText"  placeholder="请输入问题" cols="1" rows="5"></textarea>
     <van-uploader
       class="loaderUp"
       file-list="{{ fileList }}"

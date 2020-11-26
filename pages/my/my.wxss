@@ -47,7 +47,7 @@
   margin-top: 40rpx;
   display: flex;
   flex-wrap: nowrap;
-  padding-top: 9rpx;
+  line-height: 45rpx;
   padding-left: 30rpx;
 }
 .right-left-view{

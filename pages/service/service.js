@@ -6,7 +6,7 @@ Page({
    */
   data: {
     fileList:[],
-    a:''
+    text:''
   },
   // 上传图片
   afterRead(event) {
@@ -22,7 +22,7 @@ Page({
     console.log(event)
     var fileList = this.data.fileList
     if(event.detail.file.url){
-      fileList.splice(event.detail.file.index,1)
+      fileList.splice(event.detail.index,1)
       this.setData({
         fileList:fileList
       })
@@ -34,17 +34,19 @@ Page({
   onLoad: function (options) {
 
   },
-  aaa(a){
-    console.log(a)
+  changeText(event){
     this.setData({
-      a:a.detail.value
+      text:event.detail.value
     })
   },
   // 确定提交
   addrecord(){
-    wx.switchTab({
-      url: '/pages/my/my',
-    })
+    // wx.switchTab({
+    //   url: '/pages/my/my',
+    // })
+    const arrayBuffer = new Uint8Array(this.data.fileList)
+    const base64 = wx.arrayBufferToBase64(arrayBuffer)
+    console.log(base64)
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
