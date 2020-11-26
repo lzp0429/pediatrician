@@ -15,7 +15,7 @@
           placeholder="{{phone}}"
         />
       </van-cell-group>
-      </view>
+    </view>
     <!-- <van-field  model:value="{{ sms }}"  placeholder="{{password}}" type="password" /> -->
     <view class="bottom-phone">
       <van-cell-group class="van-box">

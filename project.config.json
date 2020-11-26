@@ -138,6 +138,12 @@
         {
           "name": "pages/pediatrician/pediatrician",
           "pathName": "pages/pediatrician/pediatrician",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/changepassword/changepassword",
+          "pathName": "pages/changepassword/changepassword",
           "scene": null
         }
       ]

@@ -13,6 +13,7 @@
       class="loaderUp"
       file-list="{{ fileList }}"
       bind:after-read="afterRead"
+      bind:delete="deleteImg"
       max-count="5"
     />
     <view class="hint">最多可上传5张图片</view>

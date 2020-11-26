@@ -7,7 +7,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    nick_name:'',
+    phone:wx.getStorageSync('phone'),
+    headimgurl:'',
   },
   // 自定义导航栏返回事件
   onClickLeft() {
@@ -41,6 +43,10 @@ Page({
     })
       .then(() => {
         // on confirm
+        wx.setStorageSync('token','')
+        wx.setStorageSync('user_id','')
+        wx.setStorageSync('nickname','')
+        wx.setStorageSync('phone','')
         wx.switchTab({
           url:'/pages/home/home'
         })
@@ -67,7 +73,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    var nickname = wx.getStorageSync('nickname')
+    var imgs = wx.getStorageSync('headimgurl')
+    console.log(nickname,imgs)
+    this.setData({
+      nickname:nickname,
+      headimgurl:imgs
+    })
+    console.log()
   },
 
   /**

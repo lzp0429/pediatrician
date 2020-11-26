@@ -10,18 +10,51 @@ Page({
   },
   // 修改姓名
   nickname(){
-    var token = ''
-    api._post('/user/user_modify_nickname',{
-      token:token,
-      nickname:this.data.value
-    }).then((res)=>{
-      console.log(res)
-      if(res.status == 200 && res.data.error == 0){
-        wx.navigateTo({
-          url: '/pages/myset/myset',
-        })
+    var that = this
+    var token =  wx.getStorageSync('token')
+    wx.request({
+      url: 'http://eryitong.zhengzhengh.top/user/user_modify_nickname',
+      method:"POST",
+      header:{
+        'content-type':'multipart/form-data; boundary=XXX'
+      },
+      data:'\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="token"' +
+      '\r\n' +
+      '\r\n' + token +
+      '\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="nickname"' +
+      '\r\n' +
+      '\r\n' + this.data.value 
+      ,
+      success:function(res){
+        console.log(res)
+        if(res.data.error == 0){
+          wx.setStorageSync('nickname', that.data.value )
+          wx.navigateTo({
+            url: '/pages/myset/myset',
+          })
+          wx.showToast({
+            title: res.data.message,
+            icon: 'none',
+            duration: 1500
+          })
+        }else{
+          
+        }
       }
     })
+    // api._post('/user/user_modify_nickname',{
+    //   token:token,
+    //   nickname:this.data.value
+    // }).then((res)=>{
+    //   console.log(res)
+    //   if(res.status == 200 && res.data.error == 0){
+    //     wx.navigateTo({
+    //       url: '/pages/myset/myset',
+    //     })
+    //   }
+    // })
   },
   /**
    * 生命周期函数--监听页面加载

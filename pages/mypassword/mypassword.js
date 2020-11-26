@@ -1,4 +1,5 @@
 // pages/mypassword/mypassword.js
+const api = require('../../utils/util')
 Page({
 
   /**
@@ -8,19 +9,21 @@ Page({
     sms:'',
     time:"获取",
     disabled:false,
+    phone:'',
+    yanzhen:'1234'
   },
   // 获取验证码
   tapLogo(){
-    // var phone = this.data.value
-    // if (!(/^((13[0-9])|(14[0-9])|(15[0-9])|(17[0-9])|(18[0-9]))\d{8}$/.test(phone))) {
-    //   wx.showToast({
-    //     title: '请输入正确的手机号',
-    //     duration: 2000,
-    //     icon:'none'
-    //   });
-    // }else{
+    var phone = this.data.phone
+    if (!(/^((13[0-9])|(14[0-9])|(15[0-9])|(17[0-9])|(18[0-9]))\d{8}$/.test(phone))) {
+      wx.showToast({
+        title: '请输入正确的手机号',
+        duration: 2000,
+        icon:'none'
+      });
+    }else{
 
-    //   if(phone){
+      if(phone){
         if(this.data.disabled == false){
           var timeNum = 60
           this.setData({
@@ -33,7 +36,7 @@ Page({
             if (timeNum <= 0) {
               clearInterval(this.data.Time)
               this.setData({
-                time: "再次获取",
+                time: "重发",
                 disabled: false
               })
             }else {
@@ -42,16 +45,54 @@ Page({
               })
             }
           }, 1000)
-          
+          api._get('newuser/new_sendsms?phone=' + this.data.phone).then((res)=>{
+            console.log(res)
+            if(res.data.error == 0){
+              wx.showToast({
+                title: '发送成功',
+                duration: 2000,
+                icon:'none'
+              });
+              this.setData({
+                yanzhen:res.data.message
+              })
+            }else{
+              wx.showToast({
+                title: res.data.message,
+                duration: 2000,
+                icon:'none'
+              });
+            }
+          })
   
         }
-      // }else{
-      //   wx.showToast({
-      //     title: '请输入手机号',
-      //     icon:"none"
-      //   })
-      // }
-    // }
+      }else{
+        wx.showToast({
+          title: '请输入手机号',
+          icon:"none"
+        })
+      }
+    }
+  },
+  // 下一步
+  next(){
+    if(!this.data.sms){
+      wx.showToast({
+        title: '请输入验证码',
+        duration: 2000,
+        icon:'none'
+      });
+    }else if(this.data.sms != this.data.yanzhen){
+      wx.showToast({
+        title: '请输入正确的验证码',
+        duration: 2000,
+        icon:'none'
+      });
+    }else{
+      wx.navigateTo({
+        url: '/pages/changepassword/changepassword',
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载
@@ -71,7 +112,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    var phone = wx.getStorageSync('phone')
+    this.setData({
+      phone:phone
+    })
   },
 
   /**

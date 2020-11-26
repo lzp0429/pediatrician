@@ -41,7 +41,8 @@
     "pages/negotiated/negotiated",
     "pages/forget/forget",
     "pages/order/order",
-    "pages/matterDetails/matterDetails"
+    "pages/matterDetails/matterDetails",
+    "pages/changepassword/changepassword"
   ],
   "tabBar":{
     "color": "#333333",

@@ -2,7 +2,8 @@
 <view>
     <view class="top-view">
         <view class="top-img">
-            <image src="https://fenxiang.fancyopen.com/img/eryitong/images/my/toux.png"></image>
+            <image wx:if="{{headimgurl}}" src="{{headimgurl}}"></image>
+            <image wx:else src="https://fenxiang.fancyopen.com/img/eryitong/images/myset/heard.png"></image>
         </view>
         <view class="center-view">
             <view>{{nick_name}}</view>

@@ -4,29 +4,28 @@
     <view class="ipt">
       <van-cell-group>
         <van-field
-          value="{{ value }}"
+          model:value="{{ value }}"
           placeholder="新手机号"
-          bind:change="onChange"
         />
       </van-cell-group>
     </view>
     <view class="ipt">
       <van-cell-group>
         <van-field
-          value="{{ sms }}"
+          model:value="{{ sms }}"
           center
           clearable
           placeholder="请输入短信验证码"
           border="{{ false }}"
           use-button-slot
         >
-          <van-button slot="button" size="small" type="primary"
+          <van-button slot="button" disabled="{{disabled}}" size="small" type="primary" bindtap="tapLogo"
             >{{time}}</van-button
           >
         </van-field>
       </van-cell-group>
     </view>
-    <van-button type="info" block>下一步</van-button>
+    <van-button type="info" block bindtap="sure">确认</van-button>
   </view>
 </view>
 

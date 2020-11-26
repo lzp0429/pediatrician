@@ -5,8 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    nick_name:'',
+    nick_name:wx.getStorageSync('nickname'),
     phone:wx.getStorageSync('phone'),
+    headimgurl:wx.getStorageSync('headimgurl'),
   },
   // 设置
   myset(){
@@ -78,7 +79,7 @@ Page({
   getToken(){
     // wx.setStorageSync('token','token')
     var token =  wx.getStorageSync('token')
-    console.log(token)
+    // console.log(token)
     if(!token){
       wx.navigateTo({
         url: '/pages/login/login',
@@ -105,7 +106,7 @@ Page({
   onShow: function () {
     // 每次点进来查看有没有token
     this.getToken()
-    var nick_name = wx.getStorageSync('nick_name')
+    var nick_name = wx.getStorageSync('nickname')
     var phone = wx.getStorageSync('phone')
     this.setData({
       nick_name:nick_name,

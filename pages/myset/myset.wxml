@@ -8,8 +8,11 @@
     custom-style="dangan"
   />
   <view class="heard">
-    <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myset/heard.png" class="portrait"></image></view>
-    <view class="name">王小明</view>
+    <view>
+      <image wx:if="{{headimgurl}}" src="{{headimgurl}}" class="portrait"></image>
+      <image wx:else src="https://fenxiang.fancyopen.com/img/eryitong/images/myset/heard.png" class="portrait"></image>
+    </view>
+    <view class="name">{{nickname}}</view>
     <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myset/right.png" class="img"></image></view>
   </view>
   <view class="center" bindtap="myname">
