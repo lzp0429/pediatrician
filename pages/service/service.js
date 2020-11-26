@@ -6,7 +6,8 @@ Page({
    */
   data: {
     fileList:[],
-    a:''
+    a:'',
+    value: '',
   },
   // 上传图片
   afterRead(event) {
@@ -39,6 +40,10 @@ Page({
     this.setData({
       a:a.detail.value
     })
+  },
+  onChange(event) {
+    // event.detail 为当前输入的值
+    console.log(event.detail);
   },
   // 确定提交
   addrecord(){

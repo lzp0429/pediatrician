@@ -21,4 +21,19 @@
   <view class="record">
     <view bindtap="addrecord">确定提交</view>
   </view>
+  <view class="contactNumber">
+      <view>留下您的手机号，便于我们和您取得联系</view>
+      <view>
+        <van-cell-group>
+          <van-field
+            value="{{ value }}"
+            placeholder="请填写手机号码"
+            border="{{ false }}"
+            bind:change="onChange"
+            custom-style='height:58rpx;padding:4rpx 0 0 20rpx;font-size: 24rpx;'
+          />
+        </van-cell-group>
+      </view>
+   
+  </view>
 </view>
