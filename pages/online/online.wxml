@@ -8,6 +8,7 @@
   <view class="recommend" wx:for="{{doctorlist}}" wx:key="index">
       <view class="recommend_item">
       <view>
+
          <image src="{{item.headimg}}"></image>
           <view>
             <view class="recommend_item_nav"> 
@@ -29,6 +30,7 @@
             </view>
             <view class="recommend_item_location">
               <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/location.png"></image>
+
               <view>{{item.hos_name}}</view>
             </view>
             <view class="recommend_item_introductory">

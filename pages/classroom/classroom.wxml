@@ -2,6 +2,7 @@
 <view>
 <!-- 轮播图 -->
   <swiper indicator-dots='true' indicator-active-color='#4FA7FF' autoplay='true'>
+
     <swiper-item wx:for='{{imgUrls}}' wx:key='index'>
       <image src='{{item.ad_code}}'></image>
       <view class="adname">{{item.ad_name}}</view>

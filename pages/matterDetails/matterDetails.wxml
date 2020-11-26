@@ -15,6 +15,28 @@
   </view>
   <view class="jieguo">共计 <text class="num">{{info.comment_num}}</text> 条回复。回复仅为个人建议，不能作为临床诊断结果</view>
   <view class="community">
+    <view class="zuijia">
+ 
+        <image class="zuijia_answer" src="/images/image/answer.png"></image>
+     
+      <view><image class="img" src="https://fenxiang.fancyopen.com/img/eryitong/images/home/toxiang.png"></image></view>
+      <view class="doctor">
+        <view class="doctor-title">王小明  |  主治医生</view>
+        <view class="doctor-dizhi">xxxxx医院</view>
+        <view class="doctor_btn">
+          <view>一元查看</view>
+          <view>此答案为 <text style='color:#E83434'>最佳答案</text>，支付一元可查看
+</view>
+        </view>
+        <view class="times">2020/09/28 11:09</view>
+      </view>
+    </view>
+
+
+
+
+
+
     <view class="zuijia" wx:for="{{info.comment_list}}" wx:key="index">
       <view><image class="img" src="{{item.doctor_headimg}}"></image></view>
       <view class="doctor">

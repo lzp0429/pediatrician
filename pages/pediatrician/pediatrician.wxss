@@ -88,6 +88,7 @@
 }
 .Close{
   text-align: right;
+
   position: fixed;
   top: 30rpx;
   right: 60rpx;
@@ -125,7 +126,7 @@
   font-size: 25rpx;
   line-height: 40rpx;
   padding-left: 30rpx;
-}
+} 
 .top-fixed{
   position: fixed;
   width: 100%;
@@ -134,4 +135,26 @@
 }
 .bottom-fliex{
   padding-top: 174rpx;
+}
+.bottom_btn{
+  position: fixed;
+  right: 32rpx;
+  bottom: 50rpx;
+}
+.bottom_btn>view{
+  background: #4FA7FF;
+  border-radius:125rpx;
+  width: 72rpx;
+  height: 72rpx;
+  padding: 16rpx;
+  box-sizing: border-box;
+
+}
+.bottom_btn>view:nth-child(2){
+  margin-top: 20rpx;
+}
+.bottom_btn>view>image{
+  width: 40rpx;
+  height: 40rpx;
+
 }

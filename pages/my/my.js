@@ -9,12 +9,14 @@ Page({
     phone:wx.getStorageSync('phone'),
     headimgurl:wx.getStorageSync('headimgurl'),
   },
+
   // 设置
   myset(){
     wx.navigateTo({
       url: '/pages/myset/myset',
     })
   },
+
   // 联系客服
   service(){
     wx.navigateTo({
@@ -63,6 +65,7 @@ Page({
       url: '/pages/myfavorite/myfavorite',
     })
   },
+
   // 健康档案
   myhealth(){
     wx.navigateTo({
@@ -75,6 +78,7 @@ Page({
       url: '/pages/mydiscount/mydiscount',
     })
   },
+
   // 查看本地有没有token
   getToken(){
     // wx.setStorageSync('token','token')

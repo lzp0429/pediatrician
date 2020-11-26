@@ -34,6 +34,8 @@
     "pages/mypassword/mypassword",
     "pages/myphone/myphone",
     "pages/freeConsultation/freeConsultation",
+    "pages/announce/announce",
+    "pages/RewardPage/RewardPage",
     "pages/addrecord/addrecord",
     "pages/login/login",
     "pages/error/error",
@@ -42,7 +44,8 @@
     "pages/forget/forget",
     "pages/order/order",
     "pages/matterDetails/matterDetails",
-    "pages/changepassword/changepassword"
+    "pages/changepassword/changepassword",
+    "pages/paymentOrder/paymentOrder"
   ],
   "tabBar":{
     "color": "#333333",

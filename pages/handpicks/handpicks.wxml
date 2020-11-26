@@ -2,6 +2,7 @@
 <view>
   <view class="handpick">
 
+
     <view class="handpick_item" bindtap="goPediatricianDetail"  wx:for="{{newsList}}" data-id="{{item.eryijt_id}}" wx:key='index'>
       <image src="{{item.img_url}}"></image>
       <view>

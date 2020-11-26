@@ -122,6 +122,7 @@ Page({
   onClose() {
     this.setData({ show: false });
   },
+
   // 获取数据
   getData(){
     api._get('index/illness_area?class_id=' + this.data.status + '&status=' + this.data.count + '&page=' + this.data.current_page).then((res)=>{
@@ -176,4 +177,9 @@ Page({
         console.log(err)
       })  
   },
+  goAnnounce(){
+    wx.navigateTo({
+      url: '/pages/announce/announce',
+    })
+  }
 })

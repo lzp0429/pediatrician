@@ -63,6 +63,7 @@
   </view>
   <!-- 免费咨询 -->
   <view wx:if="{{order == 2}}">
+
     <view class="free" wx:for="{{myOrder}}" wx:key="index">
       <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myorder/toux.png" class="images"></image></view>
       <view class="symptom">身体乏力...</view>

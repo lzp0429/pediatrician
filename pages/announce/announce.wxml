@@ -1,0 +1,40 @@
+<!-- 儿医帮 - 发布 -->
+<view class="outer">
+  <view class="freeConsultation">
+    <view class="texts">
+      <textarea bindinput="aaa" placeholder="请详细描述您的性别、年龄、疾病症状及具体问题并上传相应资料，提升回复准确性" cols="1" rows="5"></textarea>
+      <view class="num">0/500</view>
+      <van-uploader class="loaderUp" file-list="{{ fileList }}" bind:after-read="afterRead" max-count="5" />
+      <view class="hint">最多可上传 <text style="color:#EF1B24">5</text> 张图片</view>
+    </view>
+  </view>
+  <view class="classified">
+    <view>问题分类</view>
+    <view>
+        <view>请选择</view>
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
+    </view>
+  </view>
+  <view class="price">
+    <view class="price_alone">￥8</view>
+    <view class="price_more">￥18</view>
+  </view>
+  <view class="coupon">
+    <view>
+    <image src="/images/image/coupon.png"></image>
+        <view>优惠劵</view>
+    </view>
+    <view>
+        <view>使用优惠劵</view>
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
+      </view>
+  </view>
+  <view class="subtotal">
+    小计：￥8.00
+  </view>
+  <view class="announce_btn">
+    <view>支付即代表您已同意并阅读 <text style="color:#4FA7FF;">儿医帮咨询规则》</text> </view>
+    <view>提交问题</view>
+  </view>
+
+</view>

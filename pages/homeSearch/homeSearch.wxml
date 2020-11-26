@@ -11,6 +11,7 @@
           placeholder='输入医院、科室、疾病、医生'
         />
       </van-cell-group>
+
       <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/suosou1.png"></image>
   </view>
   <!-- 疾病分类 -->

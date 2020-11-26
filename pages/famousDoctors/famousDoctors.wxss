@@ -90,7 +90,7 @@
 .message_class_site>view:nth-child(1){
   border:2rpx solid #37D0B9;
   border-radius:125rpx;  
-  width: 59rpx;
+  /* width: 59rpx; */
   height: 27rpx;
 
   font-size: 20rpx;
@@ -100,6 +100,7 @@
   text-align: center;
   line-height: 27rpx;
   margin-right:20rpx; 
+  padding:0 20rpx;
 
 }
 .message_btn{
