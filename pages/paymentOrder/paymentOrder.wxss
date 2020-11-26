@@ -1,113 +1,81 @@
-/* pages/announce/announce.wxss */
-.outer{
-  padding-bottom: 200rpx; 
-}
-.freeConsultation{
+/* pages/paymentOrder/paymentOrder.wxss */
+.consult{
   width: 750rpx;
-  background: #fff;
-  padding: 20rpx  0 20rpx 0;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left:40rpx;
   box-sizing: border-box;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+
 }
-.texts textarea{
+.consult_name{
+  width: 750rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  padding-left:40rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  background: #FFFFFF;
+}
+.consult_created{
+  width: 750rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  padding:0 40rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  background: #FFFFFF;
+  margin: 30rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+.consult_created>image{
+  width: 10rpx;
+  height: 16rpx;
+  margin-top:36rpx; 
+}
+.payment{
+}
+.payment_title{
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
   
-  height: 200rpx;
-  padding: 20rpx;
-  font-size: 25rpx;
-  line-height: 42rpx;
+  padding: 29rpx 40rpx 0 40rpx;
+  box-sizing: border-box;
+  background: #fff
 }
-.loaderUp{
-  margin-left: 30rpx;
-}
-.van-uploader{
-  margin-top: 30rpx;
-}
-.hint{
-  margin-left: 30rpx;
+.payment_title>view:nth-child(2){
+  padding:30rpx 0;
   font-size: 24rpx;
   font-family: PingFang SC;
   font-weight: 400;
-  color: #999999;
-}
-.num{
-  text-align: right;
-  font-size: 24rpx;
-  font-family: PingFang SC;
-  font-weight: 500;
-  color: #999999;
-  line-height: 39px;
-  border-bottom:2rpx #333 dashed;
-  margin: 0 30rpx 0 30rpx;
-
-}
-.classified{
-  width: 749rpx;
-  height: 70rpx;
-  background: #FFFFFF;
-  padding:0 30rpx 0 30rpx;
-  margin: 20rpx 0;
+  color: #333333;
   display: flex;
   justify-content: space-between;
-  line-height: 70rpx;
-
-  font-size: 24rpx;
-  font-family: PingFang SC;
-  font-weight: 500;
-  color: #333333;
-  box-sizing: border-box
+}
+.fengexian{
+  width: 750rpx;
+  height: 2rpx;
+  background: #DDDDDD;
 
 }
-.classified>view:nth-child(2){
-  font-size: 24rpx;
-  font-family: PingFang SC;
-  font-weight: 500;
-  color: #999999;
-  display: flex;
-  justify-content: flex-start;
-
-}
-.classified>view:nth-child(2)>image{
-  width: 10rpx;
-  height: 16rpx;
-  margin-top:26rpx;
-  margin-left:10rpx;  
-}
-
-.price{
-  padding:30rpx 30rpx 0 30rpx;
-  box-sizing: border-box;
-  height: 94rpx;
-  background: #fff;
-  margin-bottom:2rpx;
-  font-size: 20rpx;
-  font-family: PingFang SC;
-  font-weight: 500;
-  color: #333333;
-  display: flex;
-  justify-content: flex-start;
-}
-.price>view{
-  text-align: center;
-  line-height: 36rpx;
-  width: 94rpx;
-  height: 36rpx;
-  margin-left:24rpx; 
-  border-radius:125rpx; 
-}
-.price_more{
-  background: #f0eef4;
-  color: #333;
-}
-.price_alone{
-  background: #4FA7FF;
-  color: #fff;
-}
-
 
 .coupon{
   width: 749rpx;
   height:94rpx;
   background: #FFFFFF;
-  padding:0 30rpx 0 30rpx;
+  padding:0 40rpx 0 40rpx;
   display: flex;
   justify-content: space-between;
   line-height: 94rpx;
@@ -147,7 +115,7 @@
   margin-right:10rpx;  
 }
 .subtotal{
-  padding-right: 32rpx;
+  padding-right: 40rpx;
   height: 94rpx;
   line-height: 94rpx;
   text-align: right;
@@ -185,6 +153,7 @@
   background: #4FA7FF;
   line-height: 74rpx;
   text-align: center;
+
   font-size: 28rpx;
   font-family: PingFang SC;
   font-weight: bold;

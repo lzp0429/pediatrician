@@ -51,5 +51,14 @@
       </view>
       
     </van-dialog>
+    
+    <view class="bottom_btn">
+      <view bindtap="goAnnounce">
+        <image src="/images/image/fabu.png"></image>
+      </view>
+      <view>
+        <image src="/images/image/xiaoxi.png"></image>
+      </view>
+    </view>
  </view>
  

@@ -43,7 +43,8 @@
     "pages/negotiated/negotiated",
     "pages/forget/forget",
     "pages/order/order",
-    "pages/matterDetails/matterDetails"
+    "pages/matterDetails/matterDetails",
+    "pages/paymentOrder/paymentOrder"
   ],
   "tabBar":{
     "color": "#333333",

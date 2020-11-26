@@ -48,7 +48,19 @@ Page({
     // event.detail 为当前输入的值
     console.log(event.detail);
   },
-
+  // 打赏医生
+  goReward(){
+    console.log('aaaaaaaaaaaaaaaaaaaa')
+    wx.navigateTo({
+      url: '/pages/RewardPage/RewardPage',
+    })
+  },
+  // 订单支付
+  paymentOrder(){
+    wx.navigateTo({
+      url: '/pages/paymentOrder/paymentOrder',
+    })
+  },
   onLoad(options){
     console.log(options)
     this.setData({

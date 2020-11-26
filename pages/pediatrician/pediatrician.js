@@ -177,4 +177,9 @@ Page({
         console.log(err)
       })  
   },
+  goAnnounce(){
+    wx.navigateTo({
+      url: '/pages/announce/announce',
+    })
+  }
 })

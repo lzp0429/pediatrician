@@ -23,10 +23,7 @@
     <view>
     <image src="/images/image/coupon.png"></image>
         <view>优惠劵</view>
-        
     </view>
-    
-    
     <view>
         <view>使用优惠劵</view>
         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>

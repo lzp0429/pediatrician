@@ -20,10 +20,9 @@
             </view>
         </view>
         <view class="message_btn">
-
           <view bindtap="follow" wx:if="{{ifFollow == 0}}">关注</view>
           <view bindtap="follow" wx:if="{{ifFollow == 1}}">已关注</view>
-          <view class="dashang">打赏</view>
+          <view  bindtap="goReward" class="dashang">打赏</view>
         </view>
     </view>
   
@@ -112,7 +111,7 @@
 
   <view class="famousDoctors_bottom">
   <view class="famousDoctors_bottom_btn">
-        <view wx:if="{{radio == 1}}">图文咨询（￥70.00元/次）</view>
+        <view wx:if="{{radio == 1}}" bindtap="paymentOrder">图文咨询（￥70.00元/次）</view>
         <view wx:if="{{radio == 2}}">电话咨询（￥100.00元/次）</view>
   </view>
 

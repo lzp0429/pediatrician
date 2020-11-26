@@ -1,146 +1,146 @@
 {
-  "description": "项目配置文件",
-  "packOptions": {
-    "ignore": []
-  },
-  "setting": {
-    "urlCheck": false,
-    "es6": true,
-    "enhance": true,
-    "postcss": true,
-    "preloadBackgroundData": false,
-    "minified": true,
-    "newFeature": false,
-    "coverView": true,
-    "nodeModules": true,
-    "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "uglifyFileName": false,
-    "checkInvalidKey": true,
-    "checkSiteMap": true,
-    "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
-    "useApiHook": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "useIsolateContext": true,
-    "useCompilerModule": false,
-    "userConfirmedUseCompilerModuleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true
-  },
-  "compileType": "miniprogram",
-  "libVersion": "2.14.0",
-  "appid": "wx8d5fccdea72cb1f1",
-  "projectname": "pediatricians",
-  "cloudfunctionTemplateRoot": "",
-  "watchOptions": {
-    "ignore": []
-  },
-  "debugOptions": {
-    "hidedInDevtools": []
-  },
-  "scripts": {},
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "id": -1,
-          "name": "pages/classroom/classroom",
-          "pathName": "pages/classroom/classroom",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/my/my",
-          "pathName": "pages/my/my",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/myhealth/myhealth",
-          "pathName": "pages/myhealth/myhealth",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/addrecord/addrecord",
-          "pathName": "pages/addrecord/addrecord",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/login/login",
-          "pathName": "pages/login/login",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/error/error",
-          "pathName": "pages/error/error",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/userlogin/userlogin",
-          "pathName": "pages/userlogin/userlogin",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/userlogin/userlogin",
-          "pathName": "pages/userlogin/userlogin",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/order/order",
-          "pathName": "pages/order/order",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/pediatrician/pediatrician",
-          "pathName": "pages/pediatrician/pediatrician",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/pediatrician/pediatrician",
-          "pathName": "pages/pediatrician/pediatrician",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/matterDetails/matterDetails",
-          "pathName": "pages/matterDetails/matterDetails",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/pediatrician/pediatrician",
-          "pathName": "pages/pediatrician/pediatrician",
-          "scene": null
-        }
-      ]
-    }
-  }
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": false,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"useMultiFrameRuntime": false,
+		"useApiHook": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"packNpmManually": false,
+		"packNpmRelationList": [],
+		"minifyWXSS": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.14.0",
+	"appid": "wx8d5fccdea72cb1f1",
+	"projectname": "pediatricians",
+	"cloudfunctionTemplateRoot": "",
+	"watchOptions": {
+		"ignore": []
+	},
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"plugin": {
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"list": []
+		},
+		"miniprogram": {
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/classroom/classroom",
+					"pathName": "pages/classroom/classroom",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/myhealth/myhealth",
+					"pathName": "pages/myhealth/myhealth",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/addrecord/addrecord",
+					"pathName": "pages/addrecord/addrecord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/error/error",
+					"pathName": "pages/error/error",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/userlogin/userlogin",
+					"pathName": "pages/userlogin/userlogin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/userlogin/userlogin",
+					"pathName": "pages/userlogin/userlogin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/order/order",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/pediatrician/pediatrician",
+					"pathName": "pages/pediatrician/pediatrician",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/pediatrician/pediatrician",
+					"pathName": "pages/pediatrician/pediatrician",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/matterDetails/matterDetails",
+					"pathName": "pages/matterDetails/matterDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/pediatrician/pediatrician",
+					"pathName": "pages/pediatrician/pediatrician",
+					"scene": null
+				}
+			]
+		}
+	}
 }
