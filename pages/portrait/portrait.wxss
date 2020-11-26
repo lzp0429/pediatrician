@@ -26,8 +26,3 @@
   color: #FFFFFF;
   margin-top:150rpx;
 }
-.loader{
-  width: 88px;
-  margin: 0 auto;
-  padding-top: 30%;
-}

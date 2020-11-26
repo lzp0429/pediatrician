@@ -6,7 +6,8 @@ Page({
    */
   data: {
     fileList:[],
-    text:''
+    text:'',
+    images:[],
   },
   // 上传图片
   afterRead(event) {
@@ -34,6 +35,7 @@ Page({
   onLoad: function (options) {
 
   },
+  // 文本输入款
   changeText(event){
     this.setData({
       text:event.detail.value
@@ -44,9 +46,65 @@ Page({
     // wx.switchTab({
     //   url: '/pages/my/my',
     // })
-    const arrayBuffer = new Uint8Array(this.data.fileList)
-    const base64 = wx.arrayBufferToBase64(arrayBuffer)
-    console.log(base64)
+    var fileList = this.data.fileList
+    var images = []
+    if(fileList.length >= 0){
+
+      fileList.forEach((item)=>{
+        wx.getFileSystemManager().readFile({
+          filePath: item.url,// 图片地址 本地or网络
+          encoding: "base64",
+          success: res => {
+            // console.log(res.data)// res.data就是转换完的base64
+            var img = 'data:image/jpg;base64,'+res.data
+            images.push(img)
+            
+          },
+          fail: res => {
+          }
+        })
+      })
+      this.setData({
+        images:images
+      })
+    }
+    console.log(this.data.images,"111111111111111")
+    wx.request({
+      url: 'http://eryitong.zhengzhengh.top/user/feedback',
+      method:"POST",
+      header:{
+        'content-type':'multipart/form-data; boundary=XXX'
+      },
+      data:'\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="phone"' +
+      '\r\n' +
+      '\r\n' + this.data.phone +
+      '\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="user_id"' +
+      '\r\n' +
+      '\r\n' + wx.getStorageSync('user_id') +
+      '\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="content"' +
+      '\r\n' +
+      '\r\n' + this.data.text +
+      '\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="imgarr"' +
+      '\r\n' +
+      '\r\n' + this.data.images,
+      success:function(res){
+        console.log(res)
+        if(res.data.error == 0){
+          wx.showToast({
+            title: res.data.message,
+            duration: 2000,
+            icon:'none'
+          });
+          wx.switchTab({
+            url:'/pages/my/my'
+          })
+        }
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

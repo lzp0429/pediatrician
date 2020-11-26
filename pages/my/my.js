@@ -112,9 +112,11 @@ Page({
     this.getToken()
     var nick_name = wx.getStorageSync('nickname')
     var phone = wx.getStorageSync('phone')
+    var headimgurl = wx.getStorageSync('headimgurl')
     this.setData({
       nick_name:nick_name,
-      phone:phone
+      phone:phone,
+      headimgurl:headimgurl,
     })
   },
 

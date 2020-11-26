@@ -65,7 +65,6 @@ Page({
   onShow: function () {
     var nickname = wx.getStorageSync('nickname')
     var imgs = wx.getStorageSync('headimgurl')
-    console.log(nickname,imgs)
     this.setData({
       nickname:nickname,
       headimgurl:imgs
