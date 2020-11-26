@@ -1,0 +1,33 @@
+/* pages/portrait/portrait.wxss */
+.outer{
+  padding-top: 44rpx;
+}
+.portrait{
+  background:#fff;
+  width: 546rpx;
+  height: 546rpx;
+  margin:0 auto;
+
+}
+.portrait_image{
+  width: 100%;
+  height: 100%;
+}
+.portrait_btn{
+  width:678rpx ;
+  height: 74rpx;
+  margin:0 auto;
+  background:#4FA7FF;
+  line-height: 74rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-top:150rpx;
+}
+.loader{
+  width: 88px;
+  margin: 0 auto;
+  padding-top: 30%;
+}
