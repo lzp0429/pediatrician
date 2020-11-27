@@ -127,23 +127,42 @@ Page({
       this.getClass()
       this.Get_newsList()
     }else if(event.detail.title == '我的收藏'){
+      var token = wx.getStorageSync('token')
       this.setData({
         encyclopedia:0,
         tabIndex:event.detail.index
       })
-      api._get('user/collect_list?token=' + '').then((res)=>{
-        console.log(res)
-        if(res.data.error == 1){
-          wx.showToast({
-            title: res.data.message,
-            icon: 'none',
-            duration: 1500
-          })
-          // wx.navigateTo({
-          //   url: '/pages/login/login',
-          // })
+      wx.request({
+        url: 'http://eryitong.zhengzhengh.top/user/collect_list',
+        method:"POST",
+        header:{
+          'content-type':'multipart/form-data; boundary=XXX'
+        },
+        data:'\r\n--XXX' +
+        '\r\nContent-Disposition: form-data; name="token"' +
+        '\r\n' +
+        '\r\n' + token +
+        '\r\n--XXX',
+        success:function(res){
+          console.log(res)
+          if(res.data.error == 0){
+           
+          }
         }
       })
+      // api._get('user/collect_list?token=' + token).then((res)=>{
+      //   console.log(res)
+      //   if(res.data.error == 1){
+      //     wx.showToast({
+      //       title: res.data.message,
+      //       icon: 'none',
+      //       duration: 1500
+      //     })
+      //     // wx.navigateTo({
+      //     //   url: '/pages/login/login',
+      //     // })
+      //   }
+      // })
     }else{
       this.setData({
         encyclopedia:0,

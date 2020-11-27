@@ -67,4 +67,24 @@ page{
   color: #ffffff;
   background: #4fa7ff;
 }
+.contactNumber{
+  
+  background: #f1f1f1;
+  width: 686rpx;
+  height: 176rpx;
+  padding:0 30rpx;
+  
+
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+  line-height: 38px;
+  margin:30rpx auto;
+  
+  box-sizing: border-box;
+}
+.contactNumber>view:nth-child(2){
+  background:#fff
+}
 

@@ -10,7 +10,7 @@ Page({
   },
   // 我的关注
   getMylike(){
-    var token = ''
+    var token = wx.getStorageSync('token')
     api._get('user/follow_list?token=' + token).then((res)=>{
       console.log(res)
       if(res.data.error == 0){
@@ -24,6 +24,13 @@ Page({
           duration: 1500
         })
       }
+    })
+  },
+  // 跳转详情页
+  goFamousDoctors(event){
+    var id = event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: '/pages/famousDoctors/famousDoctors?id=' + id
     })
   },
   /**

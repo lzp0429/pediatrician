@@ -66,7 +66,7 @@ Page({
   },
   // 我的咨询
   getOrder(){
-    var token = ''
+    var token = wx.getStorageSync('token')
     api._get('user/order_list?token='+token).then((res)=>{
       console.log(res)
       if(res.data.error == 0){
@@ -84,7 +84,7 @@ Page({
   },
   // 我的提问之我的问题
   getMyissue(){
-    var token = ''
+    var token = wx.getStorageSync('token')
     api._get('user/my_illness_area?token=' + token).then((res)=>{
       console.log(res,"我的提问之我的问题")
       if(res.data.error == 0){
@@ -102,7 +102,7 @@ Page({
   },
   // 我的问题之我的围观
   myLooker(){
-    var token = ''
+    var token = wx.getStorageSync('token')
     api._get('user/my_illness_onlooker?token=' + token).then((res)=>{
       console.log(res,"我的问题之我的围观")
       if(res.data.error == 0){

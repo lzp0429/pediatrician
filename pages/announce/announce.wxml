@@ -37,7 +37,7 @@
     小计：￥8.00
   </view>
   <view class="announce_btn">
-    <view>支付即代表您已同意并阅读 <text style="color:#4FA7FF;">儿医帮咨询规则》</text> </view>
+    <view>支付即代表您已同意并阅读 <text style="color:#4FA7FF;">《儿医帮咨询规则》</text> </view>
     <view>提交问题</view>
   </view>
 

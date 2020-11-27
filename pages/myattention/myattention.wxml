@@ -6,7 +6,7 @@
     </view>
     <view class="text">亲，你还暂无关注的医生哦~</view>
   </view>
-  <view class="recommend" wx:for="{{myLike}}" wx:key="index">
+  <view class="recommend" bindtap="goFamousDoctors" data-id="{{item.doctor_id}}" wx:for="{{myLike}}" wx:key="index">
     
     <view class="recommend_item">
       <view>
@@ -44,7 +44,7 @@
         <view>
           <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/tupai.png"></image>
           <view class="recommend_item_price_text">
-            图文：<text>￥{{item.price_sales}}</text> / 次
+            图文：<text>￥{{item.price}}</text> / 次
           </view>
         </view>
 
@@ -52,7 +52,7 @@
 
           <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/dianhua.png"></image>
           <view class="recommend_item_price_text">
-            电话：<text>￥{{item.price2_sales}}</text> / 次
+            电话：<text>￥{{item.price2}}</text> / 次
           </view>
         </view>
       </view>

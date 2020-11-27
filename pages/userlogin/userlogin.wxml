@@ -43,7 +43,7 @@
     <view class="forget" bindtap="forget" wx:if="{{ifpassword == true}}">忘记密码</view>
   </view>
   <view class="login" bindtap="Login">登录</view>
-  <view style="text-align:center;padding-top:30rpx">
+  <!-- <view style="text-align:center;padding-top:30rpx">
     微信登录
-  </view>
+  </view> -->
 </view>
