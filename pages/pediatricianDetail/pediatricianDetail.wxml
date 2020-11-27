@@ -5,4 +5,16 @@
   <view class="center">
     <template is="wxParse" data="{{wxParseData:content.nodes}}"></template>
   </view>
-</view>
+  <view class="bottom_btn">
+      <view bindtap="goAnnounce">
+        <image src="/images/image/wujiaoxingS.png"></image>
+        <!-- <image src="/images/image/wujiaoxingT.png"></image> -->
+      </view>
+      <!-- <view>
+        <image src="/images/image/xiaoxi.png"></image>
+      </view>
+      <view>
+        
+      </view> -->
+    </view>
+</view> 
