@@ -4,34 +4,41 @@
     <view class="texts">
       <textarea bindinput="changtetx" maxlength='500' placeholder="请详细描述您的性别、年龄、疾病症状及具体问题并上传相应资料，提升回复准确性"></textarea>
       <view class="num">{{text.length}}/500</view>
-      <van-uploader class="loaderUp"
-      file-list="{{ fileList }}"
-      bind:after-read="afterRead"
-      bind:delete="deleteImg"
-      max-count="5"/>
+      <van-uploader class="loaderUp" file-list="{{ fileList }}" bind:after-read="afterRead" bind:delete="deleteImg"
+        max-count="5" />
       <view class="hint">最多可上传 <text style="color:#EF1B24">5</text> 张图片</view>
     </view>
   </view>
-  <view class="classified">
+  <view class="classified" bindtap="dlogn">
     <view>问题分类</view>
     <view>
-        <view>请选择</view>
-        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
+      <view>{{text_title}}</view>
+      <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
     </view>
   </view>
+  <van-popup show="{{ show }}" bind:close="onClose">
+    <van-radio-group value="{{ radio }}" bind:change="onChange">
+      <van-cell-group>
+        <van-cell wx:for="{{illness_class}}" wx:key="index" title="{{item.class_name}}" clickable
+          data-name="{{item.class_name}}" data-id="{{item.class_id}}" bind:click="onClick">
+          <van-radio slot="right-icon" name="{{item.class_name}}" />
+        </van-cell>
+      </van-cell-group>
+    </van-radio-group>
+  </van-popup>
   <view class="price">
     <view class="price_alone">￥8</view>
     <view class="price_more">￥18</view>
   </view>
   <view class="coupon">
     <view>
-    <image src="/images/image/coupon.png"></image>
-        <view>优惠劵</view>
+      <image src="/images/image/coupon.png"></image>
+      <view>优惠劵</view>
     </view>
-    <view>
-        <view>使用优惠劵</view>
-        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
-      </view>
+    <view bindtap="syscenter">
+      <view>使用优惠劵</view>
+      <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
+    </view>
   </view>
   <view class="subtotal">
     小计：￥8.00

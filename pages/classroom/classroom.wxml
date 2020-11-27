@@ -29,7 +29,13 @@
       
     </van-tab>
     <van-tab title="我的收藏">
-      <view>
+      
+      <view wx:if="{{favorite.length}}" style="margin-top:20rpx" class="common-bottom" bindtap="tapDetail" data-id="{{item.eryijt_id}}" wx:for="{{favorite}}" wx:key='index'>
+          <view style="color:#333333;font-size:28rpx;padding:20rpx 30rpx">
+            {{item.title}}
+          </view>
+      </view>
+      <view wx:if="{{favorite.length <= 0}}" >
         <view class="img">
           <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
         </view>

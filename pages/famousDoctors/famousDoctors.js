@@ -7,6 +7,7 @@ Page({
     message:{},
     id:'',
     ifFollow:0,
+    phone:'',
   },
   // 单选框
   onChange(event) {

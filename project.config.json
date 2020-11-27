@@ -139,6 +139,18 @@
         {
           "name": "pages/pediatrician/pediatrician",
           "pathName": "pages/pediatrician/pediatrician",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pediatrician/pediatrician",
+          "pathName": "pages/pediatrician/pediatrician",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/announce/announce",
+          "pathName": "pages/announce/announce",
           "scene": null
         }
       ]

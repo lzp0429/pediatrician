@@ -39,6 +39,7 @@ Page({
     news_list:[],
     imgUrls:[],
     tabIndex:0,
+    favorite :[],
   },
   onLoad: function (options) {
     this.getImage()
@@ -115,10 +116,36 @@ Page({
       url: '/pages/pediatricianDetail/pediatricianDetail?id=' + id
     })
   },
+  // 收藏
+  getFavorite(){
+    var that = this
+    var token = wx.getStorageSync('token')
+    
+    wx.request({
+      url: 'http://eryitong.zhengzhengh.top/user/collect_list',
+      method:"POST",
+      header:{
+        'content-type':'multipart/form-data; boundary=XXX'
+      },
+      data:'\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="token"' +
+      '\r\n' +
+      '\r\n' + token +
+      '\r\n--XXX',
+      success:function(res){
+        console.log(res)
+        if(res.data.error == 0){
+          that.setData({
+            favorite :res.data.message
+          })
+        }
+      }
+    })
+  },
   // tab栏
   onChange(event) {
     console.log(event)
-
+   
     if(event.detail.title == "健康百科"){
       this.setData({
         encyclopedia:1,
@@ -127,42 +154,11 @@ Page({
       this.getClass()
       this.Get_newsList()
     }else if(event.detail.title == '我的收藏'){
-      var token = wx.getStorageSync('token')
+      this.getFavorite()
       this.setData({
         encyclopedia:0,
         tabIndex:event.detail.index
       })
-      wx.request({
-        url: 'http://eryitong.zhengzhengh.top/user/collect_list',
-        method:"POST",
-        header:{
-          'content-type':'multipart/form-data; boundary=XXX'
-        },
-        data:'\r\n--XXX' +
-        '\r\nContent-Disposition: form-data; name="token"' +
-        '\r\n' +
-        '\r\n' + token +
-        '\r\n--XXX',
-        success:function(res){
-          console.log(res)
-          if(res.data.error == 0){
-           
-          }
-        }
-      })
-      // api._get('user/collect_list?token=' + token).then((res)=>{
-      //   console.log(res)
-      //   if(res.data.error == 1){
-      //     wx.showToast({
-      //       title: res.data.message,
-      //       icon: 'none',
-      //       duration: 1500
-      //     })
-      //     // wx.navigateTo({
-      //     //   url: '/pages/login/login',
-      //     // })
-      //   }
-      // })
     }else{
       this.setData({
         encyclopedia:0,
@@ -242,7 +238,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.getFavorite()
   },
 
   /**

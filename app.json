@@ -46,7 +46,8 @@
     "pages/matterDetails/matterDetails",
     "pages/changepassword/changepassword",
     "pages/paymentOrder/paymentOrder",
-    "pages/portrait/portrait"
+    "pages/portrait/portrait",
+    "pages/syscenter/syscenter"
   ],
   "tabBar":{
     "color": "#333333",

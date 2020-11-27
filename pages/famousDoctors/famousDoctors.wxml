@@ -74,10 +74,10 @@
     <view style='margin-top:34rpx;' wx:if='{{radio == 2}}'>
       <van-cell-group >
       <van-field
-        value="{{ value }}"
+        value="{{ phone }}"
         placeholder="请填写您要接受回访的手机号码"
         border="{{ false }}"
-        bind:change="onChange"
+        bind:change="onChange1"
       />
     </van-cell-group>
     </view>

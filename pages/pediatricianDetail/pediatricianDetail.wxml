@@ -7,8 +7,8 @@
   </view>
   <view class="bottom_btn">
       <view bindtap="goAnnounce">
-        <image src="/images/image/wujiaoxingS.png"></image>
-        <!-- <image src="/images/image/wujiaoxingT.png"></image> -->
+        <image wx:if="{{is_collect == 1}}" src="/images/image/wujiaoxingS.png"></image>
+        <image wx:else src="/images/image/wujiaoxingT.png"></image>
       </view>
       <!-- <view>
         <image src="/images/image/xiaoxi.png"></image>

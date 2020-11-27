@@ -192,6 +192,16 @@
   font-family: PingFang SC;
   font-weight: bold;
   color: #FFFFFF;
-
-
+}
+.dlogin{
+  width: 95%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 10;
+  max-height: 600rpx;
+  overflow: hidden;
+  top: 100rpx;
+}
+.van-popup {
+  width: 90%;
 }
