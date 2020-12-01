@@ -1,0 +1,22 @@
+<!--pages/coinCertificate/coinCertificate.wxml-->
+<view class="coinCertificate">
+  <view class="coinCertificate_title">
+    请在下方输入正确的兑换码进行兑换
+  </view>
+  
+  <view class="coinCertificate_ipt">
+        <van-cell-group>
+          <van-field
+            value="{{ value }}"
+            placeholder="请填写手机号码"
+            border="{{ false }}"
+            bind:change="onChange"
+            custom-style='height:72rpx;padding:8rpx 0 0 20rpx;font-size: 24rpx;background: #f6f9fe;'
+          />
+        </van-cell-group>
+  </view>
+  <view class="coinCertificate_btn">
+    兑换优惠券
+  </view>
+</view>
+ 

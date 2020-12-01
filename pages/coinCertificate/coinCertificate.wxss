@@ -1,0 +1,38 @@
+/* pages/coinCertificate/coinCertificate.wxss */
+.coinCertificate_title{
+  height: 124rpx;
+  width: 750rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  line-height: 124rpx;
+
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+
+}
+.coinCertificate_ipt{
+  width: 686rpx;
+  height: 160rpx;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  margin:0 auto;
+  padding: 43rpx;
+  box-sizing: border-box;
+}
+.coinCertificate_btn{
+  width: 678rpx;
+  height: 74rpx;
+  background: #4FA7FF;
+  border-radius: 8rpx;
+  margin: 66rpx auto;
+  line-height: 74rpx;
+  text-align: center;
+
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+
+}
