@@ -34,6 +34,7 @@ Page({
     ss_is_normal:0,
     yc_is_normal:0,
     nexus:0,
+    archive_id:'',
   },
   // 确定提交
   sure(){
@@ -137,7 +138,7 @@ Page({
         '\r\n--XXX' +
         '\r\nContent-Disposition: form-data; name="archive_id"' +
         '\r\n' +
-        '\r\n' + '' +
+        '\r\n' + this.data.archive_id +
         '\r\n--XXX' +
         '\r\nContent-Disposition: form-data; name="sex"' +
         '\r\n' +
@@ -303,15 +304,87 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var date = new Date();
-    var Y = date.getFullYear() + '/';
-    var M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '/';
-    var D = date.getDate();
-    var time = Y+M+D;
+    console.log(options)
     this.setData({
-      date:time
+      archive_id:options.id
     })
-
+    api._post('/user/archive_info?archive_id=' + options.id).then((res)=>{
+      console.log(res)
+      if(res.data.error == 0){
+        this.setData({
+          user:res.data.message.name,
+          date:res.data.message.age,
+          stature:res.data.message.height,
+          weight:res.data.message.weight,
+        })
+        if(res.data.message.nexus == '0'){
+          this.setData({
+            concern:'其他'
+          })
+        }else if(res.data.message.nexus == '1'){
+          this.setData({
+            concern:'自己'
+          })
+        }else if(res.data.message.nexus == '2'){
+          this.setData({
+            concern:'父母'
+          })
+        }else if(res.data.message.nexus == '3'){
+          this.setData({
+            concern:'子女'
+          })
+        }else if(res.data.message.nexus == '4'){
+          this.setData({
+            concern:'爱人'
+          })
+        }
+        if(res.data.message.sex == '1'){
+          this.setData({
+            sex:'男'
+          })
+        }else if(res.data.message.sex == '2'){
+          this.setData({
+            sex:'女'
+          })
+        }
+        if(res.data.message.xy_is_normal == '0'){
+          this.setData({
+            blood:'正常'
+          })
+        }else if(res.data.message.xy_is_normal == '1'){
+          this.setData({
+            blood:'不正常'
+          })
+        }
+        if(res.data.message.gm_is_normal == '0'){
+          this.setData({
+            allergy:'否'
+          })
+        }else if(res.data.message.gm_is_normal == '1'){
+          this.setData({
+            allergy:'是'
+          })
+        }
+        if(res.data.message.ss_is_normal == '0'){
+          this.setData({
+            surgery:'否'
+          })
+        }else if(res.data.message.ss_is_normal == '1'){
+          this.setData({
+            surgery:'是'
+          })
+        }
+        if(res.data.message.yc_is_normal == '0'){
+          this.setData({
+            family:'否'
+          })
+        }else if(res.data.message.yc_is_normal == '1'){
+          this.setData({
+            family:'是'
+          })
+        }
+      }
+    })
   },
 
   /**

@@ -6,9 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    myArchive:[
-
-    ],
+    myArchive:[],
   },
   // 自定义导航栏返回事件
   onClickLeft() {
@@ -16,10 +14,18 @@ Page({
       url:'/pages/my/my'
     })
   },
+  // 跳转个人详情
+  health(event){
+    console.log(event)
+    var id = event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: '/pages/healthdetail/healthdetail?id=' + id,
+    })
+  },
   // 个人档案
   getArchive(){
-    const token = ''
-    api._get('user/archive_list?token=' + token).then((res)=>{
+    const user_id = wx.getStorageSync('user_id')
+    api._get('user/archive_list?user_id=' + user_id).then((res)=>{
       console.log(res)
       if(res.data.error == 0){
         this.setData({
@@ -34,6 +40,7 @@ Page({
       }
     })
   },
+  
   /**
    * 生命周期函数--监听页面加载
    */
@@ -56,7 +63,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.getArchive()
   },
 
   /**

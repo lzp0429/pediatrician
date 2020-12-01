@@ -47,7 +47,9 @@
     "pages/changepassword/changepassword",
     "pages/paymentOrder/paymentOrder",
     "pages/portrait/portrait",
-    "pages/syscenter/syscenter"
+    "pages/syscenter/syscenter",
+    "pages/determinePayment/determinePayment",
+    "pages/healthdetail/healthdetail"
   ],
   "tabBar":{
     "color": "#333333",

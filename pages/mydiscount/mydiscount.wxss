@@ -21,3 +21,19 @@ page{
   color: #666666;
   line-height: 60rpx;
 }
+.title{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.center{
+  display: flex;
+  justify-content:space-between;
+}
+.Tab{
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.top_tab{
+  margin-top: 85rpx;
+}

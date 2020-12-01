@@ -33,7 +33,15 @@
       </view>
       <view class="texts">当前暂无问题列表~</view>
     </view>
-    <van-dialog
+    <van-popup show="{{ show }}" bind:close="onClose">
+      <view class="Close" bindtap="onClose">x</view>
+      <view class="dialog">
+        <view wx:for="{{illness_class}}" wx:key="index" class="dialogview">
+          <view class="{{item.class_id == status ? 'colors':''}}" bindtap="onClick" data-id="{{item.class_id}}" >{{item.class_name}}</view>
+        </view>
+      </view>
+    </van-popup>
+    <!-- <van-dialog
       use-slot
       show="{{ show }}"
       close-on-click-overlay='true'
@@ -50,7 +58,7 @@
         </view>
       </view>
       
-    </van-dialog>
+    </van-dialog> -->
     
     <view class="bottom_btn">
       <view bindtap="goAnnounce">

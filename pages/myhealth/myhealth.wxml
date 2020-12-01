@@ -7,7 +7,7 @@
     bind:click-left="onClickLeft"
     custom-style="dangan"
   />
-  <view class="health" wx:for="{{myArchive}}" wx:key="index">
+  <view class="health" wx:for="{{myArchive}}" wx:key="index" data-id="{{item.archive_id}}" bindtap="health">
     <view>
       <image class="imges" src="https://fenxiang.fancyopen.com/img/eryitong/images/img/person.png"></image>
     </view>

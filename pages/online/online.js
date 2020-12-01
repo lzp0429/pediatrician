@@ -23,6 +23,7 @@ Page({
     this.setData({
       area_id:detail,
     })
+    this.getDoctor()
   },
   // 改变科室所触发
   address({ detail }){

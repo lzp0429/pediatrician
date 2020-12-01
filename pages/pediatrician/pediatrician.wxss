@@ -88,11 +88,10 @@
 }
 .Close{
   text-align: right;
-
   position: fixed;
   top: 30rpx;
   right: 60rpx;
-  z-index: 20;
+  z-index: 1000;
   width: 100%;
 }
 .colors{
@@ -156,5 +155,7 @@
 .bottom_btn>view>image{
   width: 40rpx;
   height: 40rpx;
-
+}
+.van-popup {
+  width: 90%;
 }

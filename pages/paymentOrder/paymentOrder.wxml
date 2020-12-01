@@ -42,6 +42,6 @@
 
   <view class="announce_btn">
     <view>支付即代表您已同意并阅读<text style="color:#4FA7FF;">《图文急诊》</text> </view>
-    <view>确认支付</view>
+    <view bindtap="goDeterminePayment">确认支付</view>
   </view>
 </view> 

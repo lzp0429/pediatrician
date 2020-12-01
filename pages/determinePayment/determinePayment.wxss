@@ -1,0 +1,116 @@
+/* pages/determinePayment/determinePayment.wxss */
+.outer{
+  padding-bottom: 100rpx;
+}
+.case_nav{
+  padding: 40rpx 32rpx 40rpx 32rpx;
+
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  width: 750rpx;
+  height: 157rpx;
+  box-sizing: border-box;
+  background:#fff;
+  margin-bottom: 15rpx;
+}
+.case_answer{
+  
+}
+.case_answer_top{
+  padding: 0 32rpx 0 32rpx;
+
+  box-sizing: border-box;
+  background:#fff
+}
+.case_answer_title{
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  line-height: 38px;
+
+}
+.case_answer_bottom{
+  width: 750rpx;
+  height: 214rpx;
+  padding: 19rpx 30rpx;
+  box-sizing: border-box;
+  background:#fff;
+  margin: 15rpx auto;
+
+}
+
+.case_answer_bottom_ipt{
+  
+  width: 686rpx;
+  height: 176rpx;
+  
+  border-radius: 8rpx;
+  margin: 0 auto;
+
+  background: #F0EEF4;
+
+
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+
+  padding: 20rpx;
+  box-sizing: border-box;
+  
+
+}
+textarea{
+  width: 100%;
+  height: 100%;
+}
+.case_uploading{
+  padding: 42rpx 30rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.case_uploading_title{
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 38px;
+}
+.loaderUp{
+  margin-left: 8rpx;
+}
+.hint{
+
+font-size: 26rpx;
+font-family: PingFang SC;
+font-weight: 500;
+color: #999999;
+
+}
+.announce_btn{
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  left: 0;
+  padding:36rpx;
+  box-sizing: border-box;
+
+}
+
+.announce_btn>view{
+  width: 678rpx;
+  height: 74rpx;
+  background: #4FA7FF;
+  line-height: 74rpx;
+  text-align: center;
+
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+
+
+}
