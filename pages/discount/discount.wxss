@@ -8,7 +8,6 @@ page{
   margin: 0 auto;
 }
 .box>view{
-  border: 1px dashed #888888;
   margin-top: 30rpx;
   background: #ffffff;
   padding: 20rpx;

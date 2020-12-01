@@ -1,11 +1,13 @@
 /* pages/myfavorite/myfavorite.wxss */
 .common-bottom{
-  width: 703rpx;
-  height: 150rpx;
+  width: 90%;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: nowrap;
-  margin-top: 30rpx;
+  background: #ffffff;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  line-height: 30rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
 }
 .common-left{
   width: 208rpx;

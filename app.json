@@ -49,7 +49,8 @@
     "pages/portrait/portrait",
     "pages/syscenter/syscenter",
     "pages/determinePayment/determinePayment",
-    "pages/healthdetail/healthdetail"
+    "pages/healthdetail/healthdetail",
+    "pages/searchDetail/searchDetail"
   ],
   "tabBar":{
     "color": "#333333",

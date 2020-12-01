@@ -1,7 +1,6 @@
 /* pages/homeSearch/homeSearch.wxss */
 .Search_ipt{
   background: #4FA7FF;
-  padding: 18rpx 32rpx;
   position: relative
 }
 .Search_ipt>view{
