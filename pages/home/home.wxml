@@ -27,7 +27,7 @@
         </view>
         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/zisun2.png"></image>
       </view>
-      <view>
+      <view bindtap="goVideo">
         <view class="consult_class_text" >
             <view>在线视频</view>
             <view>Online video</view>

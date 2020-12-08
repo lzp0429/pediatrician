@@ -54,6 +54,11 @@ Page({
       };
     })
   },
+  goVideo(){
+    wx.navigateTo({
+      url: '/pages/video/video',
+    })
+  },
   // 搜索
   goHomeSearch(){
     wx.navigateTo({

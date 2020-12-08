@@ -1,0 +1,49 @@
+<!--pages/video/video.wxml-->
+<view class="warp">
+  <view class="heard">
+    <van-tabs active="{{ active }}" color="#4FA7FF" bind:change="onChange" tab-active-class='Text'>
+      <van-tab title="儿童成长咨询"></van-tab>
+      <van-tab title="孕期咨询"> </van-tab>
+    </van-tabs>
+  </view>
+  <view class="video">
+    <view class="video_item">
+      <view class="video_item_left">
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/zisun3.png"></image>
+        <view>
+          <view>全科医生</view>
+          <view>客服将为您提供最优质的服务</view>
+        </view>
+    </view>
+    <view class="video_item_rig"> 
+      <!-- <view>
+        <image src="/images/image/video.png"></image>
+        <view>在线视频</view>
+      </view> -->
+      <view>
+        <image src="/images/image/liaotian.png"></image>
+        <view>在线咨询</view>
+      </view>
+    </view>
+    </view>
+    <view class="video_item">
+      <view class="video_item_left">
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/zisun3.png"></image>
+        <view>
+          <view>全科医生</view>
+          <view>客服将为您提供最优质的服务</view>
+        </view>
+    </view>
+    <view class="video_item_rig"> 
+      <view>
+        <image src="/images/image/video.png"></image>
+        <view>在线视频</view>
+      </view>
+      <!-- <view>
+        <image src="/images/image/liaotian.png"></image>
+        <view>在线咨询</view>
+      </view> -->
+    </view>
+    </view>
+  </view>
+</view>
