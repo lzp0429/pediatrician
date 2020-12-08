@@ -1,0 +1,24 @@
+<!--pages/freeDetail/freeDetail.wxml-->
+<view class="box">
+  <view class="top-title">
+    <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myorder/toux.png" class="images"></image></view>
+    <view class="top-text">{{freeDetail.content}}</view>
+  </view>
+  <view class="center-img" wx:if="{{imgs.length > 0}}">
+    <view wx:for="{{imgs}}" wx:key="index"><image src="{{item.url}}" class="images"></image></view>
+  </view>
+  <view style="text-align:right" class="time">2020-01-01  10:18</view>
+  <view class="center">
+    <view class="zuijia">
+      <view><image class="img" src="https://fenxiang.fancyopen.com/img/eryitong/images/myorder/toux.png"></image></view>
+      <view class="doctor">
+        <view class="doctor-title">全科医生  |  主治医师</view>
+        <view class="doctor-dizhi">张医生·天津市儿童医院</view>
+        <view class="doctor-center">
+          您好，请问几岁了？有感冒发烧吗？有腹痛腹泻等不舒服吗？
+        </view>
+        <view class="times">2020-01-01  10:18</view>
+      </view>
+    </view>
+  </view>
+</view>

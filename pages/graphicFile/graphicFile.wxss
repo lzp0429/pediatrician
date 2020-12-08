@@ -1,0 +1,66 @@
+/* pages/myhealth/myhealth.wxss */
+page{
+  background: #f8f8f8;
+}
+.health{
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 20rpx 30rpx;
+  background: #ffffff;
+  border-bottom: 1px solid green;
+}
+.imges{
+  width: 35rpx;
+  height: 36rpx;
+  margin-top: 15rpx;
+  margin-right: 30rpx;
+}
+.person{
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+}
+.time{
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+.record{
+  background: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20rpx 0;
+}
+.record>view{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 74rpx;
+  font-size: 28rpx;
+  color: #ffffff;
+  background: #4fa7ff;
+}
+.img{
+  width: 272rpx;
+  height: 226rpx;
+  margin: 0 auto;
+  margin-top: 30%;
+}
+.img>image{
+  width: 100%;
+  height: 100%;
+}
+.text{
+  text-align: center;
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  line-height: 60rpx;
+}

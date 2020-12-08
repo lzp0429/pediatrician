@@ -64,7 +64,7 @@
       <view bindtap="goAnnounce">
         <image src="/images/image/fabu.png"></image>
       </view>
-      <view>
+      <view bindtap="myquiz">
         <image src="/images/image/xiaoxi.png"></image>
       </view>
     </view>

@@ -1,7 +1,28 @@
 <!--pages/system/system.wxml-->
 <view>
-  <view class="img">
-    <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
+  <view wx:if="{{newsList.length <= 0}}">
+    <view class="img">
+      <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
+    </view>
+    <view class="text">当前暂无消息~</view>
   </view>
-  <view class="text">当前暂无消息~</view>
+  <view class="box">
+    <view wx:for="{{newsList}}" wx:key="index">
+      <van-swipe-cell left-width="{{ 0 }}" right-width="{{ 85 }}" disabled="{{item.is_read == '0' ? fales:true}}">
+        <van-cell-group>
+          <view class="flex-title">
+            <view>
+              <view class="title">{{item.content}}</view>
+              <view class="time">{{item.create_time}}</view>
+            </view>
+            <view class="dian" wx:if="{{item.is_read == '0'}}">
+              ·
+            </view>
+          </view>
+        </van-cell-group>
+        <view wx:if="{{item.is_read == '0'}}" slot="right" bindtap="onClose" data-id="{{item.id}}" class="van-swipe-cell__right">标为已读</view>
+      </van-swipe-cell>
+      
+    </view>
+  </view>
 </view>

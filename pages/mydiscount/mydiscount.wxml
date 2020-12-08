@@ -1,5 +1,5 @@
 <!--pages/mydiscount/mydiscount.wxml-->
-<view>
+<view style="padding-bottom:120rpx">
   <view class="Tab">
     <van-tabs swipeable bind:change="onChange">
       <van-tab title="全部"></van-tab>
@@ -13,20 +13,25 @@
       <van-tab title="付费视频"></van-tab>
     </van-tabs>
   </view>
-  <view class="top_tab">
-    <view wx:for="{{couponList}}" wx:key="index" wx:if="{{couponList}}">
-      <view class="title">
-        <view><image src="{{item.coupon_img}}"></image></view>
-        <view>
-          <view>{{item.name}}</view>
-          <view>金额</view>
+  
+  <view class="discount_list">
+    <view class="discount_item" wx:for="{{couponList}}" wx:key="index" wx:if="{{couponList}}">
+        <view class="discount_item_top">
+          <view class="discount_item_image">
+            <image src="{{item.coupon_img}}"></image>
+            <view class="discount_item_image_title">
+                <view>{{item.name}}</view>
+                <view>金额</view>
+            </view>
+          </view>
+          <view class="discount_item_price">
+            ￥{{item.number}}
+          </view>
         </view>
-        <view>￥{{item.number}}</view>
-      </view>
-      <view class="center">
-        <view>{{item.name}}</view>
-        <view>{{item.start_time}}至{{item.end_time}}</view>
-      </view>
+        <view class="discount_item_bottom">
+          <view>{{item.name}}</view>
+          <view style="font-size: 22rpx;">{{item.start_time}}至{{item.end_time}}</view>
+        </view>
     </view>
     <view wx:if="{{couponList.length <= '0'}}">
       <view class="img">
@@ -34,5 +39,12 @@
       </view>
       <view class="text">您目前还没有优惠券哦~</view>
     </view>
+  </view>
+
+  <view class="famousDoctors_bottom">
+  <view class="famousDoctors_bottom_btn" bindtap="goCoinCertificate">
+        <view>兑换优惠券</view>
+  </view>
+
   </view>
 </view>

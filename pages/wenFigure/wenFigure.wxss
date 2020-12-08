@@ -110,7 +110,7 @@
 }
 .comment_list{
   background: #f3f2f7;
-  padding: 54rpx 83rpx 37rpx 43rpx;
+  padding: 0 83rpx 37rpx 43rpx;
   margin-top:36rpx; 
   border-radius:24rpx; 
 
@@ -118,7 +118,7 @@
 .comment_item{
   /* margin-top:37rpx; */
   border-bottom:2rpx solid  #DDDDDD;
-  padding-bottom:36rpx; 
+  padding:36rpx 0; 
 }
 .comment_item_content{
   font-size: 24rpx;

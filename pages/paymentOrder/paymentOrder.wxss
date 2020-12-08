@@ -17,7 +17,7 @@
   line-height: 90rpx;
   padding-left:40rpx;
   box-sizing: border-box;
-  font-size: 32rpx;
+  font-size: 30rpx;
   font-family: PingFang SC;
   font-weight: 400;
   color: #333333;
@@ -29,7 +29,7 @@
   line-height: 90rpx;
   padding:0 40rpx;
   box-sizing: border-box;
-  font-size: 32rpx;
+  font-size: 30rpx;
   font-family: PingFang SC;
   font-weight: 400;
   color: #333333;
@@ -42,8 +42,6 @@
   width: 10rpx;
   height: 16rpx;
   margin-top:36rpx; 
-}
-.payment{
 }
 .payment_title{
   font-size: 32rpx;
@@ -158,6 +156,7 @@
   font-family: PingFang SC;
   font-weight: bold;
   color: #FFFFFF;
-
-
+}
+.van-popup {
+  width: 90%;
 }

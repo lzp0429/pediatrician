@@ -150,6 +150,30 @@
         {
           "name": "pages/announce/announce",
           "pathName": "pages/announce/announce",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/freeDetail/freeDetail",
+          "pathName": "pages/freeDetail/freeDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/chat/chat",
+          "pathName": "pages/chat/chat",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/determinePayment/determinePayment",
+          "pathName": "pages/determinePayment/determinePayment",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/determinePayment/determinePayment",
+          "pathName": "pages/determinePayment/determinePayment",
           "scene": null
         }
       ]

@@ -40,14 +40,14 @@
   margin-top: 5rpx;
 }
 .circle{
-  width: 30rpx;
-  height: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
   border-radius: 60%;
   background: red !important;
   color: #FFFFFF;
-  font-size: 28rpx;
+  font-size: 25rpx;
   text-align: center;
-  line-height: 30rpx;
+  line-height: 40rpx;
   margin-top: 25rpx;
 }
 .bottombox{

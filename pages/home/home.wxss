@@ -157,8 +157,6 @@ swiper image{
 }
 .recommend{
   padding: 20rpx 0;
-
- 
 }
 .recommend_item{
   /* height: 332rpx; */

@@ -171,3 +171,10 @@ page{
   line-height: 40rpx;
   padding-left: 30rpx;
 }
+.van-swipe-cell__right{
+  text-align: center;
+  background: red;
+  color: #ffffff;
+  font-size: 25rpx;
+  padding: 20rpx 10rpx;
+}

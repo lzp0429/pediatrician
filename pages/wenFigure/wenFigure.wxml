@@ -47,19 +47,19 @@
        <!-- <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/xiahuaxian.png"></image> -->
     </view>
     <view class="comment_list">
-      <view class="comment_item">
+      <view class="comment_item" wx:for="{{commentList}}" wx:key='index'>
         <view class="comment_item_content">
-  谢谢张医生的帮助，非常满意，非常专业，非常认真！
+            {{item.content}}
         </view>
         <view class="comment_item_time">
-          <view>李****红</view>
-          <view>10月21日</view>
+          <view>{{item.nickname}}</view>
+          <view>{{item.add_time}}</view>
         </view>
       </view>
     </view>
     
   </view>
-  <view class="wenFigure_btn">
+  <view class="wenFigure_btn" bindtap="payment">
     马上问诊
   </view>
 </view>

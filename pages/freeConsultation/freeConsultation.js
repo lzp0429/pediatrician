@@ -128,6 +128,11 @@ Page({
             wx.switchTab({
               url:'/pages/home/home'
             })
+            wx.showToast({
+              title: '提交成功',
+              duration: 2000,
+              icon:'none'
+            });
           }else{
             wx.showToast({
               title: res.data.message,

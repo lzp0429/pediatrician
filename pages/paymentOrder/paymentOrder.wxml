@@ -1,8 +1,18 @@
 <!-- 订单支付 -->
 <view class="outer">
   <view class="consult">咨询人档案</view>
-  <view class="consult_name">王小明</view>
-  <view class="consult_created">
+  <view class="consult_name" bindtap="dlogn">{{text_title}}</view>
+  <van-popup show="{{ show }}" bind:close="onClose">
+    <van-radio-group value="{{ radio }}" bind:close="onClose" bind:change="onChange">
+      <van-cell-group>
+        <van-cell wx:for="{{myArchive}}" wx:key="index" title="{{item.name}}" clickable
+          data-name="{{item.name}}" data-id="{{item.archive_id}}" bind:click="onClick">
+          <van-radio slot="right-icon" name="{{item.name}}" />
+        </van-cell>
+      </van-cell-group>
+    </van-radio-group>
+  </van-popup>
+  <view class="consult_created" bindtap="graphicFile">
     <view>创建档案</view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
   </view>
   <view class="payment">
@@ -17,19 +27,19 @@
     </view>
   </view>
   <view class="fengexian"></view>
-  <view class="coupon">
+  <view class="coupon" bindtap="useDiscount">
     <view>
     <image src="/images/image/coupon.png"></image>
         <view>优惠劵</view>
     </view>
     <view>
-        <view>使用优惠劵</view>
+        <view>{{money}}</view>
         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
       </view>
   </view>
   <view class="fengexian"></view>
   <view class="subtotal">
-    小计：￥8.00
+    小计：￥{{surplus}}.00
   </view>
   <view class="consult">支付方式</view>
    <view class="coupon">

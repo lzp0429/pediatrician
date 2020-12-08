@@ -32,6 +32,12 @@ Page({
       url: '/pages/matterDetails/matterDetails?id=' + id,
     })
   },
+  // 我的提问跳转
+  myquiz(){
+    wx.navigateTo({
+      url: '/pages/myquiz/myquiz',
+    })
+  },
   // 弹框判断颜色
   onClick(evert){
     console.log(evert)

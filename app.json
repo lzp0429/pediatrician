@@ -50,7 +50,15 @@
     "pages/syscenter/syscenter",
     "pages/determinePayment/determinePayment",
     "pages/healthdetail/healthdetail",
-    "pages/searchDetail/searchDetail"
+    "pages/searchDetail/searchDetail",
+    "pages/coinCertificate/coinCertificate",
+    "pages/myquiz/myquiz",
+    "pages/orderNews/orderNews",
+    "pages/eyNews/eyNews",
+    "pages/freeDetail/freeDetail",
+    "pages/graphicFile/graphicFile",
+    "pages/useDiscount/useDiscount",
+    "pages/chat/chat"
   ],
   "tabBar":{
     "color": "#333333",
@@ -91,7 +99,7 @@
   },
   "usingComponents": {
     "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
-  "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
     "van-calendar": "@vant/weapp/calendar/index",
     "van-uploader": "@vant/weapp/uploader/index",
     "van-radio": "/miniprogram_npm/vant-weapp/radio/index",

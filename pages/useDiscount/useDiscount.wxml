@@ -1,0 +1,36 @@
+<!--pages/mydiscount/mydiscount.wxml-->
+<view style="padding-bottom:120rpx">
+  <view class="discount_list">
+    <view class="discount_item" bindtap="money" data-money="{{item.number}}" wx:for="{{couponList}}" wx:key="index" wx:if="{{couponList}}">
+        <view class="discount_item_top">
+          <view class="discount_item_image">
+            <image src="{{item.coupon_img}}"></image>
+            <view class="discount_item_image_title">
+                <view>{{item.name}}</view>
+                <view>金额</view>
+            </view>
+          </view>
+          <view class="discount_item_price">
+            ￥{{item.number}}
+          </view>
+        </view>
+        <view class="discount_item_bottom">
+          <view>{{item.name}}</view>
+          <view style="font-size: 22rpx;">{{item.start_time}}至{{item.end_time}}</view>
+        </view>
+    </view>
+    <view wx:if="{{couponList.length <= '0'}}">
+      <view class="img">
+        <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
+      </view>
+      <view class="text">您目前还没有优惠券哦~</view>
+    </view>
+  </view>
+
+  <view class="famousDoctors_bottom">
+  <view class="famousDoctors_bottom_btn" bindtap="goCoinCertificate">
+        <view>兑换优惠券</view>
+  </view>
+
+  </view>
+</view>

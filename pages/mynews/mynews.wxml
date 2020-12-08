@@ -4,19 +4,22 @@
   <view class="topbox" bindtap="system">
     <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/mynews/alarm.png" class="img"></image></view>
     <view class="news">系统消息</view>
+    <view class="circle" style="color:#ffffff;font-size:25rpx" wx:if="{{xt > 0}}">{{xt}}</view>
   </view>
-  <view class="centerbox">
+  <view class="centerbox" bindtap="orderNews">
     <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/mynews/news.png" class="img"></image></view>
     <view class="news">订单消息</view>
+    <view class="circle" wx:if="{{order > 0}}">{{order}}</view>
   </view>
   <view class="centerbox" bindtap="discount">
     <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/mynews/money.png" class="img"></image></view>
     <view class="news">优惠券消息</view>
-    <view class="circle">1</view>
+    <view class="circle" wx:if="{{youhui > 0}}">{{youhui}}</view>
   </view>
-  <view class="bottombox">
+  <view class="bottombox" bindtap="eyNews">
     <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/mynews/star.png" class="img"></image></view>
     <view class="news">儿医帮消息</view>
+    <view class="circle" wx:if="{{eyb > 0}}">{{eyb}}</view>
   </view>
   <view>
     <view class="doctor-news">

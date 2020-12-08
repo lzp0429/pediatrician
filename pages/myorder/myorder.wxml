@@ -35,7 +35,7 @@
       <van-tab title="我的围观"> </van-tab>
     </van-tabs>
     <!-- 我的问题 -->
-    <view wx:if="{{article == 0}}">
+    <view>
       <view wx:if="{{myUser.length <= 0}}">
         <view class="imgs">
           <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
@@ -51,24 +51,24 @@
         </view>
       </view>
     </view>
-    <!-- 我的提问 -->
-    <view wx:if="{{article == 1}}">
-      <view>
-        <view class="imgs">
-          <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>
-        </view>
-        <view class="texts">当前暂无问题列表~</view>
-      </view>
-    </view>
+   
   </view>
   <!-- 免费咨询 -->
   <view wx:if="{{order == 2}}">
 
-    <view class="free" wx:for="{{myOrder}}" wx:key="index">
-      <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myorder/toux.png" class="images"></image></view>
-      <view class="symptom">身体乏力...</view>
-      <view class="times">2020-01-01  10:18</view>
+    <view style="z-index:100" wx:for="{{myOrder}}" wx:key="index" data-id="{{item.consult_id}}" bindtap="freeDetail">
+      <van-swipe-cell left-width="{{ 0 }}" right-width="{{ 50 }}" bindtap="freeDetail">
+        <van-cell-group>
+          <view class="free">
+            <view><image src="https://fenxiang.fancyopen.com/img/eryitong/images/myorder/toux.png" class="images"></image></view>
+            <view class="symptom">{{item.content}}</view>
+            <view class="times">{{item.add_time}}</view>
+          </view>
+        </van-cell-group>
+        <view  slot="right" bindtap="onClose" data-id="{{item.consult_id}}" class="van-swipe-cell__right">删除</view>
+      </van-swipe-cell>
     </view>
+
     <view wx:if="{{myOrder.length <= 0}}">
       <view class="imgs">
         <image src="https://fenxiang.fancyopen.com/img/eryitong/images/img/nonews.png"></image>

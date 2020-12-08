@@ -14,14 +14,29 @@
         请选择答谢金额
     </view>
     <view class="money_class">
-      <view class="money_class_content money_class_content_single">
-        <view>5元</view>
-        <view>一点心意</view>
+      <view wx:for="{{money}}" wx:key="index" bindtap="onMoney" data-num="{{item.number}}" data-id="{{item.id}}" class="{{item.id == num ? 'money_class_content_single':''}} money_class_content ">
+        <view>{{item.number}}</view>
+        <view>{{item.title}}</view>
       </view>
-      <view class="money_class_content">
-        <view>10元</view>
-        <view>白衣天使</view>
-      </view>
+      <van-dialog
+        use-slot
+        title="请输入自定义金额"
+        show="{{ show }}"
+        show-cancel-button
+        bind:close="onClose"
+        bind:confirm="sure"
+      >
+        <view style="width:100%">
+          <van-field model:value="{{ userName }}" placeholder="请输入自定义金额" border="{{ false }}"  />
+            <!-- <van-cell-group>
+              <van-field
+                model:value="{{ userName }}"
+                placeholder="请输入自定义金额"
+                border="{{ false }}"
+              />
+            </van-cell-group> -->
+        </view>
+      </van-dialog>
     </view>
     <view class="money_ipt">
      <textarea bindinput="aaa"  placeholder="说几句感谢医生的话" cols="1" rows="5"></textarea>

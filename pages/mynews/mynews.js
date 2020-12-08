@@ -1,11 +1,41 @@
 // pages/mynews/mynews.js
+const api = require('../../utils/util')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    eyb:'',
+    order:'',
+    xt:'',
+    youhui:'',
+  },
+  // 获取信息
+  getNews(){
+    api._post('user/getWeiReadCount?token=' + wx.getStorageSync('token')).then((res)=>{
+      console.log(res)
+      if(res.data.error == 0){
+        this.setData({
+          eyb:res.data.message.eyb,
+          order:res.data.message.order,
+          xt:res.data.message.xt,
+          youhui:res.data.message.youhui,
+        })
+      }
+    })
+  },
+  // 订单跳转
+  orderNews(){
+    wx.navigateTo({
+      url: '/pages/orderNews/orderNews',
+    })
+  },
+  // 儿医跳转
+  eyNews(){
+    wx.navigateTo({
+      url: '/pages/eyNews/eyNews',
+    })
   },
   // 系统消息跳转
   system(){
@@ -37,7 +67,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.getNews()
   },
 
   /**

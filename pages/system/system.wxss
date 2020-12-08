@@ -22,3 +22,44 @@ page{
   color: #666666;
   line-height: 60rpx;
 }
+.box{
+  width: 90%;
+  margin: 0 auto;
+}
+.box>view{
+  margin-top: 30rpx;
+  background: #ffffff;
+  padding: 20rpx;
+}
+.title{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  padding: 0 30rpx 0 0;
+  line-height: 36rpx;
+}
+.time{
+  font-size: 20rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  text-align: right;
+  margin-top: 20rpx;
+  padding-right: 10rpx;
+}
+.van-swipe-cell__right{
+  text-align: center;
+  background: red;
+  color: #ffffff;
+  font-size: 25rpx;
+  padding: 20rpx 10rpx;
+}
+.flex-title{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.dian{
+  font-size: 50rpx;
+  padding: 20rpx 5rpx;
+}

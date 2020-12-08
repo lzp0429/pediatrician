@@ -1,0 +1,48 @@
+<!--pages/chat/chat.wxml-->
+<view>
+  <view class="recommend_item" >
+    <view>
+        <image src="../../images/image/coupon.png"></image>
+        <view>
+          <view class="recommend_item_nav"> 
+            <view> 王鑫 </view>
+            <view style="padding-left:35rpx"> 天津儿童医院 </view>
+          </view>
+          <view class="recommend_item_btn">
+            <view>
+              名医咨询热榜
+            </view>
+            <view>
+              副主任医师
+            </view>
+          </view>
+        </view>
+        <view style="width:120rpx">
+          <view class="case">病例</view>
+          <view class="file">档案</view>
+        </view>
+    </view>
+  </view>
+  <view style="padding-top:160rpx">
+    <view wx:for="{{news}}" wx:key="index">
+      <view class="right" wx:if="{{item.direction == 2}}">
+        <view></view>
+        <view  class="news">
+          <view class="text">{{item.content}}</view>
+          <view><image src="../../images/img/user.png" class="user"></image></view>
+        </view>
+      </view>
+      <view class="right" wx:if="{{item.direction == 1}}">
+        <view  class="news">
+          <view><image src="../../images/img/user.png" class="user"></image></view>
+          <view class="text">{{item.content}}</view>  
+        </view>
+        <view></view>
+      </view>
+    </view>
+  </view>
+  <view class="sendmessage">
+    <input class="chat-input" type="emoji" bindinput="bindChange" confirm-type="done" value='{{input}}' placeholder="" />
+    <button class="btn" type="primary" plain="true" bindtap='send'>发送</button>
+  </view>
+</view>

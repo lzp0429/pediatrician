@@ -40,7 +40,7 @@ Page({
         order:2,
         article:0,
       })
-      this.getMyissue()
+      this.myOrder()
     }
   },
   // 我的提问tab
@@ -57,6 +57,46 @@ Page({
       })
       this.myLooker()
     }
+  },
+  // 免费咨询详情跳转
+  freeDetail(event){
+    console.log(event)
+    var id = event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: '/pages/freeDetail/freeDetail?id=' + id,
+    })
+  },
+   // 删除免费咨询
+   onClose(event) {
+    var that = this
+    console.log(event)
+    wx.request({
+      url: 'http://eryitong.zhengzhengh.top/user/free_order_delete',
+      method:"POST",
+      header:{
+        'content-type':'multipart/form-data; boundary=XXX'
+      },
+      data:'\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="token"' +
+      '\r\n' +
+      '\r\n' + wx.getStorageSync('token') +
+      '\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="consult_id"' +
+      '\r\n' +
+      '\r\n' + event.currentTarget.dataset.id +
+      '\r\n--XXX' ,
+      success:function(res){
+        console.log(res)
+        if(res.data.error == 0){
+          wx.showToast({
+            title: res.data.message,
+            duration: 2000,
+            icon:'none'
+          });
+          that.myOrder()
+        }
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面加载
@@ -84,12 +124,12 @@ Page({
   },
   // 我的提问之我的问题
   getMyissue(){
-    var token = wx.getStorageSync('token')
-    api._get('user/my_illness_area?token=' + token).then((res)=>{
+    var user_id = wx.getStorageSync('user_id')
+    api._get('user/my_illness_area?user_id=' + user_id).then((res)=>{
       console.log(res,"我的提问之我的问题")
       if(res.data.error == 0){
         this.setData({
-          myOrder:res.data.message
+          myUser:res.data.message
         })
       }else{
         wx.showToast({
@@ -102,12 +142,12 @@ Page({
   },
   // 我的问题之我的围观
   myLooker(){
-    var token = wx.getStorageSync('token')
-    api._get('user/my_illness_onlooker?token=' + token).then((res)=>{
+    var user_id = wx.getStorageSync('user_id')
+    api._get('user/my_illness_onlooker?user_id=' + user_id).then((res)=>{
       console.log(res,"我的问题之我的围观")
       if(res.data.error == 0){
         this.setData({
-          myLooker:res.data.message
+          myUser:res.data.message
         })
       }else{
         wx.showToast({
@@ -120,11 +160,12 @@ Page({
   },
   // 免费咨询
   myOrder(){
+    var token = wx.getStorageSync('token')
     api._get('user/free_order_list?token=' + token).then((res)=>{
       console.log(res,"免费咨询")
       if(res.data.error == 0){
         this.setData({
-          myLooker:res.data.message
+          myOrder:res.data.message
         })
       }else{
         wx.showToast({
