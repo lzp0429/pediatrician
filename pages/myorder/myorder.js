@@ -71,7 +71,7 @@ Page({
     var that = this
     console.log(event)
     wx.request({
-      url: 'http://eryitong.zhengzhengh.top/user/free_order_delete',
+      url: 'https://eryitong.zhengzhengh.top/user/free_order_delete',
       method:"POST",
       header:{
         'content-type':'multipart/form-data; boundary=XXX'

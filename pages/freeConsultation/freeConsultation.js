@@ -26,7 +26,7 @@ Page({
         // console.log(res.data)// res.data就是转换完的base64
         var image = 'data:image/jpg;base64,'+res.data
         wx.request({
-          url: 'http://eryitong.zhengzhengh.top/newuser/new_imgBase64_upload',
+          url: 'https://eryitong.zhengzhengh.top/newuser/new_imgBase64_upload',
           method:"POST",
           header:{
             'content-type':'multipart/form-data; boundary=XXX'
@@ -100,7 +100,7 @@ Page({
       //   console.log(res)
       // })
       wx.request({
-        url: 'http://eryitong.zhengzhengh.top/newuser/new_free_order',
+        url: 'https://eryitong.zhengzhengh.top/newuser/new_free_order',
         method:"POST",
         header:{
           'content-type':'multipart/form-data; boundary=XXX'

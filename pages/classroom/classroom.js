@@ -122,7 +122,7 @@ Page({
     var token = wx.getStorageSync('token')
     
     wx.request({
-      url: 'http://eryitong.zhengzhengh.top/user/collect_list',
+      url: 'https://eryitong.zhengzhengh.top/user/collect_list',
       method:"POST",
       header:{
         'content-type':'multipart/form-data; boundary=XXX'

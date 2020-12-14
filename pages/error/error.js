@@ -110,7 +110,7 @@ Page({
     }else{
       
       wx.request({
-        url: 'http://eryitong.zhengzhengh.top/user/register',
+        url: 'https://eryitong.zhengzhengh.top/user/register',
         method:"POST",
         header:{
           'content-type':'multipart/form-data; boundary=XXX'

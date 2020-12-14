@@ -21,7 +21,7 @@ Page({
     var token = wx.getStorageSync('token')
     console.log(token)
     wx.request({
-      url: 'http://eryitong.zhengzhengh.top/user/follow_insert',
+      url: 'https://eryitong.zhengzhengh.top/user/follow_insert',
       method:"POST",
       header:{
         'content-type':'multipart/form-data; boundary=XXX'
@@ -117,17 +117,43 @@ Page({
   },
   onShow(){
     var token = wx.getStorageSync('token')
-    api._post('/index/doctor_info?doctor_id=' + this.data.id + '&token=' + token).then((res)=>{
-      console.log(res)
-      if(res.data.error == 0){
-        this.setData({
-          message:res.data.message,
-          ifFollow:res.data.message.is_follow
-        })
-        
+    // console.log(token)
+    var that = this
+    wx.request({
+      url: 'https://eryitong.zhengzhengh.top/index/doctor_info',
+      method:"POST",
+      header:{
+        'content-type':'multipart/form-data; boundary=XXX'
+      },
+      data:'\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="doctor_id"' +
+      '\r\n' +
+      '\r\n' + this.data.id +
+      '\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="token"' +
+      '\r\n' +
+      '\r\n' + token,
+      success:function(res){
+        console.log(res)
+        if(res.data.error == 0){
+          that.setData({
+            message:res.data.message,
+            ifFollow:res.data.message.is_follow
+          })
+        }
       }
-    }).catch((err)=>{
-      console.log(err)
     })
+    // api._post('/index/doctor_info?doctor_id=' + this.data.id + '&token=' + token).then((res)=>{
+    //   console.log(res)
+    //   if(res.data.error == 0){
+    //     this.setData({
+    //       message:res.data.message,
+    //       ifFollow:res.data.message.is_follow
+    //     })
+        
+    //   }
+    // }).catch((err)=>{
+    //   console.log(err)
+    // })
   }
 });

@@ -34,6 +34,15 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    headerHeight: 0,
+    statusBarHeight: 0,
+    sdkAppID: 0,
+    userID: '',
+    userSig: '1400458787',
+    token: '',
+    expiresIn: '',
+    phone: '',
+    sessionID: '',
   }
 })

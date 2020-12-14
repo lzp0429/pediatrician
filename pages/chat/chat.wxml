@@ -23,7 +23,7 @@
         </view>
     </view>
   </view>
-  <view style="padding-top:160rpx">
+  <view style="padding-top:160rpx;padding-bottom:80rpx">
     <view wx:for="{{news}}" wx:key="index">
       <view class="right" wx:if="{{item.direction == 2}}">
         <view></view>

@@ -17,7 +17,7 @@ const formatDate = (inputTime) => {
 
   
 // 本地
-const baseUrl = 'http://eryitong.zhengzhengh.top/'
+const baseUrl = 'https://eryitong.zhengzhengh.top/'
 // 线上地址
 // const baseUrl = 'http://123.207.168.102:8081/goodMath/'
 const http = ({ url = '', param = {}, ...other } = {}) => {

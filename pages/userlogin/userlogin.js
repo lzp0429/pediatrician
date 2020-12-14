@@ -60,7 +60,7 @@ Page({
         });
       }else if(this.data.sms != this.data.message){
         wx.request({
-          url: 'http://eryitong.zhengzhengh.top/newuser/new_login',
+          url: 'https://eryitong.zhengzhengh.top/newuser/new_login',
           method:"POST",
           header:{
             'content-type':'multipart/form-data; boundary=XXX'
@@ -123,7 +123,7 @@ Page({
         });
       }else{
         wx.request({
-          url: 'http://eryitong.zhengzhengh.top/user/app_login',
+          url: 'https://eryitong.zhengzhengh.top/user/app_login',
           method:"POST",
           header:{
             'content-type':'multipart/form-data; boundary=XXX'

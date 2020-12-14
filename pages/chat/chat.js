@@ -25,7 +25,7 @@ Page({
   send(){
     var that = this
     wx.request({
-      url: 'http://eryitong.zhengzhengh.top/newuser/new_message_insert',
+      url: 'https://eryitong.zhengzhengh.top/newuser/new_message_insert',
       method:"POST",
       header:{
         'content-type':'multipart/form-data; boundary=XXX'
@@ -67,6 +67,9 @@ Page({
         console.log(res)
         if(res.data.error == 0){
           that.getNews()
+          that.setData({
+            input:''
+          })
         }
       }
     })
@@ -75,7 +78,7 @@ Page({
   getNews(){
     var that = this
     wx.request({
-      url: 'http://eryitong.zhengzhengh.top/index/message',
+      url: 'https://eryitong.zhengzhengh.top/index/message',
       method:"POST",
       header:{
         'content-type':'multipart/form-data; boundary=XXX'

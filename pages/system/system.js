@@ -29,7 +29,7 @@ Page({
     var that = this
     console.log(event)
     wx.request({
-      url: 'http://eryitong.zhengzhengh.top//user/changeReads',
+      url: 'https://eryitong.zhengzhengh.top//user/changeReads',
       method:"POST",
       header:{
         'content-type':'multipart/form-data; boundary=XXX'

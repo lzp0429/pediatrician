@@ -126,7 +126,7 @@ Page({
     }else{
 
       wx.request({
-        url: 'http://eryitong.zhengzhengh.top/user/archive_modify',
+        url: 'https://eryitong.zhengzhengh.top/user/archive_modify',
         method:"POST",
         header:{
           'content-type':'multipart/form-data; boundary=XXX'

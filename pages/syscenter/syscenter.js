@@ -1,66 +1,60 @@
-// pages/syscenter/syscenter.js
+// pages/mydiscount/mydiscount.js
+const api = require('../../utils/util')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    range:'3',
+    couponList:[{name:'图文急诊',number:5,start_time:2020-12-1,end_time:2020-12-15}],
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  // 获取优惠券数据
+  getCoupon(){
+    var that = this
+    wx.request({
+      url: 'https://eryitong.zhengzhengh.top/coupon/myCoupon',
+      method:"POST",
+      header:{
+        'content-type':'multipart/form-data; boundary=XXX'
+      },
+      data:'\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="user_id"' +
+      '\r\n' +
+      '\r\n' + wx.getStorageSync('user_id') +
+      '\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="range"' +
+      '\r\n' +
+      '\r\n' + this.data.range +
+      '\r\n--XXX' +
+      '\r\nContent-Disposition: form-data; name="is_all"' +
+      '\r\n' +
+      '\r\n' + '-1' +
+      '\r\n--XXX',
+      success:function(res){
+        console.log(res)
+        if(res.data.error == 0){
+          that.setData({
+            couponList:res.data.message
+          })
+        }
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  // 获取金额
+  money(event){
+    console.log(event)
+    var money = event.currentTarget.dataset.money
+    wx.navigateTo({
+      url: '/pages/announce/announce?money=' + money,
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  goCoinCertificate(){
+    wx.navigateTo({
+      url: '/pages/coinCertificate/coinCertificate',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onShow(){
+    // this.getCoupon()
   }
 })

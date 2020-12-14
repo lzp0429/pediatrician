@@ -98,7 +98,7 @@ Page({
       var that = this
       var token = wx.getStorageSync('token')
       wx.request({
-        url: 'http://eryitong.zhengzhengh.top/newuser/new_user_modify_phone',
+        url: 'https://eryitong.zhengzhengh.top/newuser/new_user_modify_phone',
         method:"POST",
         header:{
           'content-type':'multipart/form-data; boundary=XXX'

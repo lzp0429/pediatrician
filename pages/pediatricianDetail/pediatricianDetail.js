@@ -25,7 +25,7 @@ Page({
     //   console.log(res)
     // })
     wx.request({
-      url: 'http://eryitong.zhengzhengh.top/user/collect_insert',
+      url: 'https://eryitong.zhengzhengh.top/user/collect_insert',
       method:"POST",
       header:{
         'content-type':'multipart/form-data; boundary=XXX'

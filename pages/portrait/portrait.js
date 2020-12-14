@@ -32,7 +32,7 @@ Page({
         })
         
         wx.request({
-          url: 'http://eryitong.zhengzhengh.top/user/user_modify_headimg',
+          url: 'https://eryitong.zhengzhengh.top/user/user_modify_headimg',
           method:"POST",
           header:{
             'content-type':'multipart/form-data; boundary=XXX'

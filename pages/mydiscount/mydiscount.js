@@ -13,7 +13,7 @@ Page({
   getCoupon(){
     var that = this
     wx.request({
-      url: 'http://eryitong.zhengzhengh.top/coupon/myCoupon',
+      url: 'https://eryitong.zhengzhengh.top/coupon/myCoupon',
       method:"POST",
       header:{
         'content-type':'multipart/form-data; boundary=XXX'

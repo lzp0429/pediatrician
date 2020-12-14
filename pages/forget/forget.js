@@ -114,7 +114,7 @@ Page({
       });
     }else{
       wx.request({
-        url: 'http://eryitong.zhengzhengh.top/user/forget_pwd',
+        url: 'https://eryitong.zhengzhengh.top/user/forget_pwd',
         method:"POST",
         header:{
           'content-type':'multipart/form-data; boundary=XXX'

@@ -13,7 +13,7 @@ Page({
     var that = this
     var token =  wx.getStorageSync('token')
     wx.request({
-      url: 'http://eryitong.zhengzhengh.top/user/user_modify_nickname',
+      url: 'https://eryitong.zhengzhengh.top/user/user_modify_nickname',
       method:"POST",
       header:{
         'content-type':'multipart/form-data; boundary=XXX'

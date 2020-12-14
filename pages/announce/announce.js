@@ -16,6 +16,8 @@ Page({
     radio: '请选择',
     id:'',
     imges:[],
+    money:'使用优惠劵',
+    surplus:'',
   },
   // 文本款
   changtetx(event){
@@ -80,7 +82,7 @@ Page({
         // console.log(res.data)// res.data就是转换完的base64
         var image = 'data:image/jpg;base64,'+res.data
         wx.request({
-          url: 'http://eryitong.zhengzhengh.top/newuser/new_imgBase64_upload',
+          url: 'https://eryitong.zhengzhengh.top/newuser/new_imgBase64_upload',
           method:"POST",
           header:{
             'content-type':'multipart/form-data; boundary=XXX'
@@ -127,8 +129,28 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function (event) {
     this.illness()
+    console.log(event)
+    if(event.money){
+      this.setData({
+        money:'-￥'+ event.money +'.00',
+      })
+      if(event.money > 8){
+        this.setData({
+          surplus: 0
+        })
+      }else{
+        this.setData({
+          surplus: 8 - event.money
+        })
+      }
+    }else{
+      this.setData({
+        money:'使用优惠劵',
+        surplus: '8'
+      })
+    }
   },
 
   /**

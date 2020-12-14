@@ -75,13 +75,13 @@
         "pagePath":"pages/classroom/classroom",
         "iconPath": "/images/img/text.png",
         "selectedIconPath": "/images/img/jiantang.png",
-        "text":"儿医讲堂"
+        "text":"讲堂"
       },
       {
         "pagePath":"pages/pediatrician/pediatrician",
         "iconPath": "/images/img/shipin@_2xpng.png",
         "selectedIconPath": "/images/img/shipinxuanzhong@_2xpng.png",
-        "text":"儿医帮"
+        "text":"儿帮"
       },
       {
         "pagePath":"pages/my/my",
@@ -97,6 +97,27 @@
     "navigationBarTitleText": "儿医通",
     "navigationBarTextStyle":"white"
   },
+  "subpackages":[
+    {
+      "root": "subpackage",
+      "name": "subpackage",
+      "pages": [
+        "pages/video/video",
+        "pages/famousDoctors/famousDoctors",
+        "pages/pediatricianDetail/pediatricianDetail",
+        "pages/matterDetails/matterDetails",
+        "pages/mydoctor/mydoctor",
+        "pages/mynews/mynews",
+        "pages/myorder/myorder",
+        "pages/myattention/myattention",
+        "pages/myfavorite/myfavorite",
+        "pages/myhealth/myhealth",
+        "pages/mydiscount/mydiscount",
+        "pages/service/service"
+      ],
+      "independent": false
+    }
+  ],
   "usingComponents": {
     "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
     "van-dropdown-item": "@vant/weapp/dropdown-item/index",

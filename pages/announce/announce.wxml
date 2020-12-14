@@ -36,12 +36,12 @@
       <view>优惠劵</view>
     </view>
     <view bindtap="syscenter">
-      <view>使用优惠劵</view>
+      <view>{{money}}</view>
       <image src="https://fenxiang.fancyopen.com/img/eryitong/images/home/you.png"></image>
     </view>
   </view>
   <view class="subtotal">
-    小计：￥8.00
+    小计：￥{{surplus}}.00
   </view>
   <view class="announce_btn">
     <view>支付即代表您已同意并阅读 <text style="color:#4FA7FF;">《儿医帮咨询规则》</text> </view>
